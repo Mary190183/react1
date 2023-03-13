@@ -1,15 +1,21 @@
-import { useState } from 'react';
+import React, { Component } from 'react';
+
+import { Suspense, useState } from 'react';
+
+const Footer = React.lazy(() => import('../components/footer'));
+const Counter = React.lazy(() => import('../components/counter'));
 
 const Home = () => {
-  const [count, setCount] = useState(0);
   return (
-    <form action="" className="red">
+    <>
       <div>
         <div className="App">
-          <button onClick={() => setCount((count) => count + 1)}> count is {count} </button>
+          <Counter />
         </div>
       </div>
-    </form>
+      <Counter />
+      <Footer />
+    </>
   );
 };
 
