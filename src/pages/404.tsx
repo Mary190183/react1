@@ -1,7 +1,3 @@
-import { NavLink } from 'react-router-dom';
-import { Layout, g } from 'components/Layout';
-import Footer from 'components/footer';
-
 const NotFoundPage = () => {
   return (
     <div className="container_404 container">

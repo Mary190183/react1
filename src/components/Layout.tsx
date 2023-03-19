@@ -33,3 +33,4 @@ const Layout = () => {
 };
 
 export { Layout };
+// "build": "tsc && vite build",
