@@ -182,6 +182,7 @@ border: 2px solid #093b0a;
 .container_404 {
   width: 100vw;
   height: 100vh;
+  z-index: 1;
   font-size: 36px;
   display: flex;
   flex-direction: column;
@@ -231,4 +232,7 @@ border: 2px solid #093b0a;
   background-color: #df7a07a4;
   color: #0b8325;
   border: 2px solid #0b8325;
+}
+.none {
+  display: none;
 }

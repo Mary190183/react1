@@ -1,12 +1,14 @@
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
+import { Layout, g } from 'components/Layout';
+import Footer from 'components/footer';
 
 const NotFoundPage = () => {
   return (
     <div className="container_404 container">
       This page doesn&apos;t exist. Go
-      <Link to="/">
+      <a href="/">
         <h1 className="logo">Houseplant</h1>
-      </Link>
+      </a>
     </div>
   );
 };

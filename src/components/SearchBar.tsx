@@ -1,28 +1,23 @@
-import { SetStateAction, useState } from 'react';
-import data from '../data/plants.json';
+import { useState, useEffect } from 'react';
 
 const SearchBar = () => {
-  const [searchInput, setSearchInput] = useState('');
+  const [searchInput, setSearchInput] = useState(() => {
+    const saved = localStorage.getItem('searchInput') as string;
+    const initialValue = JSON.parse(saved);
+    return initialValue || '';
+  });
 
-  const handleChange = (e: {
-    preventDefault: () => void;
-    target: { value: SetStateAction<string> };
-  }) => {
-    e.preventDefault();
-    setSearchInput(e.target.value);
-  };
+  useEffect(() => {
+    // storing input name
+    localStorage.setItem('searchInput', JSON.stringify(searchInput));
+  }, [searchInput]);
 
-  if (searchInput.length > 0) {
-    data.plants.filter((plant) => {
-      return plant.name.match(searchInput);
-    });
-  }
   return (
     <form action="/" method="get">
       <input
         className="input-search"
         name="search"
-        onChange={handleChange}
+        onChange={(e) => setSearchInput(e.target.value)}
         value={searchInput}
         placeholder="Enter plant ..."
         type="search"
