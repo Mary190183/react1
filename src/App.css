@@ -30,18 +30,19 @@ html {
   align-items: center;
   color: #ffffff;
 }
-.header-container a, .footer-link {
+.default-link, .footer-link {
   color: #ffffff;
   text-decoration: none;
   transition: all 1s;
   cursor: pointer;
 }
-.header-container a:hover {
-  color: #ca931c;
+.default-link:hover, .active-link:hover {
+  color: #bfdf07bb;
 }
-.header-container a:hover {
+.active-link {
   color: #df7a07;
 }
+
 .logo {
   text-transform: uppercase;
   font-size: 30px;
@@ -94,10 +95,10 @@ html {
   max-width: 100%;
 }
 .footer-link:hover svg path, .svg path:hover, svg path:focus {
-  fill: #f3b122;
+  fill: #df7a07;
 }
 .footer-link:hover p{
-  color: #f3b122;
+  color: #df7a07;
 }
 
 form {
@@ -119,7 +120,7 @@ input {
   color: #9E9C9C;
 }
 input:hover {
-  border: 3px solid #f3b122;
+  border: 3px solid #df7a07;;
   color: #093b0a;
   background: #F9F0DA;
 
@@ -137,7 +138,7 @@ input:hover {
   padding: 0;
 }
 .button:hover {
-background-color: #f3b122;
+background-color: #df7a07;
 border: 2px solid #093b0a;
 }
 .button:active {
@@ -227,7 +228,7 @@ border: 2px solid #093b0a;
   border: 2px solid #0b8325;
 }
 .counter button:focus {
-  background-color: #f3b122;
+  background-color: #df7a07a4;
   color: #0b8325;
   border: 2px solid #0b8325;
 }

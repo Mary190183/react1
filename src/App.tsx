@@ -3,21 +3,18 @@ import { Routes, Route } from 'react-router-dom';
 import { About } from './pages/about';
 import { NotFoundPage } from './pages/404';
 import { Home } from './pages/home';
-import React from 'react';
-
-const Header = React.lazy(() => import('./components/header'));
-const Footer = React.lazy(() => import('./components/footer'));
+import { Layout } from './components/Layout';
 
 function App() {
   return (
     <>
-      <Header />
       <Routes>
-        <Route path="/about" element={<About />} />
-        <Route path="/" element={<Home />} />
-        <Route path="*" element={<NotFoundPage />} />
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="about" element={<About />} />
+          <Route path="*" element={<NotFoundPage />} />
+        </Route>
       </Routes>
-      <Footer />
     </>
   );
 }
