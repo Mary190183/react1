@@ -1,0 +1,175 @@
+{
+  "plants": [
+    {
+      "id": 1,
+      "name": "Гардения",
+      "watches": 5,
+      "price": 500,
+      "amount": 20,
+      "image": "/Gardenia.jpg",
+      "description": "любит легкое затенение"
+    },
+    {
+      "id": 2,
+      "name": "Аспидистра спатифиллум",
+      "watches": 3,
+      "price": 400,
+      "amount": 10,
+      "image": "/aspidistra_spatifilum.jpg",
+      "description": "любит солнце"
+    },
+    {
+      "id": 3,
+      "name": "Орхидеи",
+      "watches": 2,
+      "price": 1000,
+      "amount": 15,
+      "image": "/orhidea.jpg",
+      "description": "любит опрыскивание"
+    },
+    {
+      "id": 4,
+      "name": "Аглаонема",
+      "watches": 5,
+      "price": 500,
+      "amount": 20,
+      "image": "/aglaonema.jpg",
+      "description": "любит легкое затенение"
+    },
+    {
+      "id": 6,
+      "name": "Фикус Бенджамина",
+      "watches": 3,
+      "price": 400,
+      "amount": 10,
+      "image": "/fikus_bengamina.jpg",
+      "description": "любит солнце"
+    },
+    {
+      "id": 7,
+      "name": "Гербера",
+      "watches": 2,
+      "price": 1000,
+      "amount": 15,
+      "image": "/herbera.jpg",
+      "description": "любит опрыскивание"
+    },
+    {
+      "id": 8,
+      "name": "Коланхое",
+      "watches": 5,
+      "price": 500,
+      "amount": 20,
+      "image": "/kolanhoe.jpg",
+      "description": "любит легкое затенение"
+    },
+    {
+      "id": 9,
+      "name": "Маранта",
+      "watches": 3,
+      "price": 400,
+      "amount": 10,
+      "image": "/maranta.jpg",
+      "description": "любит солнце"
+    },
+    {
+      "id": 10,
+      "name": "Монстера",
+      "watches": 2,
+      "price": 1000,
+      "amount": 15,
+      "image": "/monstera.jpg",
+      "description": "любит опрыскивание"
+    },
+    {
+      "id": 11,
+      "name": "Нефролепис глориоса",
+      "watches": 5,
+      "price": 500,
+      "amount": 20,
+      "image": "/nefrolepis_gloriosa.jpg",
+      "description": "любит легкое затенение"
+    },
+    {
+      "id": 12,
+      "name": "Осока",
+      "watches": 3,
+      "price": 400,
+      "amount": 10,
+      "image": "/osoka.jpg",
+      "description": "любит солнце"
+    },
+    {
+      "id": 13,
+      "name": "Пальма Кения Ховея",
+      "watches": 2,
+      "price": 1000,
+      "amount": 15,
+      "image": "/palm_kenia_hoveja.jpg",
+      "description": "любит опрыскивание"
+    },
+    {
+      "id": 14,
+      "name": "Пальма Ливинстона",
+      "watches": 5,
+      "price": 500,
+      "amount": 20,
+      "image": "/palm_livinstone.jpg",
+      "description": "любит легкое затенение"
+    },
+    {
+      "id": 15,
+      "name": "Пальма",
+      "watches": 3,
+      "price": 400,
+      "amount": 10,
+      "image": "/palm.jpg",
+      "description": "любит солнце"
+    },
+    {
+      "id": 16,
+      "name": "Петуния",
+      "watches": 2,
+      "price": 1000,
+      "amount": 15,
+      "image": "/petunia.jpg",
+      "description": "любит опрыскивание"
+    }, 
+    {
+      "id": 17,
+      "name": "Примула",
+      "watches": 2,
+      "price": 1000,
+      "amount": 15,
+      "image": "/primula.jpg",
+      "description": "любит опрыскивание"
+    },
+    {
+      "id": 18,
+      "name": "Спатифиллум Лима",
+      "watches": 5,
+      "price": 500,
+      "amount": 20,
+      "image": "/spatifillu_lima.jpg",
+      "description": "любит легкое затенение"
+    },
+    {
+      "id": 19,
+      "name": "Суккуленты",
+      "watches": 3,
+      "price": 400,
+      "amount": 10,
+      "image": "/succulent.jpg",
+      "description": "любит солнце"
+    },
+    {
+      "id": 20,
+      "name": "Водный гиацинт",
+      "watches": 3,
+      "price": 400,
+      "amount": 10,
+      "image": "/water_giasint.jpg",
+      "description": "любит солнце"
+    }
+  ]
+  }

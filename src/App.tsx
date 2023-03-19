@@ -3,7 +3,6 @@ import { Routes, Route } from 'react-router-dom';
 import { About } from './pages/about';
 import { NotFoundPage } from './pages/404';
 import { Home } from './pages/home';
-import { Cart } from './pages/cart';
 import React from 'react';
 
 const Header = React.lazy(() => import('./components/header'));
@@ -16,8 +15,7 @@ function App() {
       <Routes>
         <Route path="/about" element={<About />} />
         <Route path="/" element={<Home />} />
-        <Route path="/cart" element={<Cart />} />
-        <Route path="/*" element={<NotFoundPage />} />
+        <Route path="*" element={<NotFoundPage />} />
       </Routes>
       <Footer />
     </>
