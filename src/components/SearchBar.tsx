@@ -19,7 +19,7 @@ const SearchBar = () => {
         name="search"
         onChange={(e) => setSearchInput(e.target.value)}
         value={searchInput}
-        placeholder="Enter plant ..."
+        placeholder="Enter text ..."
         type="search"
         required
       ></input>
