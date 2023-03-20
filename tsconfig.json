@@ -17,8 +17,9 @@
     "jsx": "react-jsx",
     "baseUrl": "./src",
     "noImplicitAny": true,
-    "noFallthroughCasesInSwitch": true
+    "noFallthroughCasesInSwitch": true,
+    "types": ["vitest/globals", "@testing-library/jest-dom"]
   },
-  "include": ["src"],
+  "include": [".eslintrc.cjs", "./src/**/*", "vite.config.ts"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

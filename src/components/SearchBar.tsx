@@ -23,7 +23,7 @@ const SearchBar = () => {
         type="search"
         required
       ></input>
-      <button className="button" type="submit">
+      <button className="button" type="submit" data-testid="button-search">
         <div className="search-icon"></div>
       </button>
     </form>

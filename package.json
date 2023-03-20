@@ -5,14 +5,16 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -p tsconfig.prod.json && vite build",
+    "build": "npm run test && vite build",
     "preview": "vite preview",
-    "test": "jest"
+    "test": "vitest --coverage",
+    "lint": "eslint ./src/**/*.{ts,tsx}"
   },
   "dependencies": {
     "@svgx/vite-plugin-react": "^1.0.1",
     "@typescript-eslint/eslint-plugin": "^5.54.1",
     "@typescript-eslint/parser": "^5.54.1",
+    "@vitest/coverage-c8": "^0.29.3",
     "eslint": "^8.36.0",
     "eslint-config-prettier": "^8.7.0",
     "eslint-import-resolver-typescript": "^3.5.3",
@@ -40,6 +42,8 @@
     "@vitejs/plugin-react": "^3.1.0",
     "jest": "^27.5.1",
     "typescript": "^4.9.3",
-    "vite": "^4.1.4"
+    "vite": "^4.1.4",
+    "vite-plugin-checker": "^0.5.6",
+    "vitest": "^0.29.5"
   }
 }

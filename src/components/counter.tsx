@@ -11,8 +11,12 @@ function Counter() {
   }
   return (
     <div className="counter">
-      <button onClick={decrement}>-</button>
-      <button onClick={increment}>+</button>
+      <button onClick={decrement} data-testid="button">
+        -
+      </button>
+      <button onClick={increment} data-testid="button">
+        +
+      </button>
       <h2>{count}</h2>
     </div>
   );
