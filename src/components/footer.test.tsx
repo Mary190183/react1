@@ -1,6 +1,6 @@
 import { render, screen } from '@testing-library/react';
 
-import Footer from '../components/footer';
+import Footer from './Footer';
 
 describe('Footer', () => {
   it('should have link with text "Mary190183"', () => {

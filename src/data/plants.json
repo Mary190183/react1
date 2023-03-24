@@ -2,39 +2,39 @@
   "plants": [
     {
       "id": 1,
-      "name": "Гардения",
+      "name": "Gardenia",
       "watches": 5,
       "price": 500,
       "amount": 20,
       "image": "/Gardenia.jpg",
-      "description": "любит легкое затенение"
+      "description": "Gardenia loves moisture and spraying"
     },
     {
       "id": 2,
-      "name": "Аспидистра спатифиллум",
+      "name": "Aspidistra",
       "watches": 3,
       "price": 400,
       "amount": 10,
       "image": "/aspidistra_spatifilum.jpg",
-      "description": "любит солнце"
+      "description": "It is better to hide it from direct sunlight"
     },
     {
       "id": 3,
-      "name": "Орхидеи",
+      "name": "Orchid",
       "watches": 2,
       "price": 1000,
       "amount": 15,
       "image": "/orhidea.jpg",
-      "description": "любит опрыскивание"
+      "description": "Orchids like humid air — 50-80%. They need to be sprayed"
     },
     {
       "id": 4,
-      "name": "Аглаонема",
+      "name": "Aglaonema",
       "watches": 5,
       "price": 500,
       "amount": 20,
       "image": "/aglaonema.jpg",
-      "description": "любит легкое затенение"
+      "description": "The flower loves warmth and moisture, and is also sensitive to light"
     },
     {
       "id": 6,

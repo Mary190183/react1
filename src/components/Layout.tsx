@@ -1,34 +1,18 @@
-import { NavLink, Outlet } from 'react-router-dom';
-import SearchBar from './SearchBar';
-import Footer from './footer';
+import { Outlet } from 'react-router-dom';
+import { Header } from './Header/Header';
+import Footer from './Footer';
 
 const Layout = () => {
   const shouldShowFooterHeader =
-    window.location.pathname === '/about' || window.location.pathname === '/';
+    window.location.pathname === '/about' ||
+    window.location.pathname === '/' ||
+    window.location.pathname === '/recycle';
   return (
-    <>
-      {shouldShowFooterHeader && (
-        <header className="header">
-          <div className="header-container">
-            <NavLink
-              className={({ isActive }) => (isActive ? 'active-link' : 'default-link')}
-              to=""
-            >
-              <h1 className="logo">Houseplant</h1>
-            </NavLink>
-            <SearchBar />
-            <NavLink
-              className={({ isActive }) => (isActive ? 'active-link' : 'default-link')}
-              to="about"
-            >
-              About us
-            </NavLink>
-          </div>
-        </header>
-      )}
+    <div className="wrapper" data-testid="wrapper">
+      {shouldShowFooterHeader && <Header />}
       <Outlet />
       {shouldShowFooterHeader && <Footer />}
-    </>
+    </div>
   );
 };
 

@@ -1,5 +1,5 @@
-import Github from '../assets/github.svg';
-import RSLogo from '../assets/rsschool.svg';
+import Github from '../assets/svg/github.svg';
+import RSLogo from '../assets/svg/rsschool.svg';
 
 const Footer = () => {
   return (

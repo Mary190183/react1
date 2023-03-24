@@ -10,3 +10,13 @@ export type DataPlant = {
   watches: number;
   image: string;
 };
+
+export type DataRadios = {
+  radio: DataPlants[];
+};
+
+export type DataRadio = {
+  id: number;
+  image: string;
+};
+

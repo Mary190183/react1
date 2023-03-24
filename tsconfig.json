@@ -20,6 +20,6 @@
     "noFallthroughCasesInSwitch": true,
     "types": ["vitest/globals", "@testing-library/jest-dom"]
   },
-  "include": [".eslintrc.cjs", "./src/**/*", "vite.config.ts"],
+  "include": ["./src/**/*", ".eslintrc.json", "vite.config.ts"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

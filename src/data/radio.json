@@ -1,0 +1,31 @@
+{
+  "radio": [
+    {
+      "id": 1,
+      "image": "/Plastic-recyc-01.svg"    },
+    {
+      "id": 2,
+      "image": "Plastic-recyc-02.svg"
+    },
+    {
+      "id": 3,
+      "image": "/Plastic-recyc-03.svg"
+    },
+    {
+      "id": 4,
+      "image": "/Plastic-recyc-04.svg"
+    },
+    {
+      "id": 5,
+      "image": "Plastic-recyc-05.svg"
+    },
+    {
+      "id": 6,
+      "image": "/Plastic-recyc-06.svg"
+    },
+    {
+      "id": 7,
+      "image": "/Plastic-recyc-07.svg"
+    }
+  ]
+  }
