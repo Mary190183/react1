@@ -13,7 +13,7 @@
   "dependencies": {
     "@svgx/vite-plugin-react": "^1.0.1",
     "@typescript-eslint/eslint-plugin": "^5.54.1",
-    "@typescript-eslint/parser": "^5.56.0",
+    "@typescript-eslint/parser": "^5.54.1",
     "@vitest/coverage-c8": "^0.29.3",
     "eslint": "^8.36.0",
     "eslint-config-prettier": "^8.7.0",
@@ -36,6 +36,7 @@
     "@testing-library/react": "^14.0.0",
     "@testing-library/user-event": "^14.4.3",
     "@types/jest": "^29.5.0",
+    "@types/mocha": "^10.0.1",
     "@types/react": "^18.0.27",
     "@types/react-dom": "^18.0.10",
     "@vitejs/plugin-react": "^3.1.0",

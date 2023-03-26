@@ -17,6 +17,6 @@ export type DataRadios = {
 
 export type DataRadio = {
   id: number;
+  name: string;
   image: string;
 };
-

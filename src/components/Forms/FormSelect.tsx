@@ -1,17 +1,27 @@
+import { useState, useEffect } from 'react';
+
 const FormTitle = () => {
+  const [selectInput, setSelectInput] = useState(() => {
+    const saved1 = localStorage.getItem('selectInput') as string;
+    const initialValue = JSON.parse(saved1);
+    return initialValue || '';
+  });
+  useEffect(() => {
+    localStorage.setItem('selectInput', JSON.stringify(selectInput));
+  }, [selectInput]);
   return (
-    <form className="input-box">
+    <div className="input-box">
       <label htmlFor="type">
         <h5>Type of waste: </h5>
       </label>
-      <select id="type">
-        <option>Plastic</option>
+      <select id="type" value={selectInput} onChange={(e) => setSelectInput(e.target.value)}>
+        <option selected>Plastic</option>
         <option>Metal</option>
         <option>Paper</option>
-        <option>Glass</option>
-        <option>Unsort</option>
+        <option value="Glass">Glass</option>
+        <option value="unsort">Unsort</option>
       </select>
-    </form>
+    </div>
   );
 };
 

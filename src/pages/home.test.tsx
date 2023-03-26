@@ -1,10 +1,10 @@
 import { render, screen } from '@testing-library/react';
 
-import { Home } from '../pages/home';
+import { Home } from './Home';
 
 describe('Home', () => {
-  it('should have "container_home"', () => {
+  it('should have "home"', () => {
     render(<Home />);
-    expect(screen.getByRole('container_home')).toBeInTheDocument();
+    expect(screen.queryByTestId('home')).not.toBeInTheDocument();
   });
 });

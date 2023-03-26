@@ -1,6 +1,6 @@
 import { render, screen } from '@testing-library/react';
 
-import { Recycle } from '../pages/recycle';
+import { Recycle } from './Recycle';
 
 describe('Recycle', () => {
   it('should have "button-form"', () => {

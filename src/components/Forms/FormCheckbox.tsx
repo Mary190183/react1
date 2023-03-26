@@ -1,11 +1,26 @@
-const FormCheckbox= () => {
+import { useState, useEffect } from 'react';
+
+const FormCheckbox = () => {
+  const [checkInput, setCheckInput] = useState(() => {
+    const saved3 = localStorage.getItem('checkInput') as string;
+    const initialValue = JSON.parse(saved3);
+    return initialValue || '';
+  });
+  useEffect(() => {
+    localStorage.setItem('checkInput', JSON.stringify(checkInput));
+  }, [checkInput]);
   return (
-    <form>
-        <div className="checkbox-container">
-          <input type="checkbox" className="input-checkbox" name="check1" data-testid="input-checkbox" />
-          <label htmlFor="check1">Unmarked</label>
-        </div>
-    </form>
+    <div className="checkbox-container">
+      <input
+        type="checkbox"
+        className="input-checkbox"
+        name="checkbox"
+        data-testid="input-checkbox"
+        checked={checkInput}
+        onChange={(e) => setCheckInput(e.target.checked)}
+      />
+      <label htmlFor="checkbox">Unmarked</label>
+    </div>
   );
 };
 

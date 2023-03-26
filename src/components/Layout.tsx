@@ -8,7 +8,7 @@ const Layout = () => {
     window.location.pathname === '/' ||
     window.location.pathname === '/recycle';
   return (
-    <div className="wrapper" data-testid="wrapper">
+    <div role="wrapper">
       {shouldShowFooterHeader && <Header />}
       <Outlet />
       {shouldShowFooterHeader && <Footer />}

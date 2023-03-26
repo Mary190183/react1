@@ -1,6 +1,6 @@
 import { render, screen } from '@testing-library/react';
 
-import Counter from './counter';
+import Counter from './Counter';
 
 describe('Counter', () => {
   it('should have two button', () => {
