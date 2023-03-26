@@ -30,7 +30,7 @@ const FormFile: FC<InputFileProps> = ({ ...rest }) => {
       .then((data) => console.log(data))
       .catch((err) => console.error(err));
   };
-  const fileInput = localStorage.setItem('fileInput', JSON.stringify(file?.name));
+  localStorage.setItem('fileInput', JSON.stringify(file?.name));
   return (
     <div className="profile-form input-logo">
       <h4 className="birth-title v"> Waste image: </h4>
@@ -38,7 +38,7 @@ const FormFile: FC<InputFileProps> = ({ ...rest }) => {
         <label className="input-file svg-container">
           <div className="input-box">
             <label htmlFor="file">
-              <p>Unload file</p>
+              <p>Upload file</p>
             </label>
             <input
               className="input-file"
