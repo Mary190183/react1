@@ -3,9 +3,19 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "repository": {
+    "url": "git+https://github.com/Mary190183/react1.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mary190183/react1/issues"
+  },
+  "homepage": "https://github.com/Mary190183/react1#readme",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
+    "build": "npm run test && vite build && tsc",
     "preview": "vite preview",
     "test": "vitest --coverage",
     "lint": "eslint ./src/**/*.{ts,tsx}"
