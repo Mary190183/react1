@@ -1,4 +1,4 @@
-import { DataRadio } from 'types/types';
+import { DataRadio } from '../../types/types';
 import { useState } from 'react';
 
 const FormCard = (props: DataRadio) => {

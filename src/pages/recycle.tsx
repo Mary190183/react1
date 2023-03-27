@@ -5,7 +5,7 @@ import FormFile from '../components/Forms/FormFile';
 import FormCard from '../components/Forms/FormCard';
 import FormCheckbox from '../components/Forms/FormCheckbox';
 import data from '../data/radio.json';
-import React, { useCallback } from 'react';
+import React from 'react';
 
 let check: string;
 
