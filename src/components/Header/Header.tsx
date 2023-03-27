@@ -12,13 +12,13 @@ const Header = () => {
         <SearchBar />
         <NavLink
           className={({ isActive }) => (isActive ? 'active-link' : 'default-link')}
-          to="about"
+          to="/about"
         >
           About us
         </NavLink>
         <NavLink
           className={({ isActive }) => (isActive ? 'active-link' : 'default-link')}
-          to="recycle"
+          to="/recycle"
         >
           Recycle
         </NavLink>

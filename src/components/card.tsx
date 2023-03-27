@@ -20,7 +20,7 @@ const Card = (props: DataPlant) => {
       <h3>{props.name}</h3>
       <div>{props.description}</div>
       <div>{props.price} $</div>
-      <Counter />
+      {/* <Counter /> */}
     </div>
   );
 };
