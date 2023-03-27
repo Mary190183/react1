@@ -15,11 +15,11 @@ const FormTitle = () => {
         <h5>Type of waste: </h5>
       </label>
       <select id="type" value={selectInput} onChange={(e) => setSelectInput(e.target.value)}>
-        <option selected>Plastic</option>
+        <option>Plastic</option>
         <option>Metal</option>
         <option>Paper</option>
-        <option value="Glass">Glass</option>
-        <option value="unsort">Unsort</option>
+        <option>Glass</option>
+        <option>Unsort</option>
       </select>
     </div>
   );
