@@ -13,6 +13,7 @@ const AppRoutes = () => {
         <Route index element={<Home />} />
         <Route path="about" element={<About />} />
         <Route path="recycle" element={<Recycle />} />
+
         <Route path="*" element={<NotFoundPage />} />
       </Route>
     </Routes>
