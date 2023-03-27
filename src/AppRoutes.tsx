@@ -1,5 +1,5 @@
 import './assets/styles/App.css';
-import { Routes, Route, Navigate } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import { About } from './pages/About';
 import { Recycle } from './pages/Recycle';
 import { NotFoundPage } from './pages/404';
@@ -13,8 +13,7 @@ const AppRoutes = () => {
         <Route index element={<Home />} />
         <Route path="about" element={<About />} />
         <Route path="recycle" element={<Recycle />} />
-        <Route path="404" element={<NotFoundPage />} />
-        <Route path="*" element={<Navigate replace to="/404" />} />
+        <Route path="*" element={<NotFoundPage />} />
       </Route>
     </Routes>
   );
