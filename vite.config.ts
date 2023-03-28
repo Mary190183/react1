@@ -14,7 +14,7 @@ export default defineConfig({
       all: true,
       skipFull: true,
       reporter: 'text',
-      exclude: [...coverageConfigDefaults.exclude, '**/index.tsx', '**/I*.ts'],
+      exclude: [...coverageConfigDefaults.exclude, '**/main.tsx', '**/I*.ts'],
     },
   },
 });
