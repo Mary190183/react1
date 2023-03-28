@@ -18,6 +18,7 @@ const FormCheckbox = () => {
         data-testid="input-checkbox"
         checked={checkInput}
         onChange={(e) => setCheckInput(e.target.checked)}
+        required
       />
       <label htmlFor="checkbox">Unmarked</label>
     </div>

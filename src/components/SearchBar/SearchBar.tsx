@@ -13,7 +13,7 @@ const SearchBar = () => {
   }, [searchInput]);
 
   return (
-    <form action="/" method="get">
+    <form method="get">
       <input
         className="input-search"
         name="search"
@@ -23,7 +23,7 @@ const SearchBar = () => {
         type="search"
         required
       ></input>
-      <button className="button" type="button" data-testid="button-search">
+      <button className="button" type="submit" data-testid="button-search">
         <div className="search-icon"></div>
       </button>
     </form>

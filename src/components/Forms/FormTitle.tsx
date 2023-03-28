@@ -1,23 +1,10 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import React from 'react';
 
 const FormTitle = () => {
   const input = React.useRef<HTMLInputElement>(null);
-
-  React.useEffect(() => {
-    if (input.current) {
-      input.current.focus();
-    }
-  }, []);
-  const [titleInput, setTitleInput] = useState(() => {
-    const saved = localStorage.getItem('titleInput') as string;
-    const initialValue = JSON.parse(saved);
-    return initialValue || '';
-  });
-  useEffect(() => {
-    localStorage.setItem('titleInput', JSON.stringify(titleInput));
-  }, [titleInput]);
-
+  const [titleInput, setTitleInput] = useState();
+  console.log(input.current?.value);
   return (
     <div className="input-box">
       <label htmlFor="title">

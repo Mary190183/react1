@@ -20,6 +20,7 @@ const FormDate = () => {
         className="input-date"
         value={dateInput}
         onChange={(e) => setDateInput(e.target.value)}
+        required
       />
     </div>
   );

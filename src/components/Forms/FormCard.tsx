@@ -19,6 +19,7 @@ const FormCard = (props: DataRadio) => {
         onChange={radioHandler}
         name="radio"
         type="radio"
+        required
       />
       <label htmlFor="radio">
         <img className="image-form" src={props.image} alt={props.name} />

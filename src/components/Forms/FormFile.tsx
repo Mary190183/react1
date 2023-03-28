@@ -45,6 +45,7 @@ const FormFile: FC<InputFileProps> = ({ ...rest }) => {
               type="file"
               onChange={handleFileChange}
               name="file"
+              required
               {...rest}
             />
             <div className="input-file-text-1" ref={inputRef}>
