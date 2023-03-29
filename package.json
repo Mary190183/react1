@@ -8,7 +8,8 @@
     "build": "vite build",
     "preview": "vite preview",
     "test": "vitest --coverage",
-    "lint": "eslint ./src/**/*.{ts,tsx}"
+    "lint": "eslint ./src/**/*.{ts,tsx}",
+    "react": "react-devtools"
   },
   "dependencies": {
     "@svgx/vite-plugin-react": "^1.0.1",

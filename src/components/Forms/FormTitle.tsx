@@ -1,10 +1,10 @@
-import { useState } from 'react';
+import { RefObject } from 'react';
 import React from 'react';
 
-const FormTitle = () => {
-  const input = React.useRef<HTMLInputElement>(null);
-  const [titleInput, setTitleInput] = useState();
-  console.log(input.current?.value);
+const FormTitle = (props: {
+  value: React.SetStateAction<string>;
+  onChange: React.ChangeEventHandler<HTMLInputElement>;
+}) => {
   return (
     <div className="input-box">
       <label htmlFor="title">
@@ -13,11 +13,10 @@ const FormTitle = () => {
       <input
         className="input-title"
         name="title"
-        value={titleInput}
-        onChange={(e) => setTitleInput(e.target.value)}
         placeholder="Enter text ..."
-        ref={input}
         type="text"
+        minLength={3}
+        required
       ></input>
     </div>
   );

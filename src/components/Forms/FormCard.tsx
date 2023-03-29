@@ -1,31 +1,34 @@
-import { DataRadio } from '../../types/types';
-import { useState } from 'react';
+import { DataFormCard } from 'types/types';
 
-const FormCard = (props: DataRadio) => {
-  const [mean, setValue] = useState<string>();
+type ICardItem = DataFormCard;
 
-  const radioHandler = (event: React.ChangeEvent<HTMLInputElement>) => {
-    setValue(event.target.value);
-  };
+// let check: string;
 
-  localStorage.setItem('radioInput', String(mean));
+export const FormCard: React.FC<ICardItem> = (props) => {
+  const { id, title, date, select, check, file, radio } = props;
+  // if (props.check === 'true') {
+  //   check = 'Unmarked';
+  // } else check = 'Marked';
 
   return (
-    <li className="recycle__li_garbage">
-      <input
-        className="input-radio"
-        value={props.image}
-        checked={mean == props.image ? true : false}
-        onChange={radioHandler}
-        name="radio"
-        type="radio"
-        required
-      />
-      <label htmlFor="radio">
-        <img className="image-form" src={props.image} alt={props.name} />
-      </label>
-    </li>
+    <div className="form-new-card">
+      <p>{id}</p>
+      <p className="new-card-title">
+        <u>Title:</u> {title}
+      </p>
+      <p className="new-card-date">
+        <u>Date:</u> {date}
+      </p>
+      <p className="new-card-select">
+        <u>Type of waste:</u> {select}
+      </p>
+      {/* <p className="new-card-file">
+        <u>File:</u> {file}
+      </p> */}
+      <p className="new-card-check">
+        <u>Marking:</u> {check}
+      </p>
+      {/* <img className="image-form" src={radio} alt="radio" /> */}
+    </div>
   );
 };
-
-export default FormCard;

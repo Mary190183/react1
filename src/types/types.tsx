@@ -20,3 +20,13 @@ export type DataRadio = {
   name: string;
   image: string;
 };
+
+export interface DataFormCard {
+  id: number;
+  title: string;
+  select: string;
+  file: string;
+  date: string;
+  check: string;
+  radio: string;
+}

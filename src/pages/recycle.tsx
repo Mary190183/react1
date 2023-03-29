@@ -1,121 +1,85 @@
 import FormDate from '../components/Forms/FormDate';
 import FormTitle from '../components/Forms/FormTitle';
-import FormSelect from '../components/Forms/FormSelect';
-import FormFile from '../components/Forms/FormFile';
-import FormCard from '../components/Forms/FormCard';
-import FormCheckbox from '../components/Forms/FormCheckbox';
-import data from '../data/radio.json';
-import React, { Component, RefObject, createRef } from 'react';
+// import FormSelect from '../components/Forms/FormSelect';
+// import FormFile from '../components/Forms/FormFile';
+// import FormRadio from '../components/Forms/FormRadio';
+// import FormCheckbox from '../components/Forms/FormCheckbox';
+import { FormCardList } from '../components/Forms/FormCardList';
+import { DataFormCard } from 'types/types';
+import React, { useState } from 'react';
 
-let check: string;
-
-const CreateFormCard = (props: {
-  number: number;
-  title: string | null | undefined;
-  select: string;
-  date: string;
-  check: string;
-  radio: string;
-}) => {
-  // const titleInput = localStorage.getItem('titleInput') as string;
-  const selectInput = localStorage.getItem('selectInput') as string;
-  const dateInput = localStorage.getItem('dateInput') as string;
-  const checkInput = localStorage.getItem('checkInput') as string;
-  const fileInput = localStorage.getItem('fileInput') as string;
-  const radioInput = localStorage.getItem('radioInput') as string;
-  if (checkInput === 'true') {
-    check = 'Unmarked';
-  } else check = 'Marked';
-
-  return (
-    <div className="form-new-card">
-      <p>{props.number + 1}</p>
-      <p className="new-card-title">
-        <u>Title:</u> {props.title}
-      </p>
-      <p className="new-card-date">
-        <u>Date:</u> {dateInput.replace(/\"/g, ``)}
-      </p>
-      <p className="new-card-select">
-        <u>Type of waste:</u> {selectInput.replace(/\"/g, ``)}
-      </p>
-      <p className="new-card-file">
-        <u>File:</u> {fileInput.replace(/\"/g, ``)}
-      </p>
-      <p className="new-card-check">
-        <u>Marking:</u> {check}
-      </p>
-      <img className="image-form" src={radioInput} alt="radio" />
-    </div>
-  );
-};
-const ButtonForm = (props: {
-  addChild: React.MouseEventHandler<HTMLButtonElement>;
-  children: React.ReactFragment;
-}) => {
+const ButtonForm = (props: { onClick: React.MouseEventHandler<HTMLButtonElement> }) => {
   return (
     <>
-      <button
-        data-testid="button-form"
-        onClick={props.addChild}
-        className="button-form"
-        type="submit"
-      >
+      <button data-testid="button-form" className="button-form" type="submit">
         Submit
       </button>
-      <div className="container-form-card">{props.children}</div>
     </>
   );
 };
 
-class Recycle extends React.Component {
-  input: React.RefObject<HTMLInputElement> = React.createRef();
-  state = {
-    numChildren: 0,
-    title: '',
+const Recycle: React.FC = () => {
+  const [valueDate, setValueDate] = useState('');
+  const [valueRadio, setValueRadio] = useState('');
+  const [valueTitle, setValueTitle] = useState('');
+  const handleChangeTitle: React.ChangeEventHandler<HTMLInputElement> = (e) => {
+    setValueTitle(e.target.value);
   };
-  render() {
-    const children = [];
-    for (let i = 0; i < this.state.numChildren; i += 1) {
-      children.push(
-        <CreateFormCard key={i} number={i} title={''} select={''} date={''} check={''} radio={''} />
-      );
+  const [valueSelect, setValueSelect] = useState('');
+  const [valueFile, setValueFile] = useState('');
+  const [valueCheck, setValueCheck] = useState('');
+  const [cardList, setCardList] = useState<DataFormCard[]>([]);
+  const addCard = () => {
+    if (valueDate && valueCheck && valueFile && valueSelect && valueRadio && valueTitle) {
+      setCardList([
+        ...cardList,
+        {
+          id: Date.now(),
+          title: '',
+          date: '',
+          select: '',
+          check: '',
+          file: '',
+          radio: '',
+        },
+      ]);
+      setValueDate('');
+      setValueCheck('');
+      setValueFile('');
+      setValueSelect('');
+      setValueTitle('');
+      setValueRadio('');
     }
-
-    return (
-      <>
-        <form className="recycle-container" method="get">
-          <div className="form-card">
-            <div className="form-colomn">
-              <h2>Recycling map</h2>
-              <FormDate />
-              <FormTitle />
-              <FormSelect />
-              <FormFile />
-              <FormCheckbox />
-            </div>
-            <div>
-              <h4>Marking:</h4>
-              <ul className="recycle__ol_garbage">
-                {data.radio.map((radio) => {
-                  return (
-                    <FormCard key={radio.id} id={radio.id} image={radio.image} name={radio.name} />
-                  );
-                })}
-              </ul>
-            </div>
-          </div>
-          <ButtonForm addChild={this.onAddChild}>{children}</ButtonForm>
-        </form>
-      </>
-    );
-  }
-
-  onAddChild = () => {
-    this.setState({
-      numChildren: this.state.numChildren + 1,
-    });
   };
-}
+
+  return (
+    <>
+      <form className="recycle-container" method="get">
+        <div className="form-card">
+          <div className="form-colomn">
+            <h2>Recycling map</h2>
+            <FormDate value={valueDate} onChange={handleChangeTitle} />
+            <FormTitle value={valueTitle} onChange={handleChangeTitle} />
+            {/* <FormSelect />
+            <FormFile />
+            <FormCheckbox /> */}
+          </div>
+          <div>
+            {/* <h4>Marking:</h4>
+            <ul className="recycle__ol_garbage">
+              {data.radio.map((radio) => {
+                return (
+                  <FormRadio key={radio.id} id={radio.id} image={radio.image} name={radio.name} />
+                );
+              })}
+            </ul> */}
+          </div>
+        </div>
+        <ButtonForm onClick={addCard}></ButtonForm>
+      </form>
+      <FormCardList items={cardList} />
+    </>
+  );
+};
 
 export { Recycle };
