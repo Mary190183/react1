@@ -1,10 +1,13 @@
-import { RefObject } from 'react';
-import React from 'react';
+import { DetailedHTMLProps, FC, InputHTMLAttributes, useState } from 'react';
 
-const FormTitle = (props: {
-  value: React.SetStateAction<string>;
+interface InputTitleProps {
+  value: string | number | readonly string[] | undefined;
   onChange: React.ChangeEventHandler<HTMLInputElement>;
-}) => {
+  ref: React.LegacyRef<HTMLInputElement> | undefined;
+}
+
+const FormTitle: FC<InputTitleProps> = (props) => {
+  const { value, onChange, ref } = props;
   return (
     <div className="input-box">
       <label htmlFor="title">
@@ -15,6 +18,9 @@ const FormTitle = (props: {
         name="title"
         placeholder="Enter text ..."
         type="text"
+        value={value}
+        onChange={onChange}
+        ref={ref}
         minLength={3}
         required
       ></input>

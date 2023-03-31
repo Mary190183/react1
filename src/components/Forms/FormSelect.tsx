@@ -1,25 +1,19 @@
-import { useState, useEffect } from 'react';
+import { FC } from 'react';
 
-const FormTitle = () => {
-  const [selectInput, setSelectInput] = useState(() => {
-    const saved1 = localStorage.getItem('selectInput') as string;
-    const initialValue = JSON.parse(saved1);
-    return initialValue || '';
-  });
-  useEffect(() => {
-    localStorage.setItem('selectInput', JSON.stringify(selectInput));
-  }, [selectInput]);
+interface SelectTitleProps {
+  value: string | number | readonly string[] | undefined;
+  onChange: React.ChangeEventHandler<HTMLSelectElement>;
+  ref: React.LegacyRef<HTMLSelectElement> | undefined;
+}
+
+const FormSelect: FC<SelectTitleProps> = (props) => {
+  const { value, onChange, ref } = props;
   return (
     <div className="input-box">
       <label htmlFor="type">
         <h5>Type of waste: </h5>
       </label>
-      <select
-        id="type"
-        value={selectInput}
-        onChange={(e) => setSelectInput(e.target.value)}
-        required
-      >
+      <select id="type" value={value} onChange={onChange} ref={ref} required>
         <option></option>
         <option>Plastic</option>
         <option>Metal</option>
@@ -31,4 +25,4 @@ const FormTitle = () => {
   );
 };
 
-export default FormTitle;
+export default FormSelect;

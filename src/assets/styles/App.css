@@ -415,3 +415,12 @@ margin-top: 20px;
   margin-top: 15px;
   margin-bottom: 15px;
 }
+.image-form {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: #df7a07 solid 2px;
+  background-color: #df7a07;
+  margin-left: 30px;
+  
+}

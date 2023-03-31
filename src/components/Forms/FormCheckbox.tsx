@@ -1,14 +1,13 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, FC } from 'react';
 
-const FormCheckbox = () => {
-  const [checkInput, setCheckInput] = useState(() => {
-    const saved = localStorage.getItem('checkInput') as string;
-    const initialValue = JSON.parse(saved);
-    return initialValue || '';
-  });
-  useEffect(() => {
-    localStorage.setItem('checkInput', JSON.stringify(checkInput));
-  }, [checkInput]);
+interface InputCheckProps {
+  checked: boolean | undefined;
+  onChange: React.ChangeEventHandler<HTMLInputElement>;
+  ref: React.LegacyRef<HTMLInputElement> | undefined;
+}
+
+const FormCheckbox: FC<InputCheckProps> = (props) => {
+  const { checked, onChange, ref } = props;
   return (
     <div className="checkbox-container">
       <input
@@ -16,8 +15,9 @@ const FormCheckbox = () => {
         className="input-checkbox"
         name="checkbox"
         data-testid="input-checkbox"
-        checked={checkInput}
-        onChange={(e) => setCheckInput(e.target.checked)}
+        checked={checked}
+        onChange={onChange}
+        ref={ref}
         required
       />
       <label htmlFor="checkbox">Unmarked</label>
