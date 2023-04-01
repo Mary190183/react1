@@ -1,13 +1,12 @@
-import { useState, useEffect, FC } from 'react';
+import { FC } from 'react';
 
 interface InputCheckProps {
   checked: boolean | undefined;
   onChange: React.ChangeEventHandler<HTMLInputElement>;
-  ref: React.LegacyRef<HTMLInputElement> | undefined;
 }
 
 const FormCheckbox: FC<InputCheckProps> = (props) => {
-  const { checked, onChange, ref } = props;
+  const { checked, onChange } = props;
   return (
     <div className="checkbox-container">
       <input
@@ -17,10 +16,8 @@ const FormCheckbox: FC<InputCheckProps> = (props) => {
         data-testid="input-checkbox"
         checked={checked}
         onChange={onChange}
-        ref={ref}
-        required
       />
-      <label htmlFor="checkbox">Unmarked</label>
+      <label htmlFor="checkbox">Degree of purity of waste</label>
     </div>
   );
 };

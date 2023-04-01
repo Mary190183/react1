@@ -4,11 +4,10 @@ import { DataRadio } from '../../types/types';
 interface InputTitleProps extends DataRadio {
   value: string | number | readonly string[] | undefined;
   onChange: React.ChangeEventHandler<HTMLInputElement>;
-  ref: React.LegacyRef<HTMLInputElement> | undefined;
 }
 
 const FormRadio: FC<InputTitleProps> = (props) => {
-  const { value, onChange, ref } = props;
+  const { value, onChange } = props;
   return (
     <li className="recycle__li_garbage">
       <input
@@ -18,7 +17,6 @@ const FormRadio: FC<InputTitleProps> = (props) => {
         onChange={onChange}
         name="radio"
         type="radio"
-        ref={ref}
         required
       />
       <label htmlFor="radio">

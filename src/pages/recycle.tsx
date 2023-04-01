@@ -7,7 +7,7 @@ import FormRadio from '../components/Forms/FormRadio';
 import FormCheckbox from '../components/Forms/FormCheckbox';
 import { FormCardList } from '../components/Forms/FormCardList';
 import { DataFormCard } from 'types/types';
-import React, { useEffect, useRef, useState } from 'react';
+import React, { createRef, useEffect, useRef, useState } from 'react';
 
 import data from '../data/radio.json';
 import { useForm } from 'react-hook-form';
@@ -18,32 +18,27 @@ const Recycle: React.FC = () => {
   const handleChangeTitle: React.ChangeEventHandler<HTMLInputElement> = (e) => {
     setValueTitle(e.target.value);
   };
-  const inputRefTitle = useRef<HTMLInputElement>(null);
+
   const [valueDate, setValueDate] = useState('');
   const handleChangeDate: React.ChangeEventHandler<HTMLInputElement> = (e) => {
     setValueDate(e.target.value);
   };
-  const inputRefDate = useRef<HTMLInputElement>(null);
   const [valueFile, setValueFile] = useState('');
   const handleChangeFile: React.ChangeEventHandler<HTMLInputElement> = (e) => {
     setValueFile(e.target.value);
   };
-  const inputRefFile = useRef<HTMLInputElement>(null);
   const [valueSelect, setValueSelect] = useState('');
   const handleChangeSelect: React.ChangeEventHandler<HTMLSelectElement> = (e) => {
     setValueSelect(e.target.value);
   };
-  const inputRefSelect = useRef<HTMLSelectElement>(null);
   const [valueCheck, setValueCheck] = useState(false);
   const handleChangeCheck: React.ChangeEventHandler<HTMLInputElement> = (e) => {
     setValueCheck(e.target.checked);
   };
-  const inputRefCheck = useRef<HTMLInputElement>(null);
   const [valueRadio, setValueRadio] = useState('');
   const handleChangeRadio: React.ChangeEventHandler<HTMLInputElement> = (e) => {
     setValueRadio(e.target.value);
   };
-  const inputRefRadio = useRef<HTMLInputElement>(null);
   const addCard = (event: { preventDefault: () => void }) => {
     event.preventDefault();
     if (valueTitle && valueDate && valueFile && valueSelect) {
@@ -64,19 +59,10 @@ const Recycle: React.FC = () => {
       setValueFile('');
       setValueSelect('');
       setValueCheck(false);
-      // setValueRadio('');
+      setValueRadio('');
     }
   };
-  useEffect(() => {
-    if (inputRefTitle.current) {
-      inputRefTitle.current?.focus();
-    }
-  }, []);
-  // useEffect(() => {
-  //   if (inputRefDate.current) {
-  //     inputRefDate.current?.focus();
-  //   }
-  // }, []);
+
   const deleteCard = (id: number): void => {
     setCardList(cardList.filter((cardList) => cardList.id !== id));
   };
@@ -88,11 +74,11 @@ const Recycle: React.FC = () => {
           <div className="form-colomn">
             <h2>Recycling map</h2>
             <span className="error" placeholder="error"></span>
-            <FormDate value={valueDate} onChange={handleChangeDate} ref={inputRefDate} />
-            <FormTitle value={valueTitle} onChange={handleChangeTitle} ref={inputRefTitle} />
-            <FormSelect value={valueSelect} onChange={handleChangeSelect} ref={inputRefSelect} />
-            <FormFile value={valueFile} onChange={handleChangeFile} ref={inputRefFile} />
-            <FormCheckbox checked={valueCheck} onChange={handleChangeCheck} ref={inputRefCheck} />
+            <FormDate value={valueDate} onChange={handleChangeDate} />
+            <FormTitle value={valueTitle} onChange={handleChangeTitle} ref={register} />
+            <FormSelect value={valueSelect} onChange={handleChangeSelect} />
+            <FormFile value={valueFile} onChange={handleChangeFile} />
+            <FormCheckbox checked={valueCheck} onChange={handleChangeCheck} />
           </div>
           <div>
             <h4>Marking:</h4>
@@ -106,7 +92,6 @@ const Recycle: React.FC = () => {
                     name={radio.name}
                     value={valueRadio}
                     onChange={handleChangeRadio}
-                    ref={inputRefRadio}
                   />
                 );
               })}

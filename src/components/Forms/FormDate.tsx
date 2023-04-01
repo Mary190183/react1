@@ -3,11 +3,10 @@ import { FC } from 'react';
 interface InputDateProps {
   value: string | number | readonly string[] | undefined;
   onChange: React.ChangeEventHandler<HTMLInputElement>;
-  ref: React.LegacyRef<HTMLInputElement> | undefined;
 }
 
 export const FormDate: FC<InputDateProps> = (props) => {
-  const { value, onChange, ref } = props;
+  const { value, onChange } = props;
   return (
     <div className="input-box">
       <label htmlFor="date">
@@ -18,7 +17,6 @@ export const FormDate: FC<InputDateProps> = (props) => {
         type="date"
         value={value}
         onChange={onChange}
-        ref={ref}
         className="input-date"
         required
       />

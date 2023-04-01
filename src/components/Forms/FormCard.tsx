@@ -8,13 +8,14 @@ let checkMean: string;
 export const FormCard: React.FC<ICardItem> = (props) => {
   const { id, title, date, select, check, file, radio, deleteCard } = props;
   if (props.check === true) {
-    checkMean = 'Unmarked';
-  } else checkMean = 'Marked';
+    checkMean = 'Dirty';
+  } else checkMean = 'Clean';
 
   return (
-    <div className="form-new-card">
-      <button onClick={() => deleteCard(id)}>x</button>
-      {id}
+    <div className="form-new-card" id={id.toString()}>
+      <button className="button-form-close" onClick={() => deleteCard(id)}>
+        x
+      </button>
       <p className="new-card-title">
         <u>Title:</u> {title}
       </p>

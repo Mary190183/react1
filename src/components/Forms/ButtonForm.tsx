@@ -7,14 +7,12 @@ interface ButtonProps {
 export const ButtonForm: FC<ButtonProps> = (props) => {
   const { onClick } = props;
   return (
-    <>
-      <input
-        data-testid="button-form"
-        className="button-form"
-        type="submit"
-        value="Submit"
-        onClick={onClick}
-      ></input>
-    </>
+    <input
+      data-testid="button-form"
+      className="button-form"
+      type="submit"
+      value="Submit"
+      onClick={onClick}
+    ></input>
   );
 };
