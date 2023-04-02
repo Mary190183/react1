@@ -27,7 +27,7 @@ export const FormCard: React.FC<ICardItem> = (props) => {
       </p>
       <p className="new-card-file">
         <u>File:</u>
-        <img className="image-form" src={file} alt="file" />
+        <img className="image-form" src={file.name} alt="file" />
       </p>
       <p className="new-card-check">
         <u>Marking:</u> {checkMean}
