@@ -18,8 +18,9 @@ export const FormDate: FC<InputDateProps> = (props) => {
         type="date"
         value={value}
         onChange={onChange}
-        className="input-date"
         required
+        maxLength={10}
+        className="input-date"
       />
     </div>
   );

@@ -10,7 +10,11 @@ import { DataFormCard } from '../types/types';
 import React, { FC, useState } from 'react';
 
 import data from '../data/radio.json';
-
+let errorTitle,
+  errorDate,
+  errorFile,
+  errorSelect,
+  errorRadio = '';
 const Recycle: FC = () => {
   const [cardList, setCardList] = useState<DataFormCard[]>([]);
   const [valueDate, setValueDate] = useState('');
@@ -39,9 +43,39 @@ const Recycle: FC = () => {
   const handleChangeRadio: React.ChangeEventHandler<HTMLInputElement> = (e) => {
     setValueRadio(e.target.value);
   };
+  if (valueTitle.length < 2 && valueTitle.length > 0) {
+    errorTitle = 'Errors. less 2 simbols.';
+  } else if (valueTitle === '') {
+    errorTitle = 'Please, choose title waste';
+  } else {
+    errorTitle = '';
+  }
+  if (valueDate.length > 10) {
+    errorDate = 'Date more 10 simbols';
+  } else if (valueDate === '') {
+    errorDate = 'Please, choose date';
+  } else {
+    errorDate = '';
+  }
+  if (valueSelect === '') {
+    errorSelect = 'Please, choose type of waste';
+  } else {
+    errorSelect = '';
+  }
+  if (valueFile === undefined) {
+    errorFile = 'Please, enter file';
+  } else {
+    errorFile = '';
+  }
+  if (valueRadio === '') {
+    errorRadio = 'Please, choose type of marking waste';
+  } else {
+    errorRadio = '';
+  }
 
   const addCard = (event: { preventDefault: () => void }) => {
     event.preventDefault();
+
     if (valueTitle && valueDate && valueFile && valueSelect && valueRadio && valueFile) {
       setCardList([
         ...cardList,
@@ -63,7 +97,6 @@ const Recycle: FC = () => {
       setValueRadio('');
     }
   };
-
   const deleteCard = (id: number): void => {
     setCardList(cardList.filter((cardList) => cardList.id !== id));
   };
@@ -75,9 +108,13 @@ const Recycle: FC = () => {
           <div className="form-colomn">
             <h2>Recycling map</h2>
             <FormDate value={valueDate} onChange={handleChangeDate} />
+            <p className="error">{errorDate}</p>
             <FormTitle value={valueTitle} onChange={handleChangeTitle} />
+            <p className="error">{errorTitle}</p>
             <FormSelect value={valueSelect} onChange={handleChangeSelect} />
+            <p className="error">{errorSelect}</p>
             <FormFile value={valueFile?.name} onChange={handleChangeFile} />
+            <p className="error">{errorFile}</p>
           </div>
           <div className="section-radio">
             <h4>Marking: </h4>
@@ -95,6 +132,7 @@ const Recycle: FC = () => {
                 );
               })}
             </ul>
+            <p className="error">{errorRadio}</p>
             <div className="form-row">
               <FormCheckbox checked={valueCheck} onChange={handleChangeCheck} />
               <ButtonForm onClick={addCard}></ButtonForm>

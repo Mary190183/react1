@@ -19,6 +19,9 @@ const FormTitle: FC<InputTitleProps> = forwardRef((props) => {
         placeholder="Enter text ..."
         type="text"
         value={value}
+        maxLength={13}
+        minLength={2}
+        required
         onChange={onChange}
       ></input>
     </div>
