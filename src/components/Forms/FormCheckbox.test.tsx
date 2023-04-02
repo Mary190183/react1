@@ -1,10 +1,18 @@
 import { render, screen } from '@testing-library/react';
 
 import FormCheckbox from './FormCheckbox';
+import React from 'react';
 
 describe('FormCheckbox', () => {
   it('should have input type checkbox', () => {
-    render(<FormCheckbox />);
+    render(
+      <FormCheckbox
+        checked={undefined}
+        onChange={function (event: React.ChangeEvent<HTMLInputElement>): void {
+          throw new Error('Function not implemented.');
+        }}
+      />
+    );
     expect(screen.getByTestId('input-checkbox')).toBeInTheDocument();
   });
 });

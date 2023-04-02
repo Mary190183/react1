@@ -6,7 +6,7 @@ import FormFile from '../components/Forms/FormFile';
 import FormRadio from '../components/Forms/FormRadio';
 import FormCheckbox from '../components/Forms/FormCheckbox';
 import { FormCardList } from '../components/Forms/FormCardList';
-import { DataFormCard } from 'types/types';
+import { DataFormCard } from '../types/types';
 import React, { FC, useState } from 'react';
 
 import data from '../data/radio.json';
@@ -42,7 +42,6 @@ const Recycle: FC = () => {
 
   const addCard = (event: { preventDefault: () => void }) => {
     event.preventDefault();
-    console.log(valueFile);
     if (valueTitle && valueDate && valueFile && valueSelect && valueRadio && valueFile) {
       setCardList([
         ...cardList,
@@ -59,7 +58,7 @@ const Recycle: FC = () => {
       setValueDate('');
       setValueTitle('');
       setValueSelect('');
-      setValueFile(undefined);
+      setValueFile('');
       setValueCheck(false);
       setValueRadio('');
     }
@@ -68,8 +67,9 @@ const Recycle: FC = () => {
   const deleteCard = (id: number): void => {
     setCardList(cardList.filter((cardList) => cardList.id !== id));
   };
+
   return (
-    <>
+    <section className="container_recycle">
       <form className="recycle-container">
         <div className="form-card">
           <div className="form-colomn">
@@ -78,10 +78,9 @@ const Recycle: FC = () => {
             <FormTitle value={valueTitle} onChange={handleChangeTitle} />
             <FormSelect value={valueSelect} onChange={handleChangeSelect} />
             <FormFile value={valueFile?.name} onChange={handleChangeFile} />
-            <FormCheckbox checked={valueCheck} onChange={handleChangeCheck} />
           </div>
-          <div>
-            <h4>Marking:</h4>
+          <div className="section-radio">
+            <h4>Marking: </h4>
             <ul className="recycle__ol_garbage">
               {data.radio.map((radio) => {
                 return (
@@ -96,12 +95,15 @@ const Recycle: FC = () => {
                 );
               })}
             </ul>
+            <div className="form-row">
+              <FormCheckbox checked={valueCheck} onChange={handleChangeCheck} />
+              <ButtonForm onClick={addCard}></ButtonForm>
+            </div>
           </div>
         </div>
-        <ButtonForm onClick={addCard}></ButtonForm>
       </form>
       <FormCardList deleteCard={deleteCard} items={cardList} />
-    </>
+    </section>
   );
 };
 

@@ -1,5 +1,6 @@
-import { DataFormCard } from 'types/types';
+import { DataFormCard } from '../../types/types';
 import { FormCard } from './FormCard';
+import React from 'react';
 
 interface IFormCardListProps {
   items: DataFormCard[];
@@ -8,7 +9,7 @@ interface IFormCardListProps {
 export const FormCardList: React.FC<IFormCardListProps> = (props) => {
   const { items, deleteCard } = props;
   return (
-    <div className="container-form-card">
+    <div className="container-form-card" data-testid="container-form-card">
       {items.map((list) => (
         <FormCard key={list.id} {...list} deleteCard={deleteCard} />
       ))}

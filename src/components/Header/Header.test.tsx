@@ -1,6 +1,7 @@
 import { render, screen } from '@testing-library/react';
 import { Header } from './Header';
 import { MemoryRouter } from 'react-router-dom';
+import React from 'react';
 
 describe('Header', () => {
   it('should have "Recycle"', () => {

@@ -1,5 +1,5 @@
+import React from 'react';
 import { FC, forwardRef } from 'react';
-import { FieldValues, UseFormRegister } from 'react-hook-form';
 
 interface InputTitleProps {
   value: string | number | readonly string[] | undefined;

@@ -1,5 +1,5 @@
 import React from 'react';
-const Counter = React.lazy(() => import('./Counter/Counter'));
+// import Counter from './Counter/Counter';
 import Eye from '../assets/svg/eye.svg';
 import Like from '../assets/svg/heart.svg';
 import { DataPlant } from '../types/types';

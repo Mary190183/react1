@@ -1,4 +1,5 @@
-import { DataFormCard } from 'types/types';
+import React from 'react';
+import { DataFormCard } from '../../types/types';
 
 interface ICardItem extends DataFormCard {
   deleteCard: (id: number) => void;
@@ -12,7 +13,7 @@ export const FormCard: React.FC<ICardItem> = (props) => {
   } else checkMean = 'Clean';
 
   return (
-    <div className="form-new-card" id={id.toString()}>
+    <div className="form-new-card" id={id.toString()} data-testid="form-card">
       <button className="button-form-close" onClick={() => deleteCard(id)}>
         x
       </button>
