@@ -1,13 +1,18 @@
 import React from 'react';
 import { FC } from 'react';
+import { UseFormRegister, FieldValues, FieldErrors, Path } from 'react-hook-form';
+import { DataFormCard } from '../../types/types';
 
 interface InputTitleProps {
   value: string | number | readonly string[] | undefined;
   onChange: React.ChangeEventHandler<HTMLInputElement>;
+  register: UseFormRegister<FieldValues>;
+  errors: FieldErrors<FieldValues>;
+  label: Path<DataFormCard>;
 }
 
 const FormTitle: FC<InputTitleProps> = (props) => {
-  const { value, onChange } = props;
+  const { value, onChange, register, errors, label } = props;
   return (
     <div className="input-box">
       <label htmlFor="title">
@@ -15,15 +20,19 @@ const FormTitle: FC<InputTitleProps> = (props) => {
       </label>
       <input
         className="input-title"
-        name="title"
         placeholder="Enter text ..."
         type="text"
         value={value}
-        maxLength={13}
-        minLength={2}
-        required
+        {...register(label, {
+          required: 'Enter a title',
+          minLength: {
+            value: 2,
+            message: 'Min length must be more 2',
+          },
+        })}
         onChange={onChange}
       ></input>
+      <div className="error">{errors?.title && <p>{`${errors.title.message}` || 'Error'}</p>}</div>
     </div>
   );
 };

@@ -7,7 +7,7 @@ interface ICardItem extends DataFormCard {
 let checkMean: string;
 
 export const FormCard: React.FC<ICardItem> = (props) => {
-  const { id, title, date, select, check, file, radio, deleteCard } = props;
+  const { id, title, date, select, file, radio, deleteCard } = props;
   if (props.check === true) {
     checkMean = 'Dirty';
   } else checkMean = 'Clean';
