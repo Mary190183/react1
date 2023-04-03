@@ -1,12 +1,12 @@
 import React from 'react';
-import { FC, forwardRef } from 'react';
+import { FC } from 'react';
 
 interface InputTitleProps {
   value: string | number | readonly string[] | undefined;
   onChange: React.ChangeEventHandler<HTMLInputElement>;
 }
 
-const FormTitle: FC<InputTitleProps> = forwardRef((props) => {
+const FormTitle: FC<InputTitleProps> = (props) => {
   const { value, onChange } = props;
   return (
     <div className="input-box">
@@ -26,6 +26,6 @@ const FormTitle: FC<InputTitleProps> = forwardRef((props) => {
       ></input>
     </div>
   );
-});
+};
 
 export default FormTitle;
