@@ -7,7 +7,7 @@ describe('FormCard', () => {
   it('should have "form-card"', () => {
     render(
       <FormCard
-        deleteCard={function (id: number): void {
+        deleteCard={function (): void {
           throw new Error('Function not implemented.');
         }}
         id={0}

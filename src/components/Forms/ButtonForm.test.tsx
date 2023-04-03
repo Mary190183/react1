@@ -7,7 +7,7 @@ describe('ButtonForm', () => {
   it('should have button', () => {
     render(
       <ButtonForm
-        onClick={function (event: React.MouseEvent<HTMLInputElement, MouseEvent>): void {
+        onClick={function (): void {
           throw new Error('Function not implemented.');
         }}
       />

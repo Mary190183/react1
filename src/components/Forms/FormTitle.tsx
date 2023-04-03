@@ -6,7 +6,7 @@ interface InputTitleProps {
   onChange: React.ChangeEventHandler<HTMLInputElement>;
 }
 
-const FormTitle: FC<InputTitleProps> = forwardRef((props) => {
+const FormTitle: FC<InputTitleProps> = (props) => {
   const { value, onChange } = props;
   return (
     <div className="input-box">
@@ -26,6 +26,6 @@ const FormTitle: FC<InputTitleProps> = forwardRef((props) => {
       ></input>
     </div>
   );
-});
+};
 
 export default FormTitle;

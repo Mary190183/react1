@@ -8,7 +8,7 @@ describe('FormTitle', () => {
     render(
       <FormTitle
         value={undefined}
-        onChange={function (event: React.ChangeEvent<HTMLInputElement>): void {
+        onChange={function (): void {
           throw new Error('Function not implemented.');
         }}
       />

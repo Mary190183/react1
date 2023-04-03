@@ -8,7 +8,7 @@ describe('FormSelect', () => {
     render(
       <FormSelect
         value={undefined}
-        onChange={function (event: React.ChangeEvent<HTMLSelectElement>): void {
+        onChange={function (): void {
           throw new Error('Function not implemented.');
         }}
       />

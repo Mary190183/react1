@@ -8,7 +8,7 @@ describe('FormCardList', () => {
     render(
       <FormCardList
         items={[]}
-        deleteCard={function (id: number): void {
+        deleteCard={function (): void {
           throw new Error('Function not implemented.');
         }}
       />
