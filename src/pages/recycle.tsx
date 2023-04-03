@@ -15,6 +15,7 @@ let errorTitle,
   errorFile,
   errorSelect,
   errorRadio = '';
+
 const Recycle: FC = () => {
   const [cardList, setCardList] = useState<DataFormCard[]>([]);
   const [valueDate, setValueDate] = useState('');
