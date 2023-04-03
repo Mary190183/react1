@@ -1,5 +1,5 @@
 import React from 'react';
-import { FC, forwardRef } from 'react';
+import { FC } from 'react';
 
 interface InputTitleProps {
   value: string | number | readonly string[] | undefined;
