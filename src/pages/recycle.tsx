@@ -8,7 +8,6 @@ import FormCheckbox from '../components/Forms/FormCheckbox';
 import { FormCardList } from '../components/Forms/FormCardList';
 import { DataFormCard } from '../types/types';
 import React, { FC, useState } from 'react';
-
 import data from '../data/radio.json';
 import { useForm } from 'react-hook-form';
 

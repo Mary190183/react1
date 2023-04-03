@@ -1,7 +1,7 @@
 import React from 'react';
 import { FC } from 'react';
 import { FieldErrors, FieldValues, Path, UseFormRegister } from 'react-hook-form';
-import { DataFormCard } from 'types/types';
+import { DataFormCard } from '../../types/types';
 
 interface SelectTitleProps {
   value: string | number | readonly string[] | undefined;
