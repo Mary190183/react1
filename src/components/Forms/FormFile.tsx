@@ -12,7 +12,7 @@ interface InputTitleProps {
 }
 
 const FormFile: FC<InputTitleProps> = (props) => {
-  const { value, onChange, register, label, errors } = props;
+  const { register, label, errors, value, onChange } = props;
   return (
     <div className="profile-form input-logo">
       <h4 className="birth-title v"> Waste image: </h4>

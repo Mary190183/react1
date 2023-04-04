@@ -29,4 +29,5 @@ export interface DataFormCard {
   date: string;
   check: boolean;
   radio: string;
+  submit: boolean;
 }

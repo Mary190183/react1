@@ -9,12 +9,14 @@ import { FormCardList } from '../components/Forms/FormCardList';
 import { DataFormCard } from '../types/types';
 import React, { FC, useState } from 'react';
 import data from '../data/radio.json';
-import { useForm } from 'react-hook-form';
+import { FieldValues, SubmitHandler, useForm } from 'react-hook-form';
 
 const Recycle: FC = () => {
   const {
     register,
-    formState: { errors },
+    formState: { errors, isSubmitSuccessful },
+    handleSubmit,
+    reset,
   } = useForm({ mode: 'onBlur' });
 
   const [cardList, setCardList] = useState<DataFormCard[]>([]);
@@ -44,29 +46,29 @@ const Recycle: FC = () => {
   const handleChangeRadio: React.ChangeEventHandler<HTMLInputElement> = (e) => {
     setValueRadio(e.target.value);
   };
-
-  const addCard = (event: { preventDefault: () => void }) => {
-    event.preventDefault();
-
-    if (valueTitle && valueDate && valueFile && valueSelect && valueRadio && valueFile) {
+  const addCard: SubmitHandler<FieldValues> = (dataForm) => {
+    if (isSubmitSuccessful) {
       setCardList([
         ...cardList,
         {
           id: Date.now(),
-          date: valueDate,
-          title: valueTitle,
-          select: valueSelect,
-          file: valueFile,
-          check: valueCheck,
-          radio: valueRadio,
+          date: dataForm.date,
+          title: dataForm.title,
+          select: dataForm.select,
+          file: dataForm.file,
+          check: dataForm.check,
+          radio: dataForm.radio,
+          submit: dataForm.submit,
         },
       ]);
-      setValueDate('');
+      alert('Card is completed');
       setValueTitle('');
-      setValueSelect('');
-      setValueFile(undefined);
       setValueCheck(false);
+      setValueFile(undefined);
+      setValueDate('');
+      setValueSelect('');
       setValueRadio('');
+      reset();
     }
   };
   const deleteCard = (id: number): void => {
@@ -75,7 +77,7 @@ const Recycle: FC = () => {
 
   return (
     <section className="container_recycle">
-      <form className="recycle-container">
+      <form className="recycle-container" onSubmit={handleSubmit(addCard)}>
         <div className="form-card">
           <div className="form-colomn">
             <h2>Recycling map</h2>
@@ -138,7 +140,7 @@ const Recycle: FC = () => {
                 label="select"
                 errors={errors}
               />
-              <ButtonForm onClick={addCard}></ButtonForm>
+              <ButtonForm register={register} errors={errors} label={'submit'}></ButtonForm>
             </div>
           </div>
         </div>
