@@ -25,7 +25,7 @@ export interface DataFormCard {
   id: number;
   title: string;
   select: string;
-  file: File;
+  file: File | undefined;
   date: string;
   check: boolean;
   radio: string;

@@ -1,6 +1,6 @@
 import { render, screen } from '@testing-library/react';
 
-import { Recycle } from './Recycle';
+import { Recycle } from './recycle';
 import React from 'react';
 
 describe('Recycle', () => {

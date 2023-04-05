@@ -13,10 +13,11 @@ describe('FormCard', () => {
         id={0}
         title={''}
         select={''}
-        file={''}
+        file={undefined}
         date={''}
         check={false}
         radio={''}
+        submit={false}
       />
     );
     expect(screen.getByTestId('form-card')).toBeInTheDocument();

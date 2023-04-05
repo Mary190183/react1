@@ -1,6 +1,6 @@
 import { render, screen } from '@testing-library/react';
 
-import Counter from './Counter';
+import Counter from './counter';
 import React from 'react';
 
 describe('Counter', () => {

@@ -2,15 +2,11 @@ import React from 'react';
 import { useState, useEffect } from 'react';
 
 const SearchBar = () => {
-  const [searchInput, setSearchInput] = useState(() => {
-    const saved = localStorage.getItem('searchInput') as string;
-    const initialValue = JSON.parse(saved);
-    return initialValue || '';
-  });
+  const [searchInput, setSearchInput] = useState(localStorage.getItem('searchInput') || '');
 
   useEffect(() => {
     // storing input name
-    localStorage.setItem('searchInput', JSON.stringify(searchInput));
+    localStorage.setItem('searchInput', searchInput);
   }, [searchInput]);
 
   return (

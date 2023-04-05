@@ -11,7 +11,12 @@ export const FormCard: React.FC<ICardItem> = (props) => {
   if (props.check === true) {
     checkMean = 'Dirty';
   } else checkMean = 'Clean';
-
+  let src = '';
+  if (typeof file === 'string') {
+    src = file;
+  } else if (file instanceof File) {
+    src = URL.createObjectURL(file);
+  }
   return (
     <div className="form-new-card" id={id.toString()} data-testid="form-card">
       <button className="button-form-close" onClick={() => deleteCard(id)}>
@@ -28,7 +33,7 @@ export const FormCard: React.FC<ICardItem> = (props) => {
       </p>
       <p className="new-card-file">
         <u>File:</u>
-        <img className="image-form" src={file.name} alt="file" />
+        <img className="image-form" src={src} alt="file" />
       </p>
       <p className="new-card-check">
         <u>Marking:</u> {checkMean}

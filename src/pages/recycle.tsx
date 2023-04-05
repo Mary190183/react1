@@ -55,7 +55,7 @@ const Recycle: FC = () => {
           date: dataForm.date,
           title: dataForm.title,
           select: dataForm.select,
-          file: dataForm.file,
+          file: dataForm.file?.[0],
           check: dataForm.check,
           radio: dataForm.radio,
           submit: dataForm.submit,
