@@ -5,7 +5,7 @@ import React from 'react';
 
 describe('Card', () => {
   it('should have "card"', () => {
-    render(<Card id={0} name={''} description={''} price={0} watches={0} image={''} />);
+    render(<Card id={0} climate={''} img={''} common={''} latin={''} family={''} />);
     expect(screen.getByTestId('card')).toBeInTheDocument();
   });
 });

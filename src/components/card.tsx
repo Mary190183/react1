@@ -7,20 +7,23 @@ import { DataPlant } from '../types/types';
 const Card = (props: DataPlant) => {
   return (
     <div className="card" data-testid="card">
-      <img className="image" src={props.image} alt={props.name} />
+      <img className="image" src={props.img} alt={props.common} />
       <div className="card__like_watches">
         <div className="svg">
           <Like />
         </div>
         <div className="eye-count">
-          {props.watches}
+          {/* {props.watches} */}
+          {/* <Counter /> */}
           <Eye />
         </div>
       </div>
-      <h3>{props.name}</h3>
-      <div>{props.description}</div>
-      <div>{props.price} $</div>
-      {/* <Counter /> */}
+      <div className="card__info_wrapper">
+        <h3>Name: {props.common}</h3>
+        <div>Latin name: {props.latin}</div>
+        <div>Family: {props.family}</div>
+        <div>Climate: {props.climate}</div>
+      </div>
     </div>
   );
 };

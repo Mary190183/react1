@@ -190,12 +190,12 @@ border: 2px solid #093b0a;
 }
 .card {
   display: flex;
+  height: 650px;
   flex-direction: column;
   border-radius: 10px;
   cursor: pointer;
   transition: all 1s;
   box-shadow: none;
-  padding: 10px;
 }
 .card:hover {
   box-shadow: 0 6px 5px 0 rgb(0 0 0 / 18%), 0 1px 9px 0 rgb(0 0 0 / 15%);
@@ -206,6 +206,12 @@ border: 2px solid #093b0a;
   background-size: cover cover;
   background-position: 100%;
   border-radius: 10px 10px 0 0;
+}
+.card__info_wrapper {
+  width: 380px;
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
 }
 .container_404 {
   width: 100vw;
@@ -463,4 +469,12 @@ justify-content: center;
 color: red;
 height: 20px;
 font-size: 10px;
+}
+.super-wrapper {
+width: 100vw;
+height: 100vh;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
 }

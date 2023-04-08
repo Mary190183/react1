@@ -5,7 +5,15 @@ import React from 'react';
 
 describe('SearchBar', () => {
   it('should have button', () => {
-    render(<SearchBar />);
+    render(
+      <SearchBar
+        onChange={function (): void {
+          throw new Error('Function not implemented.');
+        }}
+        onSubmit={undefined}
+        value={undefined}
+      />
+    );
     expect(screen.getByTestId('button-search')).toBeInTheDocument();
   });
 });

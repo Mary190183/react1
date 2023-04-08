@@ -1,24 +1,22 @@
 import React from 'react';
-import { useState, useEffect } from 'react';
 
-const SearchBar = () => {
-  const [searchInput, setSearchInput] = useState(localStorage.getItem('searchInput') || '');
+interface InputDateProps {
+  onChange: React.ChangeEventHandler<HTMLInputElement>;
+  onSubmit: React.FormEventHandler<HTMLFormElement> | undefined;
+  value: string | number | readonly string[] | undefined;
+}
 
-  useEffect(() => {
-    // storing input name
-    localStorage.setItem('searchInput', searchInput);
-  }, [searchInput]);
-
+const SearchBar: React.FC<InputDateProps> = (props) => {
+  const { onSubmit, value, onChange } = props;
   return (
-    <form method="get">
+    <form method="get" onSubmit={onSubmit}>
       <input
         className="input-search"
         name="search"
-        onChange={(e) => setSearchInput(e.target.value)}
-        value={searchInput}
-        placeholder="Enter text ..."
+        onChange={onChange}
+        value={value}
+        placeholder="Enter Plant Name Here..."
         type="search"
-        required
       ></input>
       <button className="button" type="submit" data-testid="button-search">
         <div className="search-icon"></div>

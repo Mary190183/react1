@@ -10,7 +10,6 @@ const Header = () => {
           <img src="/logo.svg" alt="logo" />
           <h1 className="logo">Houseplants</h1>
         </NavLink>
-        <SearchBar />
         <NavLink
           className={({ isActive }) => (isActive ? 'active-link' : 'default-link')}
           to="/about"

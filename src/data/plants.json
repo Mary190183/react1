@@ -1,175 +1,175 @@
 {
   "plants": [
     {
-      "id": 1,
-      "name": "Gardenia",
+      "Id": "1",
+      "Common_name": "Gardenia",
       "watches": 5,
-      "price": 500,
-      "amount": 20,
-      "image": "/Gardenia.jpg",
-      "description": "Gardenia loves moisture and spraying"
+      "Latin_name": "Gardenia",
+      "Categories": "20",
+      "Img": "/Gardenia.jpg",
+      "Description": "Gardenia loves moisture and spraying"
     },
     {
-      "id": 2,
-      "name": "Aspidistra",
+      "Id": "2",
+      "Common_name":  "AspIdistra",
       "watches": 3,
-      "price": 400,
-      "amount": 10,
-      "image": "/aspidistra_spatifilum.jpg",
-      "description": "It is better to hide it from direct sunlight"
+      "Latin_name": "Aspidistra",
+      "Categories": "10",
+      "Img": "/aspidistra_spatifilum.jpg",
+      "Description": "It is better to hide it from direct sunlight"
     },
     {
-      "id": 3,
-      "name": "Orchid",
+      "Id": "3",
+      "Common_name": "Orchid",
       "watches": 2,
-      "price": 1000,
-      "amount": 15,
-      "image": "/orhidea.jpg",
-      "description": "Orchids like humid air — 50-80%. They need to be sprayed"
+      "Latin_name": "Orchid",
+      "Categories": "hj",
+      "Img": "/orhidea.jpg",
+      "Description": "Orchids like humId air — 50-80%. They need to be sprayed"
     },
     {
-      "id": 4,
-      "name": "Aglaonema",
+      "Id": "4",
+      "Common_name": "Aglaonema",
       "watches": 5,
-      "price": 500,
-      "amount": 20,
-      "image": "/aglaonema.jpg",
-      "description": "The flower loves warmth and moisture, and is also sensitive to light"
+      "Latin_name": "Aglaonema",
+      "Categories": "20",
+      "Img": "/aglaonema.jpg",
+      "Description": "The flower loves warmth and moisture, and is also sensitive to light"
     },
     {
-      "id": 6,
-      "name": "Фикус Бенджамина",
+      "Id": "6",
+      "Common_name": "Фикус Бенджамина",
       "watches": 3,
-      "price": 400,
-      "amount": 10,
-      "image": "/fikus_bengamina.jpg",
-      "description": "любит солнце"
+      "Latin_name": "Фикус Бенджамина",
+      "Categories": "10",
+      "Img": "/fikus_bengamina.jpg",
+      "Description": "любит солнце"
     },
     {
-      "id": 7,
-      "name": "Гербера",
+      "Id": "7",
+      "Common_name": "Гербера",
       "watches": 2,
-      "price": 1000,
-      "amount": 15,
-      "image": "/herbera.jpg",
-      "description": "любит опрыскивание"
+      "Latin_name": "Гербера",
+      "Categories": "15",
+      "Img": "/herbera.jpg",
+      "Description": "любит опрыскивание"
     },
     {
-      "id": 8,
-      "name": "Коланхое",
+      "Id": "8",
+      "Common_name": "Коланхое",
       "watches": 5,
-      "price": 500,
-      "amount": 20,
-      "image": "/kolanhoe.jpg",
-      "description": "любит легкое затенение"
+      "Latin_name": "Коланхое",
+      "Categories": "20",
+      "Img": "/kolanhoe.jpg",
+      "Description": "любит легкое затенение"
     },
     {
-      "id": 9,
-      "name": "Маранта",
+      "Id": "9",
+      "Common_name": "Маранта",
       "watches": 3,
-      "price": 400,
-      "amount": 10,
-      "image": "/maranta.jpg",
-      "description": "любит солнце"
+      "Latin_name": "Маранта",
+      "Categories": "10",
+      "Img": "/maranta.jpg",
+      "Description": "любит солнце"
     },
     {
-      "id": 10,
-      "name": "Монстера",
+      "Id": "10",
+      "Common_name": "Монстера",
       "watches": 2,
-      "price": 1000,
-      "amount": 15,
-      "image": "/monstera.jpg",
-      "description": "любит опрыскивание"
+      "Latin_name": "Монстера",
+      "Categories": "15",
+      "Img": "/monstera.jpg",
+      "Description": "любит опрыскивание"
     },
     {
-      "id": 11,
-      "name": "Нефролепис глориоса",
+      "Id": "11",
+      "Common_name": "Нефролепис глориоса",
       "watches": 5,
-      "price": 500,
-      "amount": 20,
-      "image": "/nefrolepis_gloriosa.jpg",
-      "description": "любит легкое затенение"
+      "Latin_name": "Нефролепис глориоса",
+      "Categories": "20",
+      "Img": "/nefrolepis_gloriosa.jpg",
+      "Description": "любит легкое затенение"
     },
     {
-      "id": 12,
-      "name": "Осока",
+      "Id": "12",
+      "Common_name": "Осока",
       "watches": 3,
-      "price": 400,
-      "amount": 10,
-      "image": "/osoka.jpg",
-      "description": "любит солнце"
+      "Latin_name": "Осока",
+      "Categories": "10",
+      "Img": "/osoka.jpg",
+      "Description": "любит солнце"
     },
     {
-      "id": 13,
-      "name": "Пальма Кения Ховея",
+      "Id": "13",
+      "Common_name": "Пальма Кения Ховея",
       "watches": 2,
-      "price": 1000,
-      "amount": 15,
-      "image": "/palm_kenia_hoveja.jpg",
-      "description": "любит опрыскивание"
+      "Latin_name": "Пальма Кения Ховея",
+      "Categories": "15",
+      "Img": "/palm_kenia_hoveja.jpg",
+      "Description": "любит опрыскивание"
     },
     {
-      "id": 14,
-      "name": "Пальма Ливинстона",
+      "Id": "14",
+      "Common_name": "Пальма Ливинстона",
       "watches": 5,
-      "price": 500,
-      "amount": 20,
-      "image": "/palm_livinstone.jpg",
-      "description": "любит легкое затенение"
+      "Latin_name": "Пальма Ливинстона",
+      "Categories": "20",
+      "Img": "/palm_livinstone.jpg",
+      "Description": "любит легкое затенение"
     },
     {
-      "id": 15,
-      "name": "Пальма",
+      "Id": "15",
+      "Common_name": "Пальма",
       "watches": 3,
-      "price": 400,
-      "amount": 10,
-      "image": "/palm.jpg",
-      "description": "любит солнце"
+      "Latin_name": "Gakmvf",
+      "Categories": "10",
+      "Img": "/palm.jpg",
+      "Description": "любит солнце"
     },
     {
-      "id": 16,
-      "name": "Петуния",
+      "Id": "16",
+      "Common_name": "Петуния",
       "watches": 2,
-      "price": 1000,
-      "amount": 15,
-      "image": "/petunia.jpg",
-      "description": "любит опрыскивание"
+      "Latin_name": "Петуния",
+      "Categories": "15",
+      "Img": "/petunia.jpg",
+      "Description": "любит опрыскивание"
     }, 
     {
-      "id": 17,
-      "name": "Примула",
+      "Id": "17",
+      "Common_name": "Примула",
       "watches": 2,
-      "price": 1000,
-      "amount": 15,
-      "image": "/primula.jpg",
-      "description": "любит опрыскивание"
+      "Latin_name": "Примула",
+      "Categories": "15",
+      "Img": "/primula.jpg",
+      "Description": "любит опрыскивание"
     },
     {
-      "id": 18,
-      "name": "Спатифиллум Лима",
+      "Id": "18",
+      "Common_name": "Спатифиллум Лима",
       "watches": 5,
-      "price": 500,
-      "amount": 20,
-      "image": "/spatifillu_lima.jpg",
-      "description": "любит легкое затенение"
+      "Latin_name": "Спатифиллум Лима",
+      "Categories": "20",
+      "Img": "/spatifillu_lima.jpg",
+      "Description": "любит легкое затенение"
     },
     {
-      "id": 19,
-      "name": "Суккуленты",
+      "Id": "19",
+      "Common_name": "Суккуленты",
       "watches": 3,
-      "price": 400,
-      "amount": 10,
-      "image": "/succulent.jpg",
-      "description": "любит солнце"
+      "Latin_name": "Суккуленты",
+      "Categories": "10",
+      "Img": "/succulent.jpg",
+      "Description": "любит солнце"
     },
     {
-      "id": 20,
-      "name": "Водный гиацинт",
+      "Id": "20",
+      "Common_name": "Водный гиацинт",
       "watches": 3,
-      "price": 400,
-      "amount": 10,
-      "image": "/water_giasint.jpg",
-      "description": "любит солнце"
+      "Latin_name": "Водный гиацинт",
+      "Categories": "10",
+      "Img": "/water_giasint.jpg",
+      "Description": "любит солнце"
     }
   ]
   }
