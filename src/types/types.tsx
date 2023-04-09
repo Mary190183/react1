@@ -4,11 +4,12 @@ export type DataPlants = {
 
 export type DataPlant = {
   id: number;
-  climate: string;
   img: string;
   common: string;
+  climate: string;
   latin: string;
   family: string;
+  categories: string;
 };
 
 export type DataRadios = {
