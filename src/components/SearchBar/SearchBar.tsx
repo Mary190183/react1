@@ -2,7 +2,7 @@ import React from 'react';
 
 interface InputDateProps {
   onChange: React.ChangeEventHandler<HTMLInputElement>;
-  onSubmit: React.FormEventHandler<HTMLFormElement>;
+  onSubmit: React.FormEventHandler<HTMLFormElement> | undefined;
   value: string | number | readonly string[] | undefined;
   onKeyDown: React.KeyboardEventHandler<HTMLInputElement> | undefined;
 }
