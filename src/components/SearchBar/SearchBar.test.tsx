@@ -12,6 +12,7 @@ describe('SearchBar', () => {
         }}
         onSubmit={undefined}
         value={undefined}
+        onKeyDown={undefined}
       />
     );
     expect(screen.getByTestId('button-search')).toBeInTheDocument();

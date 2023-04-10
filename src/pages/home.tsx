@@ -1,10 +1,10 @@
-import React, { SetStateAction, createContext, useContext, useEffect, useState } from 'react';
+import React, { FC, useEffect, useState } from 'react';
 import Card from '../components/card';
 // import data from '../data/plants.json';
 import SearchBar from '../components/SearchBar/SearchBar';
 import { Loading } from '../components/Loading';
-import { DataPlant } from '../types/types';
 import { Modal } from '../components/Modal';
+import { useForm } from 'react-hook-form';
 
 export const SearchPlants = (filterItems: [], searchWord: string) => {
   if (filterItems && filterItems.length > 0) {
@@ -26,8 +26,10 @@ export const SearchPlants = (filterItems: [], searchWord: string) => {
     return newPlantArray;
   }
 };
-
-function Home() {
+interface SearchBarProps {
+  onSubmit: (value: string) => void;
+}
+const Home = ({ onSubmit }: SearchBarProps) => {
   const [isPending, setIsPending] = useState(false);
   const [openedId, setOpenedId] = useState<number | null>(null);
   const [openedImg, setOpenedImg] = useState<string | null>(null);
@@ -54,7 +56,7 @@ function Home() {
     const plant = {
       method: 'GET',
       headers: {
-        'X-RapidAPI-Key': 'a6d21b6b44mshf695036ab327363p15e425jsnab1e16ae2519',
+        'X-RapidAPI-Key': 'b18c204c09msh89a114b4b235ccap162bddjsn254a940390cf',
         'X-RapidAPI-Host': 'house-plants2.p.rapidapi.com',
       },
     };
@@ -74,11 +76,15 @@ function Home() {
       });
   };
 
-  const handleSubmit = (e: { preventDefault: () => void }) => {
-    e.preventDefault();
-  };
+  // const handleSubmit: React.FormEventHandler<HTMLFormElement> = (e) => {
+  //   if (e.key === 'Enter') {
+  //     e.preventDefault();
+  //     (e: React.ChangeEvent<HTMLInputElement>) => onChangeHandler(e);
+  //     alert('s');
+  //   }
+  // };
 
-  const onChangeHandler = (e: React.ChangeEvent<HTMLInputElement>) => {
+  const onChangeHandler: React.ChangeEventHandler<HTMLInputElement> = (e) => {
     setQuery(e.target.value);
   };
   const handleOpening = (
@@ -109,10 +115,24 @@ function Home() {
     setOpenedCategories(null);
   };
 
+  const handleSearch: React.KeyboardEventHandler<HTMLInputElement> = (e) => {
+    if (e.key === 'Enter') {
+      alert('h');
+    }
+  };
   return (
     <section id="home1" className="container_home1" data-testid="home">
       <div>
-        <SearchBar onSubmit={handleSubmit} value={query} onChange={onChangeHandler} />
+        <SearchBar
+          onSubmit={(e) => {
+            e.preventDefault();
+            onSubmit(query);
+            setQuery('');
+          }}
+          value={query}
+          onChange={onChangeHandler}
+          onKeyDown={handleSearch}
+        />
       </div>
       {isPending && <Loading />}
       {filterData.length > 0 ? (
@@ -155,9 +175,9 @@ function Home() {
           )}
         </section>
       ) : (
-        <div>NOT FOUND</div>
+        <div className="no-results">NOT FOUND</div>
       )}
     </section>
   );
-}
+};
 export { Home };
