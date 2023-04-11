@@ -1,5 +1,4 @@
 import { NavLink } from 'react-router-dom';
-import SearchBar from '../SearchBar/SearchBar';
 import React from 'react';
 
 const Header = () => {
