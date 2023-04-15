@@ -1,13 +1,14 @@
 import React from 'react';
 import { DataFormCard } from '../../types/types';
+import { deleteCard } from '../../store/recycleSlice';
+import { useDispatch } from 'react-redux';
 
-interface ICardItem extends DataFormCard {
-  deleteCard: (id: number) => void;
-}
+type ICardItem = DataFormCard;
 let checkMean: string;
 
 export const FormCard: React.FC<ICardItem> = (props) => {
-  const { id, title, date, select, file, radio, deleteCard } = props;
+  const { id, title, date, select, file, radio } = props;
+  const dispatch = useDispatch();
   if (props.check === true) {
     checkMean = 'Dirty';
   } else checkMean = 'Clean';
@@ -19,7 +20,7 @@ export const FormCard: React.FC<ICardItem> = (props) => {
   }
   return (
     <div className="form-new-card" id={id.toString()} data-testid="form-card">
-      <button className="button-form-close" onClick={() => deleteCard(id)}>
+      <button className="button-form-close" onClick={() => dispatch(deleteCard({ id }))}>
         x
       </button>
       <p className="new-card-title">

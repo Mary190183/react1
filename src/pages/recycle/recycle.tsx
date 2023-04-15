@@ -6,10 +6,12 @@ import FormFile from '../../components/Forms/FormFile';
 import FormRadio from '../../components/Forms/FormRadio';
 import FormCheckbox from '../../components/Forms/FormCheckbox';
 import { FormCardList } from '../../components/Forms/FormCardList';
-import { DataFormCard } from '../../types/types';
 import React, { FC, useState } from 'react';
 import data from '../../data/radio.json';
 import { FieldValues, SubmitHandler, useForm } from 'react-hook-form';
+import { useSelector, useDispatch } from 'react-redux';
+import { RootState } from '../../store';
+import { addCard } from '../../store/recycleSlice';
 
 const Recycle: FC = () => {
   const {
@@ -18,8 +20,32 @@ const Recycle: FC = () => {
     handleSubmit,
     reset,
   } = useForm({ mode: 'onBlur' });
-
-  const [cardList, setCardList] = useState<DataFormCard[]>([]);
+  const cards = useSelector((state: RootState) => state.cards.cards);
+  const dispatch = useDispatch();
+  const onSubmit: SubmitHandler<FieldValues> = (dataForm) => {
+    if (isSubmitSuccessful) {
+      dispatch(
+        addCard({
+          id: Date.now(),
+          date: dataForm.date,
+          title: dataForm.title,
+          select: dataForm.select,
+          file: dataForm.file,
+          check: dataForm.check,
+          radio: dataForm.radio,
+          submit: dataForm.submit,
+        })
+      );
+      setValueCheck(false);
+      setValueDate('');
+      setValueFile(undefined);
+      setValueRadio('');
+      setValueTitle('');
+      setValueSelect('');
+      reset();
+      alert('Card is completed');
+    }
+  };
   const [valueDate, setValueDate] = useState('');
   const handleChangeDate: React.ChangeEventHandler<HTMLInputElement> = (e) => {
     setValueDate(e.target.value);
@@ -46,38 +72,10 @@ const Recycle: FC = () => {
   const handleChangeRadio: React.ChangeEventHandler<HTMLInputElement> = (e) => {
     setValueRadio(e.target.value);
   };
-  const addCard: SubmitHandler<FieldValues> = (dataForm) => {
-    if (isSubmitSuccessful) {
-      setCardList([
-        ...cardList,
-        {
-          id: Date.now(),
-          date: dataForm.date,
-          title: dataForm.title,
-          select: dataForm.select,
-          file: dataForm.file?.[0],
-          check: dataForm.check,
-          radio: dataForm.radio,
-          submit: dataForm.submit,
-        },
-      ]);
-      alert('Card is completed');
-      setValueTitle('');
-      setValueCheck(false);
-      setValueFile(undefined);
-      setValueDate('');
-      setValueSelect('');
-      setValueRadio('');
-      reset();
-    }
-  };
-  const deleteCard = (id: number): void => {
-    setCardList(cardList.filter((cardList) => cardList.id !== id));
-  };
 
   return (
     <section className="container_recycle">
-      <form className="recycle-container" onSubmit={handleSubmit(addCard)}>
+      <form className="recycle-container" onSubmit={handleSubmit(onSubmit)}>
         <div className="form-card">
           <div className="form-colomn">
             <h2>Recycling map</h2>
@@ -145,7 +143,7 @@ const Recycle: FC = () => {
           </div>
         </div>
       </form>
-      <FormCardList deleteCard={deleteCard} items={cardList} />
+      <FormCardList items={cards} />
     </section>
   );
 };

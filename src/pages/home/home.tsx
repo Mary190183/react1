@@ -4,6 +4,8 @@ import Card from '../../components/Card/Card';
 import SearchBar from '../../components/SearchBar/SearchBar';
 import { Loading } from '../../components/Loading';
 import { Modal } from '../../components/Modal';
+// import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
+// import { DataPlant } from '../../types/types';
 
 export const SearchPlants = (filterItems: [], searchWord: string) => {
   if (filterItems && filterItems.length > 0) {
@@ -48,6 +50,18 @@ const Home: FC = () => {
   useEffect(() => {
     localStorage.setItem('query', query);
   }, [query]);
+
+  // const plantApi = createApi({
+  //   reducerPath: 'plantApi',
+  //   baseQuery: fetchBaseQuery({ baseUrl: 'house-plants2.p.rapidapi.com' }),
+  //   endpoints: (builder) => ({
+  //     getPlantByName: builder.query<DataPlant, string>({
+  //       query: (name) => `plant/${name}`,
+  //     }),
+  //   }),
+  // });
+  // const { useGetPlantByNameQuery } = plantApi;
+
   const fetchMe = () => {
     setIsPending(true);
     const plant = {
