@@ -6,6 +6,8 @@ import { NotFoundPage } from './pages/404/404';
 import { Home } from './pages/home/home';
 import { Layout } from './components/Layout/Layout';
 import React from 'react';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { Provider } from 'react-redux';
 
 class AppRoutes extends React.Component {
   render = (): JSX.Element => {
