@@ -1,9 +1,9 @@
 import React, { FC, useEffect, useState } from 'react';
-import Card from '../components/card';
+import Card from '../../components/Card/Card';
 // import data from '../data/plants.json';
-import SearchBar from '../components/SearchBar/SearchBar';
-import { Loading } from '../components/Loading';
-import { Modal } from '../components/Modal';
+import SearchBar from '../../components/SearchBar/SearchBar';
+import { Loading } from '../../components/Loading';
+import { Modal } from '../../components/Modal';
 
 export const SearchPlants = (filterItems: [], searchWord: string) => {
   if (filterItems && filterItems.length > 0) {
@@ -20,7 +20,6 @@ export const SearchPlants = (filterItems: [], searchWord: string) => {
         return false;
       }
     );
-    console.log('RETURNING PLANTS:', newPlantArray.length);
 
     return newPlantArray;
   }
@@ -38,13 +37,14 @@ const Home: FC = () => {
   const [items, setItems] = useState<[]>([]);
   const [query, setQuery] = useState<string>(localStorage.getItem('query') || '');
   const [filterData, setFilterData] = useState([]);
+
+  useEffect(() => {
+    fetchMe();
+  }, []);
   useEffect(() => {
     const searchResults = SearchPlants(items, query);
     setFilterData(searchResults ? searchResults : []);
   }, [query, items]);
-  useEffect(() => {
-    fetchMe();
-  }, []);
   useEffect(() => {
     localStorage.setItem('query', query);
   }, [query]);
@@ -76,6 +76,7 @@ const Home: FC = () => {
   const handleSubmit: React.FormEventHandler<HTMLFormElement> = (e) => {
     e.preventDefault();
     (e: React.ChangeEvent<HTMLInputElement>) => onChangeHandler(e);
+    fetchMe();
   };
 
   const onChangeHandler: React.ChangeEventHandler<HTMLInputElement> = (e) => {
@@ -112,6 +113,7 @@ const Home: FC = () => {
   const handleSearch: React.KeyboardEventHandler<HTMLInputElement> = (e) => {
     if (e.key === 'Enter') {
       (e: React.ChangeEvent<HTMLInputElement>) => onChangeHandler(e);
+      fetchMe();
     }
   };
   return (

@@ -1,5 +1,5 @@
 import React from 'react';
-import Create from '../assets/img/create.avif';
+import Create from '../../assets/img/create.avif';
 
 const About = () => {
   return (

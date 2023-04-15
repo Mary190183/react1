@@ -17,8 +17,11 @@
     "jsx": "react-jsx",
     "baseUrl": "./src",
     "noImplicitAny": true,
-    "noFallthroughCasesInSwitch": true
+    "noFallthroughCasesInSwitch": true,
+    "paths": {
+      "@src/*": ["./src/*"],
+    }
   },
-  "include": ["src"],
+  "include": ["./src/**/*"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

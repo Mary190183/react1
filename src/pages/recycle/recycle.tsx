@@ -1,14 +1,14 @@
-import { FormDate } from '../components/Forms/FormDate';
-import { ButtonForm } from '../components/Forms/ButtonForm';
-import FormTitle from '../components/Forms/FormTitle';
-import FormSelect from '../components/Forms/FormSelect';
-import FormFile from '../components/Forms/FormFile';
-import FormRadio from '../components/Forms/FormRadio';
-import FormCheckbox from '../components/Forms/FormCheckbox';
-import { FormCardList } from '../components/Forms/FormCardList';
-import { DataFormCard } from '../types/types';
+import { FormDate } from '../../components/Forms/FormDate';
+import { ButtonForm } from '../../components/Forms/ButtonForm';
+import FormTitle from '../../components/Forms/FormTitle';
+import FormSelect from '../../components/Forms/FormSelect';
+import FormFile from '../../components/Forms/FormFile';
+import FormRadio from '../../components/Forms/FormRadio';
+import FormCheckbox from '../../components/Forms/FormCheckbox';
+import { FormCardList } from '../../components/Forms/FormCardList';
+import { DataFormCard } from '../../types/types';
 import React, { FC, useState } from 'react';
-import data from '../data/radio.json';
+import data from '../../data/radio.json';
 import { FieldValues, SubmitHandler, useForm } from 'react-hook-form';
 
 const Recycle: FC = () => {

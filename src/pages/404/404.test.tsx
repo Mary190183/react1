@@ -1,6 +1,6 @@
 import { render, screen } from '@testing-library/react';
 
-import { NotFoundPage } from '../pages/404';
+import { NotFoundPage } from './404';
 
 describe('NotFoundPage', () => {
   it('should have "Houseplant" text', () => {

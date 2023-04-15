@@ -1,8 +1,8 @@
 import React from 'react';
 // import Counter from './Counter/Counter';
-import Eye from '../assets/svg/eye.svg';
-import Like from '../assets/svg/heart.svg';
-import { DataPlant } from '../types/types';
+import Eye from '../../assets/svg/eye.svg';
+import Like from '../../assets/svg/heart.svg';
+import { DataPlant } from '../../types/types';
 
 export interface CardProps extends DataPlant {
   onOpening?: (
