@@ -1,14 +1,14 @@
 import { configureStore } from '@reduxjs/toolkit';
 import recycleReducer from './recycleSlice';
+import cardsReducer from './searchSlice';
 
-export type RootState = ReturnType<ReturnType<typeof store>['getState']>;
-export type AppDispatch = ReturnType<typeof store>['dispatch'];
+export type RootState = ReturnType<typeof store.getState>;
+export type AppDispatch = typeof store.dispatch;
 
-export const store = () => {
-  return configureStore({
-    reducer: {
-      cards: recycleReducer,
-    },
-    middleware: (getDefaultMiddleware) => getDefaultMiddleware({}),
-  });
-};
+export const store = configureStore({
+  reducer: {
+    cards: recycleReducer,
+    cardsSearch: cardsReducer,
+  },
+  middleware: (getDefaultMiddleware) => getDefaultMiddleware({ serializableCheck: false }),
+});

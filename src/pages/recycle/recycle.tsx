@@ -9,42 +9,40 @@ import { FormCardList } from '../../components/Forms/FormCardList';
 import React, { FC, useState } from 'react';
 import data from '../../data/radio.json';
 import { FieldValues, SubmitHandler, useForm } from 'react-hook-form';
-import { useSelector, useDispatch } from 'react-redux';
-import { RootState } from '../../store';
+import { useSelector, useDispatch, Provider } from 'react-redux';
+import { RootState, store } from '../../store';
 import { addCard } from '../../store/recycleSlice';
 
 const Recycle: FC = () => {
   const {
     register,
-    formState: { errors, isSubmitSuccessful },
+    formState: { errors },
     handleSubmit,
     reset,
   } = useForm({ mode: 'onBlur' });
   const cards = useSelector((state: RootState) => state.cards.cards);
   const dispatch = useDispatch();
   const onSubmit: SubmitHandler<FieldValues> = (dataForm) => {
-    if (isSubmitSuccessful) {
-      dispatch(
-        addCard({
-          id: Date.now(),
-          date: dataForm.date,
-          title: dataForm.title,
-          select: dataForm.select,
-          file: dataForm.file,
-          check: dataForm.check,
-          radio: dataForm.radio,
-          submit: dataForm.submit,
-        })
-      );
-      setValueCheck(false);
-      setValueDate('');
-      setValueFile(undefined);
-      setValueRadio('');
-      setValueTitle('');
-      setValueSelect('');
-      reset();
-      alert('Card is completed');
-    }
+    dispatch(
+      addCard({
+        id: Date.now(),
+        date: dataForm.date,
+        title: dataForm.title,
+        select: dataForm.select,
+        file: dataForm.file,
+        check: dataForm.check,
+        radio: dataForm.radio,
+        submit: dataForm.submit,
+      })
+    );
+    setValueCheck(false);
+    setValueDate('');
+    setValueFile(undefined);
+    setValueRadio('');
+    setValueTitle('');
+    setValueSelect('');
+    reset();
+    alert('Card is completed');
   };
   const [valueDate, setValueDate] = useState('');
   const handleChangeDate: React.ChangeEventHandler<HTMLInputElement> = (e) => {

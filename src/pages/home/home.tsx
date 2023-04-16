@@ -1,11 +1,11 @@
-import React, { FC, useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Card from '../../components/Card/Card';
-// import data from '../data/plants.json';
+
 import SearchBar from '../../components/SearchBar/SearchBar';
 import { Loading } from '../../components/Loading';
 import { Modal } from '../../components/Modal';
-// import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
-// import { DataPlant } from '../../types/types';
+import { Provider, useDispatch } from 'react-redux';
+import { store } from '../../store';
 
 export const SearchPlants = (filterItems: [], searchWord: string) => {
   if (filterItems && filterItems.length > 0) {
@@ -27,7 +27,7 @@ export const SearchPlants = (filterItems: [], searchWord: string) => {
   }
 };
 
-const Home: FC = () => {
+const Home = () => {
   const [isPending, setIsPending] = useState(false);
   const [openedId, setOpenedId] = useState<number | null>(null);
   const [openedImg, setOpenedImg] = useState<string | null>(null);
@@ -39,58 +39,44 @@ const Home: FC = () => {
   const [items, setItems] = useState<[]>([]);
   const [query, setQuery] = useState<string>(localStorage.getItem('query') || '');
   const [filterData, setFilterData] = useState([]);
-
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const dispatch: any = useDispatch();
   useEffect(() => {
-    fetchMe();
-  }, []);
+    dispatch(fetchMe());
+  }, [dispatch]);
   useEffect(() => {
     const searchResults = SearchPlants(items, query);
     setFilterData(searchResults ? searchResults : []);
   }, [query, items]);
-  useEffect(() => {
-    localStorage.setItem('query', query);
-  }, [query]);
-
-  // const plantApi = createApi({
-  //   reducerPath: 'plantApi',
-  //   baseQuery: fetchBaseQuery({ baseUrl: 'house-plants2.p.rapidapi.com' }),
-  //   endpoints: (builder) => ({
-  //     getPlantByName: builder.query<DataPlant, string>({
-  //       query: (name) => `plant/${name}`,
-  //     }),
-  //   }),
-  // });
-  // const { useGetPlantByNameQuery } = plantApi;
 
   const fetchMe = () => {
     setIsPending(true);
     const plant = {
       method: 'GET',
       headers: {
-        'X-RapidAPI-Key': 'b18c204c09msh89a114b4b235ccap162bddjsn254a940390cf',
+        'X-RapidAPI-Key': '6911f20055mshf5dbae5ebc1f4d4p1080d4jsn2a57a6023eea',
         'X-RapidAPI-Host': 'house-plants2.p.rapidapi.com',
       },
     };
-    fetch('https://house-plants2.p.rapidapi.com/all-lite', plant)
-      .then((response) => {
-        return response.json();
-      })
-      .then((data) => {
-        console.log({ data });
-        localStorage.setItem('query-list', JSON.stringify(data));
-        setItems(data);
-        setIsPending(false);
-      })
-      .catch((err) => {
-        console.error(err);
-        setIsPending(false);
-      });
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    return (dispatch: (arg0: { type: string; data?: []; msg?: string }) => any) => {
+      return fetch('https://house-plants2.p.rapidapi.com/all-lite', plant)
+        .then((response) => response.json())
+        .then((json) => {
+          dispatch({ type: 'FetchData', data: json });
+          setIsPending(false);
+          setItems(json);
+        })
+        .catch((err) => {
+          dispatch({ type: 'ERROR', msg: 'Unable to fetch data' });
+          console.log(err);
+          setIsPending(false);
+        });
+    };
   };
 
-  const handleSubmit: React.FormEventHandler<HTMLFormElement> = (e) => {
-    e.preventDefault();
-    (e: React.ChangeEvent<HTMLInputElement>) => onChangeHandler(e);
-    fetchMe();
+  const handleSubmit = () => {
+    dispatch(fetchMe());
   };
 
   const onChangeHandler: React.ChangeEventHandler<HTMLInputElement> = (e) => {
@@ -124,21 +110,10 @@ const Home: FC = () => {
     setOpenedCategories(null);
   };
 
-  const handleSearch: React.KeyboardEventHandler<HTMLInputElement> = (e) => {
-    if (e.key === 'Enter') {
-      (e: React.ChangeEvent<HTMLInputElement>) => onChangeHandler(e);
-      fetchMe();
-    }
-  };
   return (
     <section id="home1" className="container_home1" data-testid="home">
       <div>
-        <SearchBar
-          onSubmit={handleSubmit}
-          value={query}
-          onChange={onChangeHandler}
-          onKeyDown={handleSearch}
-        />
+        <SearchBar onSubmit={handleSubmit} onChange={onChangeHandler} value={query} />
       </div>
       {isPending && <Loading />}
       {filterData.length > 0 ? (

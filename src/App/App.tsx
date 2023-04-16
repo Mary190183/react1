@@ -6,11 +6,13 @@ import { store } from '../store';
 
 const App: React.FC = () => {
   return (
-    <Provider store={store()}>
-      <BrowserRouter>
-        <AppRoutes />
-      </BrowserRouter>
-    </Provider>
+    <React.StrictMode>
+      <Provider store={store}>
+        <BrowserRouter>
+          <AppRoutes />
+        </BrowserRouter>
+      </Provider>
+    </React.StrictMode>
   );
 };
 

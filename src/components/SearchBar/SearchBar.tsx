@@ -4,11 +4,10 @@ interface InputDateProps {
   onChange: React.ChangeEventHandler<HTMLInputElement>;
   onSubmit: React.FormEventHandler<HTMLFormElement> | undefined;
   value: string | number | readonly string[] | undefined;
-  onKeyDown: React.KeyboardEventHandler<HTMLInputElement> | undefined;
 }
 
 const SearchBar: React.FC<InputDateProps> = (props) => {
-  const { onSubmit, value, onChange, onKeyDown } = props;
+  const { onSubmit, value, onChange } = props;
 
   return (
     <form method="get" onSubmit={onSubmit}>
@@ -18,7 +17,6 @@ const SearchBar: React.FC<InputDateProps> = (props) => {
         onChange={onChange}
         value={value}
         placeholder="Enter Plant Name Here..."
-        onKeyDown={onKeyDown}
         required
         type="search"
       ></input>
