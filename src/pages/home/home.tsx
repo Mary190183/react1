@@ -4,8 +4,7 @@ import Card from '../../components/Card/Card';
 import SearchBar from '../../components/SearchBar/SearchBar';
 import { Loading } from '../../components/Loading';
 import { Modal } from '../../components/Modal';
-import { Provider, useDispatch } from 'react-redux';
-import { store } from '../../store';
+import { useDispatch } from 'react-redux';
 
 export const SearchPlants = (filterItems: [], searchWord: string) => {
   if (filterItems && filterItems.length > 0) {

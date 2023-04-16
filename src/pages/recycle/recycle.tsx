@@ -9,8 +9,8 @@ import { FormCardList } from '../../components/Forms/FormCardList';
 import React, { FC, useState } from 'react';
 import data from '../../data/radio.json';
 import { FieldValues, SubmitHandler, useForm } from 'react-hook-form';
-import { useSelector, useDispatch, Provider } from 'react-redux';
-import { RootState, store } from '../../store';
+import { useSelector, useDispatch } from 'react-redux';
+import { RootState } from '../../store';
 import { addCard } from '../../store/recycleSlice';
 
 const Recycle: FC = () => {
