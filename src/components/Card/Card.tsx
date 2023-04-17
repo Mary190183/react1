@@ -5,16 +5,7 @@ import Like from '../../assets/svg/heart.svg';
 import { DataPlant } from '../../types/types';
 
 export interface CardProps extends DataPlant {
-  onOpening?: (
-    id: number,
-    img: string,
-    common: string,
-    latin: string,
-    family: string,
-    climate: string,
-    categories: string
-  ) => void;
-  onDelete?: (id: number) => void;
+  onOpening?: (data: DataPlant) => void;
 }
 const Card = (props: CardProps) => {
   const { onOpening } = props;
@@ -24,18 +15,9 @@ const Card = (props: CardProps) => {
       data-testid="card"
       onClick={() => {
         if (onOpening) {
-          onOpening(
-            props.id,
-            props.img,
-            props.climate,
-            props.family,
-            props.latin,
-            props.common,
-            props.categories
-          );
+          onOpening(props);
         }
       }}
-      onKeyDown={() => {}}
     >
       <div className="image-container">
         <img className="image" src={props.img} alt="gg" />

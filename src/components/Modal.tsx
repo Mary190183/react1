@@ -1,41 +1,13 @@
 import { useState } from 'react';
 import { DataPlant } from '../types/types';
 
-interface ModalProps {
-  id: number | null;
+interface ModalProps extends DataPlant {
   onClose: () => void;
-  img: string | null;
-  common: string | null;
-  latin: string | null;
-  family: string | null;
-  climate: string | null;
-  categories: string | null;
 }
 
-export const Modal = ({
-  id,
-  img,
-  common,
-  family,
-  latin,
-  climate,
-  categories,
-  onClose,
-}: ModalProps) => {
-  const getCardsList = () => {
-    const cardsList = localStorage.getItem(`query-list`) as string;
-    try {
-      return cardsList ? (JSON.parse(cardsList) as DataPlant[]) : [];
-    } catch (err) {
-      localStorage.removeItem('query-list');
-      return [];
-    }
-  };
-
-  const card = getCardsList().find((el) => el.id === id) as DataPlant;
+export const Modal = (props: ModalProps) => {
+  const { onClose } = props;
   const [isLoaded, setIsLoaded] = useState(false);
-  console.log(categories, common, latin, family, climate);
-  console.log(card);
   return (
     <div
       data-testid="modal"
@@ -45,7 +17,6 @@ export const Modal = ({
           onClose();
         }
       }}
-      onKeyDown={() => {}}
     >
       <div className="modal__card">
         <button
@@ -57,19 +28,19 @@ export const Modal = ({
           X
         </button>
         <img
-          src={img !== null ? img : ''}
-          alt={common !== null ? common : 'alt'}
+          src={props.img}
+          alt={props.common !== null ? props.common : 'alt'}
           onLoad={() => {
             setIsLoaded(true);
           }}
           style={!isLoaded ? { opacity: 0 } : { opacity: 1 }}
         />
         <div>
-          <h3>Name: {common}</h3>
-          <p>Latin name: {latin}</p>
-          <p>Climate: {climate}</p>
-          <p>Family: {family}</p>
-          <p>Categories: {categories}</p>
+          <h3>Name: {props.common}</h3>
+          <p>Latin name: {props.latin}</p>
+          <p>Climate: {props.climate}</p>
+          <p>Family: {props.family}</p>
+          <p>Categories: {props.categories}</p>
         </div>
       </div>
     </div>

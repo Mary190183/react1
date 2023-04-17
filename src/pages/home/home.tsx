@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import Card from '../../components/Card/Card';
-import { AppDispatch } from '../../store';
+import { AppDispatch, RootState } from '../../store';
 import SearchBar from '../../components/SearchBar/SearchBar';
 import { Loading } from '../../components/Loading';
 import { Modal } from '../../components/Modal';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
+import { DataPlant } from 'types/types';
 
 export const SearchPlants = (filterItems: [], searchWord: string) => {
   if (filterItems && filterItems.length > 0) {
@@ -36,9 +37,10 @@ const Home = () => {
   const [openedClimat, setOpenedClimat] = useState<string | null>(null);
   const [openedCategories, setOpenedCategories] = useState<string | null>(null);
   const [items, setItems] = useState<[]>([]);
-  const [query, setQuery] = useState<string>(localStorage.getItem('query') || '');
+  const [query, setQuery] = useState<string>('');
   const [filterData, setFilterData] = useState([]);
-
+  const cardsSearch = useSelector((state: RootState) => state.cardsSearch.cardsSearch);
+  console.log(cardsSearch);
   const dispatch: AppDispatch = useDispatch();
   useEffect(() => {
     dispatch(fetchMe());
@@ -80,22 +82,14 @@ const Home = () => {
   const onChangeHandler: React.ChangeEventHandler<HTMLInputElement> = (e) => {
     setQuery(e.target.value);
   };
-  const handleOpening = (
-    id: number,
-    img: string,
-    climate: string,
-    family: string,
-    latin: string,
-    common: string,
-    categories: string
-  ) => {
-    setOpenedId(id);
-    setOpenedImg(img);
-    setOpenedCommon(common);
-    setOpenedlatin(latin);
-    setOpenedFamily(family);
-    setOpenedClimat(climate);
-    setOpenedCategories(categories);
+  const handleOpening = (data: DataPlant) => {
+    setOpenedId(data.id);
+    setOpenedImg(data.img);
+    setOpenedCommon(data.common);
+    setOpenedlatin(data.latin);
+    setOpenedFamily(data.family);
+    setOpenedClimat(data.climate);
+    setOpenedCategories(data.categories);
   };
 
   const handleClosing = () => {
@@ -149,13 +143,13 @@ const Home = () => {
           {openedId !== null && (
             <Modal
               id={openedId}
-              img={openedImg}
+              img={openedImg ? openedImg : '-'}
               onClose={handleClosing}
               common={openedCommon ? openedCommon : '-'}
-              latin={openedLatin}
+              latin={openedLatin ? openedLatin : '-'}
               family={openedFamily ? openedFamily : '-'}
-              climate={openedClimat}
-              categories={openedCategories}
+              climate={openedClimat ? openedClimat : '-'}
+              categories={openedCategories ? openedCategories : '-'}
             />
           )}
         </section>

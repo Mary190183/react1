@@ -7,14 +7,14 @@ describe('Modal', () => {
   it('should have "modal"', () => {
     render(
       <Modal
-        id={null}
         onClose={function (): void {}}
-        img={null}
-        common={null}
-        latin={null}
-        family={null}
-        climate={null}
-        categories={null}
+        id={0}
+        img={''}
+        common={''}
+        climate={''}
+        latin={''}
+        family={''}
+        categories={''}
       />
     );
     expect(screen.getByTestId('modal')).toBeInTheDocument();
