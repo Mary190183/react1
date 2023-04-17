@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Card from '../../components/Card/Card';
-
+import { AppDispatch } from '../../store';
 import SearchBar from '../../components/SearchBar/SearchBar';
 import { Loading } from '../../components/Loading';
 import { Modal } from '../../components/Modal';
@@ -38,8 +38,8 @@ const Home = () => {
   const [items, setItems] = useState<[]>([]);
   const [query, setQuery] = useState<string>(localStorage.getItem('query') || '');
   const [filterData, setFilterData] = useState([]);
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  const dispatch: any = useDispatch();
+
+  const dispatch: AppDispatch = useDispatch();
   useEffect(() => {
     dispatch(fetchMe());
   }, [dispatch]);
@@ -57,8 +57,7 @@ const Home = () => {
         'X-RapidAPI-Host': 'house-plants2.p.rapidapi.com',
       },
     };
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    return (dispatch: (arg0: { type: string; data?: []; msg?: string }) => any) => {
+    return (dispatch: AppDispatch) => {
       return fetch('https://house-plants2.p.rapidapi.com/all-lite', plant)
         .then((response) => response.json())
         .then((json) => {
@@ -112,7 +111,12 @@ const Home = () => {
   return (
     <section id="home1" className="container_home1" data-testid="home">
       <div>
-        <SearchBar onSubmit={handleSubmit} onChange={onChangeHandler} value={query} />
+        <SearchBar
+          onSubmit={handleSubmit}
+          onChange={onChangeHandler}
+          value={query}
+          data-testid="button-search"
+        />
       </div>
       {isPending && <Loading />}
       {filterData.length > 0 ? (
@@ -138,6 +142,7 @@ const Home = () => {
                 family={Family}
                 onOpening={handleOpening}
                 categories={Categories}
+                data-testid="card"
               />
             );
           })}

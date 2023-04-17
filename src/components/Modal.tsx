@@ -38,7 +38,7 @@ export const Modal = ({
   console.log(card);
   return (
     <div
-      data-testid={`modal-${id}`}
+      data-testid="modal"
       className="modal__wrapper"
       onClick={(e) => {
         if (e.target === e.currentTarget) {

@@ -14,7 +14,7 @@ interface InputTitleProps {
 const FormTitle: FC<InputTitleProps> = (props) => {
   const { value, onChange, register, errors, label } = props;
   return (
-    <div className="input-box">
+    <div className="input-box" data-testid="title">
       <label htmlFor="title">
         <h5>Title </h5>
       </label>
