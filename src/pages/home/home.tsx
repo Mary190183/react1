@@ -55,7 +55,7 @@ const Home = () => {
     const plant = {
       method: 'GET',
       headers: {
-        'X-RapidAPI-Key': '6911f20055mshf5dbae5ebc1f4d4p1080d4jsn2a57a6023eea',
+        'X-RapidAPI-Key': '5085932200msh848b331681e1c9bp151c83jsn50800328ea46',
         'X-RapidAPI-Host': 'house-plants2.p.rapidapi.com',
       },
     };
