@@ -30,8 +30,8 @@ const Home = () => {
   };
   const filteredData = data.filter(
     (el) =>
-      el.common.toLocaleLowerCase() === searchValue.toLowerCase() ||
-      el.latin.toLocaleLowerCase() === searchValue.toLocaleLowerCase()
+      el.common.toLocaleLowerCase().includes(searchValue.toLowerCase()) ||
+      el.latin.toLocaleLowerCase().includes(searchValue.toLocaleLowerCase())
   );
   const handleClosing = () => {
     setOpenedId(null);
