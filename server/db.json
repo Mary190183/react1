@@ -1,0 +1,175 @@
+{
+  "plants": [
+    {
+      "id": 1,
+      "common": "Gardenia",
+      "watches": 5,
+      "latin": "Gardenia",
+      "categories": "20",
+      "img": "/Gardenia.jpg",
+      "description": "Gardenia loves moisture and spraying"
+    },
+    {
+      "id": 2,
+      "common":  "Aspidistra",
+      "watches": 3,
+      "latin": "Aspidistra",
+      "categories": "10",
+      "img": "/aspidistra_spatifilum.jpg",
+      "description": "It is better to hide it from direct sunlight"
+    },
+    {
+      "id": 3,
+      "common": "Orchid",
+      "watches": 2,
+      "latin": "Orchid",
+      "categories": "hj",
+      "img": "/orhidea.jpg",
+      "description": "Orchids like humid air — 50-80%. They need to be sprayed"
+    },
+    {
+      "id": 4,
+      "common": "Aglaonema",
+      "watches": 5,
+      "latin": "Aglaonema",
+      "categories": "20",
+      "img": "/aglaonema.jpg",
+      "description": "The flower loves warmth and moisture, and is also sensitive to light"
+    },
+    {
+      "id": 5,
+      "common": "Фикус Бенджамина",
+      "watches": 3,
+      "latin": "Фикус Бенджамина",
+      "categories": "10",
+      "img": "/fikus_bengamina.jpg",
+      "description": "любит солнце"
+    },
+    {
+      "id": 6,
+      "common": "Гербера",
+      "watches": 2,
+      "latin": "Гербера",
+      "categories": "15",
+      "img": "/herbera.jpg",
+      "description": "любит опрыскивание"
+    },
+    {
+      "id": 7,
+      "common": "Коланхое",
+      "watches": 5,
+      "latin": "Коланхое",
+      "categories": "20",
+      "img": "/kolanhoe.jpg",
+      "description": "любит легкое затенение"
+    },
+    {
+      "id": 8,
+      "common": "Маранта",
+      "watches": 3,
+      "latin": "Маранта",
+      "categories": "10",
+      "img": "/maranta.jpg",
+      "description": "любит солнце"
+    },
+    {
+      "id": 9,
+      "common": "Монстера",
+      "watches": 2,
+      "latin": "Монстера",
+      "categories": "15",
+      "img": "/monstera.jpg",
+      "description": "любит опрыскивание"
+    },
+    {
+      "id": 10,
+      "common": "Нефролепис глориоса",
+      "watches": 5,
+      "latin": "Нефролепис глориоса",
+      "categories": "20",
+      "img": "/nefrolepis_gloriosa.jpg",
+      "description": "любит легкое затенение"
+    },
+    {
+      "id": 11,
+      "common": "Осока",
+      "watches": 3,
+      "latin": "Осока",
+      "categories": "10",
+      "img": "/osoka.jpg",
+      "description": "любит солнце"
+    },
+    {
+      "id": 12,
+      "common": "Пальма Кения Ховея",
+      "watches": 2,
+      "latin": "Пальма Кения Ховея",
+      "categories": "15",
+      "img": "/palm_kenia_hoveja.jpg",
+      "description": "любит опрыскивание"
+    },
+    {
+      "id": 13,
+      "common": "Пальма Ливинстона",
+      "watches": 5,
+      "latin": "Пальма Ливинстона",
+      "categories": "20",
+      "img": "/palm_livinstone.jpg",
+      "description": "любит легкое затенение"
+    },
+    {
+      "id": 14,
+      "common": "Пальма",
+      "watches": 3,
+      "latin": "Gakmvf",
+      "categories": "10",
+      "img": "/palm.jpg",
+      "description": "любит солнце"
+    },
+    {
+      "id": 15,
+      "common": "Петуния",
+      "watches": 2,
+      "latin": "Петуния",
+      "categories": "15",
+      "img": "/petunia.jpg",
+      "description": "любит опрыскивание"
+    }, 
+    {
+      "id": 16,
+      "common": "Примула",
+      "watches": 2,
+      "latin": "Примула",
+      "categories": "15",
+      "img": "/primula.jpg",
+      "description": "любит опрыскивание"
+    },
+    {
+      "id": 17,
+      "common": "Спатифиллум Лима",
+      "watches": 5,
+      "latin": "Спатифиллум Лима",
+      "categories": "20",
+      "img": "/spatifillu_lima.jpg",
+      "description": "любит легкое затенение"
+    },
+    {
+      "id": 18,
+      "common": "Суккуленты",
+      "watches": 3,
+      "latin": "Суккуленты",
+      "categories": "10",
+      "img": "/succulent.jpg",
+      "description": "любит солнце"
+    },
+    {
+      "id": 19,
+      "common": "Водный гиацинт",
+      "watches": 3,
+      "latin": "Водный гиацинт",
+      "categories": "10",
+      "img": "/water_giasint.jpg",
+      "description": "любит солнце"
+    }
+  ]
+  }

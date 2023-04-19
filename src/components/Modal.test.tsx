@@ -11,10 +11,9 @@ describe('Modal', () => {
         id={0}
         img={''}
         common={''}
-        climate={''}
         latin={''}
-        family={''}
         categories={''}
+        description={''}
       />
     );
     expect(screen.getByTestId('modal')).toBeInTheDocument();

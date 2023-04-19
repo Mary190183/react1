@@ -1,28 +1,24 @@
-import { createSlice, PayloadAction, Slice, SliceCaseReducers } from '@reduxjs/toolkit';
-import { DataPlant } from '../types/types';
+import { createSlice } from '@reduxjs/toolkit';
+import type { PayloadAction } from '@reduxjs/toolkit';
 
-interface CardsState {
-  cardsSearch: DataPlant[];
-  search: string;
+interface SearchState {
+  searchValue: string;
 }
 
-const initialState: CardsState = {
-  cardsSearch: [],
-  search: '',
+const initialState: SearchState = {
+  searchValue: '',
 };
 
-export const searchSlice: Slice<CardsState, SliceCaseReducers<CardsState>, 'search'> = createSlice({
+export const searchSlice = createSlice({
   name: 'search',
   initialState,
   reducers: {
-    addSearchValue(state, action: PayloadAction<CardsState>) {
-      state.search = action.payload.search;
-    },
-    clearSearchValue(state) {
-      state.search = '';
+    addSearchValue: (state, action: PayloadAction<string>) => {
+      state.searchValue = action.payload;
     },
   },
 });
 
-export const { addSearchValue, clearSearchValue } = searchSlice.actions;
+export const { addSearchValue } = searchSlice.actions;
+
 export default searchSlice.reducer;

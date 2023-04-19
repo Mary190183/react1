@@ -13,6 +13,5 @@ describe('Home', () => {
       </Provider>
     );
     expect(screen.getByTestId('home')).toBeInTheDocument();
-    expect(screen.getByTestId('button-search')).toBeInTheDocument();
   });
 });

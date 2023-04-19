@@ -6,10 +6,10 @@ export type DataPlant = {
   id: number;
   img: string;
   common: string;
-  climate: string;
   latin: string;
-  family: string;
+  description: string;
   categories: string;
+  plants?: DataPlant[];
 };
 
 export type DataRadios = {
@@ -31,4 +31,11 @@ export interface DataFormCard {
   check: boolean;
   radio: string;
   submit: boolean;
+}
+
+export interface ApiResponse {
+  limit: number;
+  plants: DataPlant[];
+  skip: number;
+  total: number;
 }

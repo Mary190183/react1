@@ -4,12 +4,15 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "concurrently \"npm run start\" \"npm run server\"",
+    "start": "vite",
+    "server": "json-server -w server/db.json -p 3001",
     "build": "vite build & tsc",
     "preview": "vite preview",
     "test": "vitest --coverage",
     "lint": "eslint ./src/**/**/*.{ts,tsx}",
-    "react": "react-devtools"
+    "react": "react-devtools",
+    "eject": "eject"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.3",
@@ -17,6 +20,8 @@
     "@typescript-eslint/eslint-plugin": "^5.54.1",
     "@typescript-eslint/parser": "^5.54.1",
     "@vitest/coverage-c8": "^0.29.3",
+    "concurrently": "^8.0.1",
+    "eject": "^0.0.4",
     "eslint": "^8.38.0",
     "eslint-config-prettier": "^8.8.0",
     "eslint-import-resolver-typescript": "^3.5.3",
@@ -24,6 +29,7 @@
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-react": "^7.32.2",
     "husky": "^8.0.3",
+    "json-server": "^0.17.3",
     "lint": "^0.8.19",
     "lint-staged": "^13.2.0",
     "prettier": "^2.8.4",
@@ -37,6 +43,7 @@
     "vite-plugin-svgr": "^2.4.0"
   },
   "devDependencies": {
+    "@redux-devtools/core": "^3.13.1",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^14.0.0",
     "@testing-library/user-event": "^14.4.3",

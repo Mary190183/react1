@@ -1,20 +1,25 @@
-import React from 'react';
+import { useState } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { addSearchValue } from '../../store/searchSlice';
+import { RootState } from '../../store';
 
-interface InputDateProps {
-  onChange: React.ChangeEventHandler<HTMLInputElement>;
-  onSubmit: React.FormEventHandler<HTMLFormElement> | undefined;
-  value: string | number | readonly string[] | undefined;
-}
-
-const SearchBar: React.FC<InputDateProps> = (props) => {
-  const { onSubmit, value, onChange } = props;
+const SearchBar = () => {
+  const dispatch = useDispatch();
+  const searchValue = useSelector((state: RootState) => state.cardsSearch.searchValue);
+  const [value, setValue] = useState(searchValue);
 
   return (
-    <form method="get" onSubmit={onSubmit}>
+    <form
+      method="get"
+      onSubmit={(e) => {
+        e.preventDefault();
+        dispatch(addSearchValue(value));
+      }}
+    >
       <input
         className="input-search"
         name="search"
-        onChange={onChange}
+        onChange={(e) => setValue(e.target.value)}
         value={value}
         placeholder="Enter Plant Name Here..."
         required

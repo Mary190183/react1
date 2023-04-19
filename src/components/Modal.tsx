@@ -28,6 +28,7 @@ export const Modal = (props: ModalProps) => {
           X
         </button>
         <img
+          className="modal__img"
           src={props.img}
           alt={props.common !== null ? props.common : 'alt'}
           onLoad={() => {
@@ -38,8 +39,7 @@ export const Modal = (props: ModalProps) => {
         <div>
           <h3>Name: {props.common}</h3>
           <p>Latin name: {props.latin}</p>
-          <p>Climate: {props.climate}</p>
-          <p>Family: {props.family}</p>
+          <p>Description: {props.description}</p>
           <p>Categories: {props.categories}</p>
         </div>
       </div>
