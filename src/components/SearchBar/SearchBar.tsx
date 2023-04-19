@@ -22,7 +22,6 @@ const SearchBar = () => {
         onChange={(e) => setValue(e.target.value)}
         value={value}
         placeholder="Enter Plant Name Here..."
-        required
         type="search"
       ></input>
       <button className="button" type="submit" data-testid="button-search">
