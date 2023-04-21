@@ -4,172 +4,172 @@
       "id": 1,
       "common": "Gardenia",
       "watches": 5,
-      "latin": "Gardenia",
-      "categories": "20",
+      "latin": "Gardénia",
+      "family": "Rubiaceae",
       "img": "/Gardenia.jpg",
-      "description": "Gardenia loves moisture and spraying"
+      "watering": "Gardenia loves moisture and spraying"
     },
     {
       "id": 2,
       "common":  "Aspidistra",
       "watches": 3,
       "latin": "Aspidistra",
-      "categories": "10",
+      "family": "Asparagaceae",
       "img": "/aspidistra_spatifilum.jpg",
-      "description": "It is better to hide it from direct sunlight"
+      "watering": "Water when soil is half dry & Can dry between watering"
     },
     {
       "id": 3,
       "common": "Orchid",
       "watches": 2,
-      "latin": "Orchid",
-      "categories": "hj",
+      "latin": "Orchidáceae",
+      "family": "Orchidaceae",
       "img": "/orhidea.jpg",
-      "description": "Orchids like humid air — 50-80%. They need to be sprayed"
+      "watering": "Orchids like humid air — 50-80%. They need to be sprayed"
     },
     {
       "id": 4,
       "common": "Aglaonema",
       "watches": 5,
       "latin": "Aglaonema",
-      "categories": "20",
+      "family": "Araceae",
       "img": "/aglaonema.jpg",
-      "description": "The flower loves warmth and moisture, and is also sensitive to light"
+      "watering": "Keep moist between watering & Water when soil is half dry"
     },
     {
       "id": 5,
-      "common": "Фикус Бенджамина",
+      "common": "Ficus benjamina",
       "watches": 3,
-      "latin": "Фикус Бенджамина",
-      "categories": "10",
+      "latin": "Ficus benjamina",
+      "family": "Moraceae",
       "img": "/fikus_bengamina.jpg",
-      "description": "любит солнце"
+      "watering": "Keep moist between watering & Must not dry between watering"
     },
     {
       "id": 6,
-      "common": "Гербера",
+      "common": "Gerbera",
       "watches": 2,
-      "latin": "Гербера",
-      "categories": "15",
+      "latin": "Gerbera",
+      "family": "Asteraceae",
       "img": "/herbera.jpg",
-      "description": "любит опрыскивание"
+      "watering": "The plant loves to be sprayed. For this, water of a similar temperature is used. Watering with cold water can cause the potted plant to die."
     },
     {
       "id": 7,
-      "common": "Коланхое",
+      "common": "Kalanchoe",
       "watches": 5,
-      "latin": "Коланхое",
-      "categories": "20",
+      "latin": "Kalánchoë",
+      "family": "Crassulaceae",
       "img": "/kolanhoe.jpg",
-      "description": "любит легкое затенение"
+      "watering": "Kalanchoes should be watered once every week and a half or two weeks to prevent overwatering. This succulent stores water in its leaves and stems; hence, let the top 2-3″ of soil completely dry out before watering again."
     },
     {
       "id": 8,
-      "common": "Маранта",
+      "common": "Maranta",
       "watches": 3,
-      "latin": "Маранта",
-      "categories": "10",
+      "latin": "Maranta",
+      "family": "Marantaceae",
       "img": "/maranta.jpg",
-      "description": "любит солнце"
+      "watering": "Keep moist between watering & Water when soil is half dry"
     },
     {
       "id": 9,
-      "common": "Монстера",
+      "common": "Monstera",
       "watches": 2,
-      "latin": "Монстера",
-      "categories": "15",
+      "latin": "Monstéra",
+      "family": "Araceae",
       "img": "/monstera.jpg",
-      "description": "любит опрыскивание"
+      "watering": "Water when soil is half dry & Can dry between watering"
     },
     {
       "id": 10,
-      "common": "Нефролепис глориоса",
+      "common": "Nephrolepis",
       "watches": 5,
-      "latin": "Нефролепис глориоса",
-      "categories": "20",
+      "latin": "Nephrolépis",
+      "family": "Nephrolepidaceae",
       "img": "/nefrolepis_gloriosa.jpg",
-      "description": "любит легкое затенение"
+      "watering": "Keep moist between watering & Water when soil is half dry"
     },
     {
       "id": 11,
-      "common": "Осока",
+      "common": "Carex",
       "watches": 3,
-      "latin": "Осока",
-      "categories": "10",
+      "latin": "Cárex",
+      "family": "Cyperaceae",
       "img": "/osoka.jpg",
-      "description": "любит солнце"
+      "watering": "Most plants like about 1 inch of water per week."
     },
     {
       "id": 12,
-      "common": "Пальма Кения Ховея",
+      "common": "Kentia palm",
       "watches": 2,
-      "latin": "Пальма Кения Ховея",
-      "categories": "15",
+      "latin": "Howea forsteriana",
+      "family": "Arecaceae",
       "img": "/palm_kenia_hoveja.jpg",
-      "description": "любит опрыскивание"
+      "watering": "Keep moist between watering & Must not dry between watering"
     },
     {
       "id": 13,
-      "common": "Пальма Ливинстона",
+      "common": "Livistona",
       "watches": 5,
-      "latin": "Пальма Ливинстона",
-      "categories": "20",
+      "latin": "Livistona",
+      "family": "Arecaceae",
       "img": "/palm_livinstone.jpg",
-      "description": "любит легкое затенение"
+      "watering": "It's a good idea to check the soil more often in summer when the weather is warmer, as Livistonamight need a little more water than in the cold winter months."
     },
     {
       "id": 14,
-      "common": "Пальма",
+      "common": "Bamboo palm",
       "watches": 3,
-      "latin": "Gakmvf",
-      "categories": "10",
+      "latin": "Chamaedorea erumpens",
+      "family": "Arecaceae",
       "img": "/palm.jpg",
-      "description": "любит солнце"
+      "watering": "Watering: Keep moist between watering & Water when soil is half dry"
     },
     {
       "id": 15,
-      "common": "Петуния",
+      "common": "Petunia",
       "watches": 2,
-      "latin": "Петуния",
-      "categories": "15",
+      "latin": "Petunia",
+      "family": "Solanaceae",
       "img": "/petunia.jpg",
-      "description": "любит опрыскивание"
+      "watering": "Watering should be regular, but not excessive, especially during the flowering period."
     }, 
     {
       "id": 16,
-      "common": "Примула",
+      "common": "Primula",
       "watches": 2,
-      "latin": "Примула",
-      "categories": "15",
+      "latin": "Primula",
+      "family": "Primulaceae",
       "img": "/primula.jpg",
-      "description": "любит опрыскивание"
+      "watering": "It is important to maintain a constant humidity of the soil, and you should not allow it to dry out excessively, or wet it too much."
     },
     {
       "id": 17,
-      "common": "Спатифиллум Лима",
+      "common": "Spathiphyllum",
       "watches": 5,
-      "latin": "Спатифиллум Лима",
-      "categories": "20",
+      "latin": "Spathiphyllum",
+      "family": "Araceae",
       "img": "/spatifillu_lima.jpg",
-      "description": "любит легкое затенение"
+      "watering": "Keep moist between watering & Must not dry between watering"
     },
     {
       "id": 18,
-      "common": "Суккуленты",
+      "common": "Succulentus",
       "watches": 3,
-      "latin": "Суккуленты",
-      "categories": "10",
+      "latin": "Succulentus",
+      "family": "Cactaceae",
       "img": "/succulent.jpg",
-      "description": "любит солнце"
+      "watering": "Keep moist between watering & Water when soil is half dry"
     },
     {
       "id": 19,
-      "common": "Водный гиацинт",
+      "common": "Janet Craig",
       "watches": 3,
-      "latin": "Водный гиацинт",
-      "categories": "10",
+      "latin": "Dracaena deremensis 'Janet Craig'",
+      "family": "Asparagaceae",
       "img": "/water_giasint.jpg",
-      "description": "любит солнце"
+      "watering": "Keep moist between watering & Can dry between watering"
     }
   ]
   }

@@ -13,8 +13,9 @@ const Home = () => {
   const [openedImg, setOpenedImg] = useState<string | null>(null);
   const [openedCommon, setOpenedCommon] = useState<string | null>(null);
   const [openedLatin, setOpenedlatin] = useState<string | null>(null);
-  const [openedDescription, setOpenedDescription] = useState<string | null>(null);
-  const [openedCategories, setOpenedCategories] = useState<string | null>(null);
+  const [openedWatering, setOpenedWatering] = useState<string | null>(null);
+  const [openedFamily, setOpenedFamily] = useState<string | null>(null);
+  const [openedWatches, setOpenedWatches] = useState<number | null>(null);
   const searchValue = useSelector((state: RootState) => state.cardsSearch.searchValue);
   const { data = [], isLoading, isError, isFetching } = useGetPlantsQuery(searchValue);
   if (isLoading) {
@@ -25,23 +26,25 @@ const Home = () => {
     setOpenedImg(basa.img);
     setOpenedCommon(basa.common);
     setOpenedlatin(basa.latin);
-    setOpenedDescription(basa.description);
-    setOpenedCategories(basa.categories);
+    setOpenedWatering(basa.watering);
+    setOpenedFamily(basa.family);
+    setOpenedWatches(basa.watches);
   };
   const filteredData = data.filter(
     (el) =>
       el.common.toLocaleLowerCase().includes(searchValue.toLowerCase()) ||
       el.latin.toLocaleLowerCase().includes(searchValue.toLocaleLowerCase())
   );
+  console.log(filteredData);
   const handleClosing = () => {
     setOpenedId(null);
     setOpenedImg(null);
     setOpenedCommon(null);
     setOpenedlatin(null);
-    setOpenedDescription(null);
-    setOpenedCategories(null);
+    setOpenedWatering(null);
+    setOpenedFamily(null);
+    setOpenedWatches(null);
   };
-
   return (
     <section id="home1" className="container_home1" data-testid="home">
       <SearchBar />
@@ -58,9 +61,10 @@ const Home = () => {
                     img={card.img}
                     common={card.common}
                     latin={card.latin}
-                    description={card.description}
-                    categories={card.categories}
+                    watering={card.watering}
+                    family={card.family}
                     onOpening={handleOpening}
+                    watches={card.watches}
                   />
                 );
               })
@@ -72,12 +76,16 @@ const Home = () => {
                     img={card.img}
                     common={card.common}
                     latin={card.latin}
-                    description={card.description}
-                    categories={card.categories}
+                    watering={card.watering}
+                    family={card.family}
                     onOpening={handleOpening}
+                    watches={card.watches}
                   />
                 );
               })}
+          {isLoading && <Loading />}
+          {filteredData.length === 0 && <p>Not found</p>}
+          {isError && <p className="error">Something went wrong</p>}
           {openedId !== null && (
             <Modal
               id={openedId}
@@ -85,13 +93,13 @@ const Home = () => {
               onClose={handleClosing}
               common={openedCommon ? openedCommon : '-'}
               latin={openedLatin ? openedLatin : '-'}
-              description={openedDescription ? openedDescription : '-'}
-              categories={openedCategories ? openedCategories : '-'}
+              watering={openedWatering ? openedWatering : '-'}
+              family={openedFamily ? openedFamily : '-'}
+              watches={openedWatches ? openedWatches : 0}
             />
           )}
         </ul>
       )}
-      {isError && <p className="error">Something went wrong</p>}
     </section>
   );
 };

@@ -28,7 +28,7 @@ const Card = (data: CharacterProps) => {
           <Like />
         </div>
         <div className="eye-count">
-          {/* {data.watches} */}
+          {data.watches}
           {/* <Counter /> */}
           <Eye />
         </div>

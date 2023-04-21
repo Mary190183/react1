@@ -7,8 +7,9 @@ export type DataPlant = {
   img: string;
   common: string;
   latin: string;
-  description: string;
-  categories: string;
+  watering: string;
+  watches: number;
+  family: string;
   plants?: DataPlant[];
 };
 

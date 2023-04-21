@@ -192,6 +192,7 @@ border: 2px solid #093b0a;
 }
 .card {
   display: flex;
+  height: 500px;
   flex-direction: column;
   border-radius: 10px;
   cursor: pointer;
@@ -462,7 +463,7 @@ margin-right: 60px;
 }
 .container_recycle, .container_home, .container_about {
 height: 100%;
-min-height: 98vh;
+min-height: 80vh;
 }
 .container_about {
 display: flex;
@@ -503,7 +504,7 @@ align-items: center;
 }
 .modal__card {
 width: 50vw;
-height: 70vh;
+height: 50vh;
 background-color: #ffffff;
 display: flex;
 flex-direction: column;
@@ -530,8 +531,18 @@ font-size: 36px;
 width: 100vw;
 height: 80vh;
 display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.modal__wrap {
+display: flex;
+flex-direction: row;
 justify-content: center;
 align-items: center;
+}
+.modal__info {
+  width: 400px;
+  margin-left: 30px;
 }
 .cat {
   border-radius: 50%;

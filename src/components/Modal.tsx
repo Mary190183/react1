@@ -27,20 +27,28 @@ export const Modal = (props: ModalProps) => {
         >
           X
         </button>
-        <img
-          className="modal__img"
-          src={props.img}
-          alt={props.common !== null ? props.common : 'alt'}
-          onLoad={() => {
-            setIsLoaded(true);
-          }}
-          style={!isLoaded ? { opacity: 0 } : { opacity: 1 }}
-        />
-        <div>
-          <h3>Name: {props.common}</h3>
-          <p>Latin name: {props.latin}</p>
-          <p>Description: {props.description}</p>
-          <p>Categories: {props.categories}</p>
+        <div className="modal__wrap">
+          <img
+            className="modal__img"
+            src={props.img}
+            alt={props.common !== null ? props.common : 'alt'}
+            onLoad={() => {
+              setIsLoaded(true);
+            }}
+            style={!isLoaded ? { opacity: 0 } : { opacity: 1 }}
+          />
+          <div className="modal__info">
+            <h3>Name: {props.common}</h3>
+            <p>
+              <u>Latin name</u>: {props.latin}
+            </p>
+            <p>
+              <u>Family</u>: {props.family}
+            </p>
+            <p>
+              <u>Watering</u>: {props.watering}
+            </p>
+          </div>
         </div>
       </div>
     </div>

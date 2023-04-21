@@ -1,5 +1,6 @@
 import React from 'react';
 import Create from '../../assets/img/create.avif';
+import { NavLink } from 'react-router-dom';
 
 const About = () => {
   return (
@@ -26,7 +27,8 @@ const About = () => {
         <p>
           *We know the importance of making the planet greener and more sustainable and that&apos;s
           why we constantly look at ways of improving our business to make a positive societal
-          change. To see what we are doing so far, check out our sustainability page.
+          change. To see what we are doing so far, check out our{' '}
+          <NavLink to="/recycle">Recycle page</NavLink>.
         </p>
       </div>
     </section>
