@@ -1,9 +1,9 @@
 import './assets/styles/App.css';
 import { Routes, Route } from 'react-router-dom';
-import { About } from './pages/about/about';
-import { Recycle } from './pages/recycle/recycle';
-import { NotFoundPage } from './pages/404/404';
-import { Home } from './pages/home/home';
+import About from './pages/about';
+import Recycle from './pages/recycle';
+import NotFoundPage from './pages/404';
+import Home from './pages';
 import { Layout } from './components/Layout/Layout';
 import React from 'react';
 
