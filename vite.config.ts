@@ -17,4 +17,7 @@ export default defineConfig({
       exclude: [...coverageConfigDefaults.exclude],
     },
   },
+  build: {
+    minify: false,
+  },
 });
