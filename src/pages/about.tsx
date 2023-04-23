@@ -1,11 +1,13 @@
 import Link from 'next/link';
 import React from 'react';
-// import Create from '../../assets/img/create.avif';
+import Image from 'next/image';
+import Create from '../assets/img/create.avif';
 
 export default function About() {
   return (
     <section className="container_about">
       {/* <img className="create" sizes="100vw" src={Create} alt="create" /> */}
+      <Image src={Create} alt={'create'} />
       <div className="container">
         <h2>Grow your home!</h2>
         <p>

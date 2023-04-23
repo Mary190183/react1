@@ -7,6 +7,9 @@ import { Modal } from '../components/Modal';
 import { useSelector } from 'react-redux';
 import { DataPlant } from 'types/types';
 import { useGetPlantsQuery } from '../store/plantsApi';
+import { Header } from '../components/Header/Header';
+import Footer from '../components/Footer/footer';
+import Counter from '../components/Counter/counter';
 
 export default function Home() {
   const [openedId, setOpenedId] = useState<number | null>(null);
@@ -48,60 +51,63 @@ export default function Home() {
     setOpenedWatches(null);
   };
   return (
-    <section id="home1" className="container_home1" data-testid="home">
-      <SearchBar />
-      {searchValue ? (
-        <Loading />
-      ) : (
-        <ul className="container_home">
-          {searchValue === ''
-            ? data.map((card: DataPlant) => {
-                return (
-                  <Card
-                    key={card.id}
-                    id={card.id}
-                    img={card.img}
-                    common={card.common}
-                    latin={card.latin}
-                    watering={card.watering}
-                    family={card.family}
-                    onOpening={handleOpening}
-                    watches={card.watches}
-                  />
-                );
-              })
-            : filteredData.map((card: DataPlant) => {
-                return (
-                  <Card
-                    key={card.id}
-                    id={card.id}
-                    img={card.img}
-                    common={card.common}
-                    latin={card.latin}
-                    watering={card.watering}
-                    family={card.family}
-                    onOpening={handleOpening}
-                    watches={card.watches}
-                  />
-                );
-              })}
-          {/* {isLoading && <Loading />} */}
-          {filteredData.length === 0 && <p>Not found</p>}
-          {/* {isError && <p className="error">Something went wrong</p>} */}
-          {openedId !== null && (
-            <Modal
-              id={openedId}
-              img={openedImg ? openedImg : '-'}
-              onClose={handleClosing}
-              common={openedCommon ? openedCommon : '-'}
-              latin={openedLatin ? openedLatin : '-'}
-              watering={openedWatering ? openedWatering : '-'}
-              family={openedFamily ? openedFamily : '-'}
-              watches={openedWatches ? openedWatches : 0}
-            />
-          )}
-        </ul>
-      )}
-    </section>
+    <>
+      <section id="home1" className="container_home1" data-testid="home">
+        <SearchBar />
+        {searchValue ? (
+          <Loading />
+        ) : (
+          <ul className="container_home">
+            {searchValue === ''
+              ? data.map((card: DataPlant) => {
+                  return (
+                    <Card
+                      key={card.id}
+                      id={card.id}
+                      img={card.img}
+                      common={card.common}
+                      latin={card.latin}
+                      watering={card.watering}
+                      family={card.family}
+                      onOpening={handleOpening}
+                      watches={card.watches}
+                    />
+                  );
+                })
+              : filteredData.map((card: DataPlant) => {
+                  return (
+                    <Card
+                      key={card.id}
+                      id={card.id}
+                      img={card.img}
+                      common={card.common}
+                      latin={card.latin}
+                      watering={card.watering}
+                      family={card.family}
+                      onOpening={handleOpening}
+                      watches={card.watches}
+                    />
+                  );
+                })}
+            {/* {isLoading && <Loading />} */}
+            {filteredData.length === 0 && <p>Not found</p>}
+            {/* {isError && <p className="error">Something went wrong</p>} */}
+            {openedId !== null && (
+              <Modal
+                id={openedId}
+                img={openedImg ? openedImg : '-'}
+                onClose={handleClosing}
+                common={openedCommon ? openedCommon : '-'}
+                latin={openedLatin ? openedLatin : '-'}
+                watering={openedWatering ? openedWatering : '-'}
+                family={openedFamily ? openedFamily : '-'}
+                watches={openedWatches ? openedWatches : 0}
+              />
+            )}
+          </ul>
+        )}
+        <Counter />
+      </section>
+    </>
   );
 }

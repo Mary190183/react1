@@ -1,5 +1,7 @@
+import Link from 'next/link';
 import Github from '../../assets/svg/github.svg';
 import RSLogo from '../../assets/svg/rsschool.svg';
+import Image from 'next/image';
 
 const Footer = () => {
   return (
@@ -7,18 +9,19 @@ const Footer = () => {
       <div className="footer-container">
         <ul className="footer-list">
           <li className="footer-item">
-            <a className="footer-link" href="https://github.com/Mary190183/">
-              <Github />
+            <Link className="footer-link" href="https://github.com/Mary190183/">
+              <Image src={Github} alt={'github'} />
               <p className="footer-p">Mary190183</p>
-            </a>
+            </Link>
           </li>
           <li className="footer-item">
             <p>@2023</p>
           </li>
           <li className="footer-item">
-            <a className="footer-link" href="https://rs.school/react/">
-              <RSLogo />
-            </a>
+            <Link className="footer-link" href="https://rs.school/react/">
+              <Image src={RSLogo} alt={'rslogo'} />
+              {/* <RSLogo /> */}
+            </Link>
           </li>
         </ul>
       </div>
