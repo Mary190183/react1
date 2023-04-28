@@ -13,7 +13,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { RootState } from '../../store';
 import { addCard } from '../../store/recycleSlice';
 
-export const Recycle: FC = () => {
+export const Recycle = () => {
   const {
     register,
     formState: { errors },

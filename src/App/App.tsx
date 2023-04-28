@@ -3,14 +3,10 @@ import { AppRoutes } from '../AppRoutes';
 import React from 'react';
 import { store } from '../store';
 
-const App: React.FC = () => {
+export const App = () => {
   return (
-    // <React.StrictMode>
     <Provider store={store}>
       <AppRoutes />
     </Provider>
-    // </React.StrictMode>
   );
 };
-
-export default App;

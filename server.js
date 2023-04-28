@@ -1,10 +1,8 @@
 import fs from 'fs/promises';
 import path from 'path';
 import Express from 'express';
-
 import { fromNodeMiddleware, toNodeListener } from 'h3';
 import { createServer as createViteServer } from 'vite';
-import { PipeableStream, RenderToPipeableStreamOptions } from 'react-dom/server.js';
 import { listen } from 'listhen';
 import sirv from 'sirv';
 
@@ -66,25 +64,6 @@ const bootstrap = async () => {
 
 bootstrap()
   .then(async ({ app }) => {
-    await listen(toNodeListener(app), { port: 5127 });
+    await listen(toNodeListener(app), { port: 3333 });
   })
   .catch(console.error);
-
-// "dev-pre": "concurrently \"npm run start\" \"npm run server\" \"npm run open\"",
-// "start": "vite",
-// "server": "json-server -w server/db.json -p 3001",
-// "build-pre": "concurrently \"npm run prebuild\" \"npm run server\"",
-// "open": "open http://localhost:5173/",
-// "prebuild": "vite build & tsc",
-// "preview": "vite preview",
-// "test": "vitest --coverage",
-// "lint": "eslint ./src/**/**/*.{ts,tsx}",
-// "react": "react-devtools",
-// "eject": "eject",
-// "dev": "node server && npm run server",
-// "build": "npm run build:client && npm run build:server && npm run server",
-// "build:client": "vite build --outDir dist/client",
-// "build:server": "vite build --ssr src/entry-server.tsx --outDir dist/server",
-// "generate": "vite build --outDir dist/static && npm run build:server && node prerender && npm run server",
-// "serve": "NODE_ENV=production node server",
-// "debug": "node --inspect-brk server"
