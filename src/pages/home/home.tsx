@@ -8,7 +8,7 @@ import { useSelector } from 'react-redux';
 import { DataPlant } from 'types/types';
 import { useGetPlantsQuery } from '../../store/plantsApi';
 
-const Home = () => {
+export const Home = () => {
   const [openedId, setOpenedId] = useState<number | null>(null);
   const [openedImg, setOpenedImg] = useState<string | null>(null);
   const [openedCommon, setOpenedCommon] = useState<string | null>(null);
@@ -103,4 +103,3 @@ const Home = () => {
     </section>
   );
 };
-export { Home };

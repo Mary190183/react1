@@ -2,7 +2,7 @@ import React from 'react';
 import Create from '../../assets/img/create.avif';
 import { NavLink } from 'react-router-dom';
 
-const About = () => {
+export const About = () => {
   return (
     <section className="container_about">
       <img className="create" sizes="100vw" src={Create} alt="create" />
@@ -34,4 +34,3 @@ const About = () => {
     </section>
   );
 };
-export { About };

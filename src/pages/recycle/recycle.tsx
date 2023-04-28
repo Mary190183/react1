@@ -13,7 +13,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { RootState } from '../../store';
 import { addCard } from '../../store/recycleSlice';
 
-const Recycle: FC = () => {
+export const Recycle: FC = () => {
   const {
     register,
     formState: { errors },
@@ -145,5 +145,3 @@ const Recycle: FC = () => {
     </section>
   );
 };
-
-export { Recycle };

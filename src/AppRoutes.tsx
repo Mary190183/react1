@@ -7,19 +7,16 @@ import { Home } from './pages/home/home';
 import { Layout } from './components/Layout/Layout';
 import React from 'react';
 
-class AppRoutes extends React.Component {
-  render = (): JSX.Element => {
-    return (
-      <Routes>
-        <Route path="/" element={<Layout />}>
-          <Route index element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/recycle" element={<Recycle />} />
+export const AppRoutes = () => {
+  return (
+    <Routes>
+      <Route path="/" element={<Layout />}>
+        <Route index element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/recycle" element={<Recycle />} />
 
-          <Route path="*" element={<NotFoundPage />} />
-        </Route>
-      </Routes>
-    );
-  };
-}
-export default AppRoutes;
+        <Route path="*" element={<NotFoundPage />} />
+      </Route>
+    </Routes>
+  );
+};
