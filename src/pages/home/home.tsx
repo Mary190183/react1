@@ -35,7 +35,6 @@ export const Home = () => {
       el.common.toLocaleLowerCase().includes(searchValue.toLowerCase()) ||
       el.latin.toLocaleLowerCase().includes(searchValue.toLocaleLowerCase())
   );
-  console.log(filteredData);
   const handleClosing = () => {
     setOpenedId(null);
     setOpenedImg(null);

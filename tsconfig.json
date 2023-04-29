@@ -17,7 +17,6 @@
     "baseUrl": "./src",
     "noImplicitAny": true,
     "noFallthroughCasesInSwitch": true,
-    "jsxImportSource": "million",
     "esModuleInterop": false,
   },
   "include": ["./src/**/*"],
