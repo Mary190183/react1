@@ -1,23 +1,31 @@
 /// <reference types="vitest" />
 /// <reference types="vite/client" />
-
+import istanbul from 'vite-plugin-istanbul';
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 import svgx from '@svgx/vite-plugin-react';
-import { coverageConfigDefaults } from 'vitest/config';
 import eslintPlugin from '@nabla/vite-plugin-eslint';
 
 export default defineConfig({
-  plugins: [react(), svgx(), eslintPlugin()],
+  plugins: [
+    react(),
+    svgx(),
+    eslintPlugin(),
+    istanbul({
+      cypress: true,
+      requireEnv: false,
+    }),
+  ],
   server: {
     open: true,
+    port: 5113,
   },
   test: {
     globals: true,
     environment: 'jsdom',
     setupFiles: ['./src/tests/setup.ts'],
     coverage: {
-      provider: 'c8',
+      provider: 'istanbul',
       all: true,
       skipFull: true,
       reporter: 'text',
@@ -45,4 +53,5 @@ export default defineConfig({
     },
     sourcemap: true,
   },
+  envDir: './',
 });
