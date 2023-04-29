@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 
 export const About = () => {
   return (
-    <section className="container_about">
+    <section className="container_about" data-testid="about">
       <img className="create" sizes="100vw" src={Create} alt="create" />
       <div className="container">
         <h2>Grow your home!</h2>

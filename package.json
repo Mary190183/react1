@@ -11,7 +11,8 @@
     "build:server": "vite build --ssr src/entry-server.tsx --outDir dist/server",
     "serve": "NODE_ENV=production node server",
     "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "lint:fix": "eslint --ext .tsx src --fix"
+    "lint:fix": "eslint --ext .tsx src --fix",
+    "test": "vitest --coverage"
   },
   "dependencies": {
     "@remix-run/node": "^1.15.0",

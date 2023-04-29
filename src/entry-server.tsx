@@ -3,14 +3,17 @@ import { RenderToPipeableStreamOptions, renderToPipeableStream } from 'react-dom
 import { AppRoutes } from './AppRoutes';
 import { Provider } from 'react-redux';
 import { store } from './store';
+import React from 'react';
 
 export const render = (url: string, options: RenderToPipeableStreamOptions) => {
   const stream = renderToPipeableStream(
-    <Provider store={store}>
-      <StaticRouter location={url}>
-        <AppRoutes />
-      </StaticRouter>
-    </Provider>,
+    <React.StrictMode>
+      <Provider store={store}>
+        <StaticRouter location={url}>
+          <AppRoutes />
+        </StaticRouter>
+      </Provider>
+    </React.StrictMode>,
     options
   );
   const preloadedState = store.getState();
