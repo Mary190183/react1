@@ -1,6 +1,6 @@
 {
-  "/Users/macbook/Downloads/react/react1/src/store/recycleSlice.ts": {
-    "path": "/Users/macbook/Downloads/react/react1/src/store/recycleSlice.ts",
+  "C:/Users/Мария/Downloads/bot/react1/src/store/recycleSlice.ts": {
+    "path": "C:/Users/Мария/Downloads/bot/react1/src/store/recycleSlice.ts",
     "statementMap": {
       "0": {
         "start": {
@@ -139,32 +139,32 @@
     },
     "branchMap": {},
     "s": {
-      "0": 5,
-      "1": 5,
+      "0": 15,
+      "1": 15,
       "2": 0,
       "3": 0,
-      "4": 1,
-      "5": 5
+      "4": 3,
+      "5": 15
     },
     "f": {
       "0": 0,
       "1": 0,
-      "2": 1
+      "2": 3
     },
     "b": {},
     "inputSourceMap": {
       "version": 3,
       "sources": [
-        "/Users/macbook/Downloads/react/react1/src/store/recycleSlice.ts"
+        "C:/Users/Мария/Downloads/bot/react1/src/store/recycleSlice.ts"
       ],
       "mappings": "AAAA,SAA4B,mBAAmB;AAM/C,MAAM,eAA2B;AAAA,EAC/B,OAAO,CAAC;AACV;AACA,MAAM,eAAe,YAAuD;AAAA,EAC1E,MAAM;AAAA,EACN;AAAA,EACA,UAAU;AAAA,IACR,WAAW,OAAO,QAAQ;AACxB,YAAM,QAAQ,MAAM,MAAM,OAAO,CAAC,SAAS,KAAK,OAAO,OAAO,QAAQ,EAAE;AAAA,IAC1E;AAAA,IACA,QAAQ,OAAO,QAAQ;AACrB,YAAM,MAAM,KAAK;AAAA,QACf,IAAI,KAAK,IAAI;AAAA,QACb,MAAM,OAAO,QAAQ;AAAA,QACrB,OAAO,OAAO,QAAQ;AAAA,QACtB,QAAQ,OAAO,QAAQ;AAAA,QACvB,MAAM,OAAO,QAAQ,OAAO,CAAC;AAAA,QAC7B,OAAO,OAAO,QAAQ;AAAA,QACtB,OAAO,OAAO,QAAQ;AAAA,QACtB,QAAQ,OAAO,QAAQ;AAAA,MACzB,CAAC;AAAA,IACH;AAAA,EACF;AACF,CAAC;AAEM,aAAM,EAAE,SAAS,WAAW,IAAI,aAAa;AACpD,eAAe,aAAa;",
       "names": []
     },
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
-    "hash": "bca46cd4106e2f9200c09fe8472b67fc14e877f1"
+    "hash": "505d48d8ddf2313caf5f6219d73f81fade1ff013"
   },
-  "/Users/macbook/Downloads/react/react1/src/store/searchSlice.ts": {
-    "path": "/Users/macbook/Downloads/react/react1/src/store/searchSlice.ts",
+  "C:/Users/Мария/Downloads/bot/react1/src/store/searchSlice.ts": {
+    "path": "C:/Users/Мария/Downloads/bot/react1/src/store/searchSlice.ts",
     "statementMap": {
       "0": {
         "start": {
@@ -235,28 +235,28 @@
     },
     "branchMap": {},
     "s": {
-      "0": 5,
-      "1": 5,
-      "2": 1,
-      "3": 5
+      "0": 15,
+      "1": 15,
+      "2": 3,
+      "3": 15
     },
     "f": {
-      "0": 1
+      "0": 3
     },
     "b": {},
     "inputSourceMap": {
       "version": 3,
       "sources": [
-        "/Users/macbook/Downloads/react/react1/src/store/searchSlice.ts"
+        "C:/Users/Мария/Downloads/bot/react1/src/store/searchSlice.ts"
       ],
       "mappings": "AAAA,SAAS,mBAAmB;AAO5B,MAAM,eAA4B;AAAA,EAChC,aAAa;AACf;AAEO,aAAM,cAAc,YAAY;AAAA,EACrC,MAAM;AAAA,EACN;AAAA,EACA,UAAU;AAAA,IACR,gBAAgB,CAAC,OAAO,WAAkC;AACxD,YAAM,cAAc,OAAO;AAAA,IAC7B;AAAA,EACF;AACF,CAAC;AAEM,aAAM,EAAE,eAAe,IAAI,YAAY;AAE9C,eAAe,YAAY;",
       "names": []
     },
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
-    "hash": "df9ea1480c1ab50f9b747b8bdbe2a475509dc29d"
+    "hash": "2f94100b9e98f187b002b90eeb33dfe4ad37921e"
   },
-  "/Users/macbook/Downloads/react/react1/src/store/plantsApi.ts": {
-    "path": "/Users/macbook/Downloads/react/react1/src/store/plantsApi.ts",
+  "C:/Users/Мария/Downloads/bot/react1/src/store/plantsApi.ts": {
+    "path": "C:/Users/Мария/Downloads/bot/react1/src/store/plantsApi.ts",
     "statementMap": {
       "0": {
         "start": {
@@ -388,34 +388,34 @@
       }
     },
     "s": {
-      "0": 5,
-      "1": 5,
-      "2": 4,
-      "3": 5
+      "0": 15,
+      "1": 15,
+      "2": 12,
+      "3": 15
     },
     "f": {
-      "0": 5,
-      "1": 4
+      "0": 15,
+      "1": 12
     },
     "b": {
       "0": [
-        1,
-        3
+        3,
+        9
       ]
     },
     "inputSourceMap": {
       "version": 3,
       "sources": [
-        "/Users/macbook/Downloads/react/react1/src/store/plantsApi.ts"
+        "C:/Users/Мария/Downloads/bot/react1/src/store/plantsApi.ts"
       ],
       "mappings": "AAAA,SAAS,WAAW,sBAAsB;AAGnC,aAAM,YAAY,UAAU;AAAA,EACjC,aAAa;AAAA,EACb,WAAW,eAAe,EAAE,SAAS,yBAAyB,CAAC;AAAA,EAC/D,WAAW,CAAC,aAAa;AAAA,IACvB,WAAW,QAAQ,MAAkC;AAAA,MACnD,OAAO,CAAC,WAAW,UAAU,SAAS,aAAa,WAAW;AAAA;AAAA,IAEhE,CAAC;AAAA,EACH;AACF,CAAC;AACM,aAAM,EAAE,kBAAkB,IAAI;",
       "names": []
     },
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
-    "hash": "0adeb3f08ff40b7f24a3c2cb3550a709856f3ad7"
+    "hash": "08043beff34dfb14435513a7253d516ba04c67f4"
   },
-  "/Users/macbook/Downloads/react/react1/src/store/index.ts": {
-    "path": "/Users/macbook/Downloads/react/react1/src/store/index.ts",
+  "C:/Users/Мария/Downloads/bot/react1/src/store/index.ts": {
+    "path": "C:/Users/Мария/Downloads/bot/react1/src/store/index.ts",
     "statementMap": {
       "0": {
         "start": {
@@ -466,26 +466,26 @@
     },
     "branchMap": {},
     "s": {
-      "0": 5,
-      "1": 5
+      "0": 15,
+      "1": 15
     },
     "f": {
-      "0": 5
+      "0": 15
     },
     "b": {},
     "inputSourceMap": {
       "version": 3,
       "sources": [
-        "/Users/macbook/Downloads/react/react1/src/store/index.ts"
+        "C:/Users/Мария/Downloads/bot/react1/src/store/index.ts"
       ],
       "mappings": "AAAA,SAAS,sBAAsB;AAC/B,OAAO,oBAAoB;AAC3B,OAAO,kBAAkB;AACzB,SAAS,iBAAiB;AAKnB,aAAM,QAAQ,eAAe;AAAA,EAClC,SAAS;AAAA,IACP,CAAC,UAAU,WAAW,GAAG,UAAU;AAAA,IACnC,OAAO;AAAA,IACP,aAAa;AAAA,EACf;AAAA,EACA,YAAY,CAAC,yBACX,qBAAqB,EAAE,mBAAmB,MAAM,CAAC,EAAE,OAAO,UAAU,UAAU;AAClF,CAAC;",
       "names": []
     },
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
-    "hash": "e8d694ecb47a07a2726e51ecf58716e70db3577f"
+    "hash": "ecc7b285b379d15cfc5dbecddd5839d504d62a7d"
   },
-  "/Users/macbook/Downloads/react/react1/src/pages/about/about.tsx": {
-    "path": "/Users/macbook/Downloads/react/react1/src/pages/about/about.tsx",
+  "C:/Users/Мария/Downloads/bot/react1/src/pages/about/about.tsx": {
+    "path": "C:/Users/Мария/Downloads/bot/react1/src/pages/about/about.tsx",
     "statementMap": {
       "0": {
         "start": {
@@ -554,7 +554,7 @@
         },
         "end": {
           "line": 12,
-          "column": 107
+          "column": 105
         }
       },
       "7": {
@@ -654,7 +654,7 @@
         },
         "end": {
           "line": 89,
-          "column": 133
+          "column": 131
         }
       },
       "17": {
@@ -969,24 +969,24 @@
       }
     },
     "s": {
-      "0": 5,
-      "1": 5,
+      "0": 15,
+      "1": 15,
       "2": 0,
-      "3": 5,
-      "4": 5,
-      "5": 5,
-      "6": 5,
-      "7": 5,
-      "8": 5,
-      "9": 2,
-      "10": 5,
-      "11": 5,
-      "12": 5,
-      "13": 5,
-      "14": 5,
-      "15": 5,
-      "16": 5,
-      "17": 5,
+      "3": 15,
+      "4": 15,
+      "5": 15,
+      "6": 15,
+      "7": 15,
+      "8": 15,
+      "9": 6,
+      "10": 15,
+      "11": 15,
+      "12": 15,
+      "13": 15,
+      "14": 15,
+      "15": 15,
+      "16": 15,
+      "17": 15,
       "18": 0,
       "19": 0,
       "20": 0,
@@ -994,22 +994,22 @@
       "22": 0
     },
     "f": {
-      "0": 5,
-      "1": 2,
-      "2": 5,
+      "0": 15,
+      "1": 6,
+      "2": 15,
       "3": 0
     },
     "b": {
       "0": [
-        5,
+        15,
         0
       ],
       "1": [
         0,
-        5
+        15
       ],
       "2": [
-        5,
+        15,
         0
       ],
       "3": [
@@ -1023,7 +1023,7 @@
     },
     "inputSourceMap": {
       "version": 3,
-      "mappings": "AAOM;AAPN,OAAOA,oBAAkB;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AACzB,OAAOC,YAAY;AACnB,SAASC,eAAe;AAEjB,aAAMC,QAAQA,MAAM;AACzB,SACE,uBAAC,aAAQ,WAAU,mBAAkB,eAAY,SAC/C;AAAA,2BAAC,SAAI,WAAU,UAAS,OAAM,SAAQ,KAAKF,QAAQ,KAAI,YAAvD;AAAA;AAAA;AAAA;AAAA,WAA+D;AAAA,IAC/D,uBAAC,SAAI,WAAU,aACb;AAAA,6BAAC,QAAG,+BAAJ;AAAA;AAAA;AAAA;AAAA,aAAmB;AAAA,MACnB,uBAAC,OAAC,8SAAF;AAAA;AAAA;AAAA;AAAA,aAKA;AAAA,MACA,uBAAC,OAAC,qaAAF;AAAA;AAAA;AAAA;AAAA,aAMA;AAAA,MACA,uBAAC,OAAC;AAAA;AAAA,QAC6C,uBAAC,YAAO,8BAAR;AAAA;AAAA;AAAA;AAAA,eAAsB;AAAA,QAAS;AAAA,WAD9E;AAAA;AAAA;AAAA;AAAA,aAEA;AAAA,MACA,uBAAC,OAAC;AAAA;AAAA,QAGuD;AAAA,QACvD,uBAAC,WAAQ,IAAG,YAAW,4BAAvB;AAAA;AAAA;AAAA;AAAA,eAAmC;AAAA,QAAU;AAAA,WAJ/C;AAAA;AAAA;AAAA;AAAA,aAKA;AAAA,SAvBF;AAAA;AAAA;AAAA;AAAA,WAwBA;AAAA,OA1BF;AAAA;AAAA;AAAA;AAAA,SA2BA;AAEJ;AAAEG,KA/BWD;AAAK,IAAAC;AAAAC,aAAAD,IAAA",
+      "mappings": "AAOM;AAPN,OAAOA,oBAAkB;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AACzB,OAAOC,YAAY;AACnB,SAASC,eAAe;AAEjB,aAAMC,QAAQA,MAAM;AACzB,SACE,uBAAC,aAAQ,WAAU,mBAAkB,eAAY,SAC/C;AAAA,2BAAC,SAAI,WAAU,UAAS,OAAM,SAAQ,KAAKF,QAAQ,KAAI,YAAvD;AAAA;AAAA;AAAA;AAAA,WAA+D;AAAA,IAC/D,uBAAC,SAAI,WAAU,aACb;AAAA,6BAAC,QAAG,+BAAJ;AAAA;AAAA;AAAA;AAAA,aAAmB;AAAA,MACnB,uBAAC,OAAE,8SAAH;AAAA;AAAA;AAAA;AAAA,aAKA;AAAA,MACA,uBAAC,OAAE,qaAAH;AAAA;AAAA;AAAA;AAAA,aAMA;AAAA,MACA,uBAAC,OAAE;AAAA;AAAA,QAC4C,uBAAC,YAAO,8BAAR;AAAA;AAAA;AAAA;AAAA,eAAsB;AAAA,QAAS;AAAA,WAD9E;AAAA;AAAA;AAAA;AAAA,aAEA;AAAA,MACA,uBAAC,OAAE;AAAA;AAAA,QAGsD;AAAA,QACvD,uBAAC,WAAQ,IAAG,YAAW,4BAAvB;AAAA;AAAA;AAAA;AAAA,eAAmC;AAAA,QAAU;AAAA,WAJ/C;AAAA;AAAA;AAAA;AAAA,aAKA;AAAA,SAvBF;AAAA;AAAA;AAAA;AAAA,WAwBA;AAAA,OA1BF;AAAA;AAAA;AAAA;AAAA,SA2BA;AAEJ;AAAEG,KA/BWD;AAAK,IAAAC;AAAAC,aAAAD,IAAA",
       "names": [
         "React",
         "Create",
@@ -1033,15 +1033,15 @@
         "$RefreshReg$"
       ],
       "sources": [
-        "/Users/macbook/Downloads/react/react1/src/pages/about/about.tsx"
+        "C:/Users/Мария/Downloads/bot/react1/src/pages/about/about.tsx"
       ],
-      "file": "/Users/macbook/Downloads/react/react1/src/pages/about/about.tsx"
+      "file": "C:/Users/Мария/Downloads/bot/react1/src/pages/about/about.tsx"
     },
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
-    "hash": "bef3301c31b2c5895defd4e2e3cfcb570afc40c1"
+    "hash": "eb4e18665f5432adbc0f933c9b065091adacc576"
   },
-  "/Users/macbook/Downloads/react/react1/src/components/Forms/FormDate.tsx": {
-    "path": "/Users/macbook/Downloads/react/react1/src/components/Forms/FormDate.tsx",
+  "C:/Users/Мария/Downloads/bot/react1/src/components/Forms/FormDate.tsx": {
+    "path": "C:/Users/Мария/Downloads/bot/react1/src/components/Forms/FormDate.tsx",
     "statementMap": {
       "0": {
         "start": {
@@ -1110,7 +1110,7 @@
         },
         "end": {
           "line": 12,
-          "column": 115
+          "column": 113
         }
       },
       "7": {
@@ -1220,7 +1220,7 @@
         },
         "end": {
           "line": 70,
-          "column": 141
+          "column": 139
         }
       },
       "18": {
@@ -1607,25 +1607,25 @@
       }
     },
     "s": {
-      "0": 5,
-      "1": 5,
+      "0": 15,
+      "1": 15,
       "2": 0,
-      "3": 5,
-      "4": 5,
-      "5": 5,
-      "6": 5,
-      "7": 5,
-      "8": 5,
-      "9": 16,
-      "10": 16,
-      "11": 5,
-      "12": 5,
-      "13": 5,
-      "14": 5,
-      "15": 5,
-      "16": 5,
-      "17": 5,
-      "18": 5,
+      "3": 15,
+      "4": 15,
+      "5": 15,
+      "6": 15,
+      "7": 15,
+      "8": 15,
+      "9": 48,
+      "10": 48,
+      "11": 15,
+      "12": 15,
+      "13": 15,
+      "14": 15,
+      "15": 15,
+      "16": 15,
+      "17": 15,
+      "18": 15,
       "19": 0,
       "20": 0,
       "21": 0,
@@ -1633,22 +1633,22 @@
       "23": 0
     },
     "f": {
-      "0": 5,
-      "1": 16,
-      "2": 5,
+      "0": 15,
+      "1": 48,
+      "2": 15,
       "3": 0
     },
     "b": {
       "0": [
-        5,
+        15,
         0
       ],
       "1": [
         0,
-        5
+        15
       ],
       "2": [
-        16,
+        48,
         0
       ],
       "3": [
@@ -1656,7 +1656,7 @@
         0
       ],
       "4": [
-        5,
+        15,
         0
       ],
       "5": [
@@ -1688,15 +1688,15 @@
         "$RefreshReg$"
       ],
       "sources": [
-        "/Users/macbook/Downloads/react/react1/src/components/Forms/FormDate.tsx"
+        "C:/Users/Мария/Downloads/bot/react1/src/components/Forms/FormDate.tsx"
       ],
-      "file": "/Users/macbook/Downloads/react/react1/src/components/Forms/FormDate.tsx"
+      "file": "C:/Users/Мария/Downloads/bot/react1/src/components/Forms/FormDate.tsx"
     },
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
-    "hash": "37fdc3a1dc47888a130e6b90343e7f4a0f483681"
+    "hash": "b27954e062cbd25cee6c81a8be0fcf44588b2fe6"
   },
-  "/Users/macbook/Downloads/react/react1/src/components/Forms/ButtonForm.tsx": {
-    "path": "/Users/macbook/Downloads/react/react1/src/components/Forms/ButtonForm.tsx",
+  "C:/Users/Мария/Downloads/bot/react1/src/components/Forms/ButtonForm.tsx": {
+    "path": "C:/Users/Мария/Downloads/bot/react1/src/components/Forms/ButtonForm.tsx",
     "statementMap": {
       "0": {
         "start": {
@@ -1765,7 +1765,7 @@
         },
         "end": {
           "line": 12,
-          "column": 117
+          "column": 115
         }
       },
       "7": {
@@ -1875,7 +1875,7 @@
         },
         "end": {
           "line": 55,
-          "column": 143
+          "column": 141
         }
       },
       "18": {
@@ -2266,25 +2266,25 @@
       }
     },
     "s": {
-      "0": 5,
-      "1": 5,
+      "0": 15,
+      "1": 15,
       "2": 0,
-      "3": 5,
-      "4": 5,
-      "5": 5,
-      "6": 5,
-      "7": 5,
-      "8": 5,
-      "9": 16,
-      "10": 16,
-      "11": 5,
-      "12": 5,
-      "13": 5,
-      "14": 5,
-      "15": 5,
-      "16": 5,
-      "17": 5,
-      "18": 5,
+      "3": 15,
+      "4": 15,
+      "5": 15,
+      "6": 15,
+      "7": 15,
+      "8": 15,
+      "9": 48,
+      "10": 48,
+      "11": 15,
+      "12": 15,
+      "13": 15,
+      "14": 15,
+      "15": 15,
+      "16": 15,
+      "17": 15,
+      "18": 15,
       "19": 0,
       "20": 0,
       "21": 0,
@@ -2292,30 +2292,30 @@
       "23": 0
     },
     "f": {
-      "0": 5,
-      "1": 16,
-      "2": 5,
+      "0": 15,
+      "1": 48,
+      "2": 15,
       "3": 0
     },
     "b": {
       "0": [
-        5,
+        15,
         0
       ],
       "1": [
         0,
-        5
+        15
       ],
       "2": [
-        16,
-        16,
-        16,
-        16,
-        16,
+        48,
+        48,
+        48,
+        48,
+        48,
         0
       ],
       "3": [
-        5,
+        15,
         0
       ],
       "4": [
@@ -2347,15 +2347,15 @@
         "$RefreshReg$"
       ],
       "sources": [
-        "/Users/macbook/Downloads/react/react1/src/components/Forms/ButtonForm.tsx"
+        "C:/Users/Мария/Downloads/bot/react1/src/components/Forms/ButtonForm.tsx"
       ],
-      "file": "/Users/macbook/Downloads/react/react1/src/components/Forms/ButtonForm.tsx"
+      "file": "C:/Users/Мария/Downloads/bot/react1/src/components/Forms/ButtonForm.tsx"
     },
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
-    "hash": "a53eba6307ff1d0e335f3b0cd9c67b7249d54dc7"
+    "hash": "bf9824ebb2cc924ffb744813fabe44c10bf007b8"
   },
-  "/Users/macbook/Downloads/react/react1/src/components/Forms/FormTitle.tsx": {
-    "path": "/Users/macbook/Downloads/react/react1/src/components/Forms/FormTitle.tsx",
+  "C:/Users/Мария/Downloads/bot/react1/src/components/Forms/FormTitle.tsx": {
+    "path": "C:/Users/Мария/Downloads/bot/react1/src/components/Forms/FormTitle.tsx",
     "statementMap": {
       "0": {
         "start": {
@@ -2424,7 +2424,7 @@
         },
         "end": {
           "line": 12,
-          "column": 116
+          "column": 114
         }
       },
       "7": {
@@ -2534,7 +2534,7 @@
         },
         "end": {
           "line": 71,
-          "column": 142
+          "column": 140
         }
       },
       "18": {
@@ -2921,25 +2921,25 @@
       }
     },
     "s": {
-      "0": 5,
-      "1": 5,
+      "0": 15,
+      "1": 15,
       "2": 0,
-      "3": 5,
-      "4": 5,
-      "5": 5,
-      "6": 5,
-      "7": 5,
-      "8": 5,
-      "9": 16,
-      "10": 16,
-      "11": 5,
-      "12": 5,
-      "13": 5,
-      "14": 5,
-      "15": 5,
-      "16": 5,
-      "17": 5,
-      "18": 5,
+      "3": 15,
+      "4": 15,
+      "5": 15,
+      "6": 15,
+      "7": 15,
+      "8": 15,
+      "9": 48,
+      "10": 48,
+      "11": 15,
+      "12": 15,
+      "13": 15,
+      "14": 15,
+      "15": 15,
+      "16": 15,
+      "17": 15,
+      "18": 15,
       "19": 0,
       "20": 0,
       "21": 0,
@@ -2947,22 +2947,22 @@
       "23": 0
     },
     "f": {
-      "0": 5,
-      "1": 16,
-      "2": 5,
+      "0": 15,
+      "1": 48,
+      "2": 15,
       "3": 0
     },
     "b": {
       "0": [
-        5,
+        15,
         0
       ],
       "1": [
         0,
-        5
+        15
       ],
       "2": [
-        16,
+        48,
         0
       ],
       "3": [
@@ -2970,7 +2970,7 @@
         0
       ],
       "4": [
-        5,
+        15,
         0
       ],
       "5": [
@@ -3002,15 +3002,15 @@
         "$RefreshReg$"
       ],
       "sources": [
-        "/Users/macbook/Downloads/react/react1/src/components/Forms/FormTitle.tsx"
+        "C:/Users/Мария/Downloads/bot/react1/src/components/Forms/FormTitle.tsx"
       ],
-      "file": "/Users/macbook/Downloads/react/react1/src/components/Forms/FormTitle.tsx"
+      "file": "C:/Users/Мария/Downloads/bot/react1/src/components/Forms/FormTitle.tsx"
     },
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
-    "hash": "e7fd4ba89a1f5995bdb03685e5667768d1aedc31"
+    "hash": "56cf174b72fc2d98058b20a85df941bb6271ebd3"
   },
-  "/Users/macbook/Downloads/react/react1/src/components/Forms/FormSelect.tsx": {
-    "path": "/Users/macbook/Downloads/react/react1/src/components/Forms/FormSelect.tsx",
+  "C:/Users/Мария/Downloads/bot/react1/src/components/Forms/FormSelect.tsx": {
+    "path": "C:/Users/Мария/Downloads/bot/react1/src/components/Forms/FormSelect.tsx",
     "statementMap": {
       "0": {
         "start": {
@@ -3079,7 +3079,7 @@
         },
         "end": {
           "line": 12,
-          "column": 117
+          "column": 115
         }
       },
       "7": {
@@ -3189,7 +3189,7 @@
         },
         "end": {
           "line": 98,
-          "column": 143
+          "column": 141
         }
       },
       "18": {
@@ -3576,25 +3576,25 @@
       }
     },
     "s": {
-      "0": 5,
-      "1": 5,
+      "0": 15,
+      "1": 15,
       "2": 0,
-      "3": 5,
-      "4": 5,
-      "5": 5,
-      "6": 5,
-      "7": 5,
-      "8": 5,
-      "9": 16,
-      "10": 16,
-      "11": 5,
-      "12": 5,
-      "13": 5,
-      "14": 5,
-      "15": 5,
-      "16": 5,
-      "17": 5,
-      "18": 5,
+      "3": 15,
+      "4": 15,
+      "5": 15,
+      "6": 15,
+      "7": 15,
+      "8": 15,
+      "9": 48,
+      "10": 48,
+      "11": 15,
+      "12": 15,
+      "13": 15,
+      "14": 15,
+      "15": 15,
+      "16": 15,
+      "17": 15,
+      "18": 15,
       "19": 0,
       "20": 0,
       "21": 0,
@@ -3602,22 +3602,22 @@
       "23": 0
     },
     "f": {
-      "0": 5,
-      "1": 16,
-      "2": 5,
+      "0": 15,
+      "1": 48,
+      "2": 15,
       "3": 0
     },
     "b": {
       "0": [
-        5,
+        15,
         0
       ],
       "1": [
         0,
-        5
+        15
       ],
       "2": [
-        16,
+        48,
         0
       ],
       "3": [
@@ -3625,7 +3625,7 @@
         0
       ],
       "4": [
-        5,
+        15,
         0
       ],
       "5": [
@@ -3656,15 +3656,15 @@
         "$RefreshReg$"
       ],
       "sources": [
-        "/Users/macbook/Downloads/react/react1/src/components/Forms/FormSelect.tsx"
+        "C:/Users/Мария/Downloads/bot/react1/src/components/Forms/FormSelect.tsx"
       ],
-      "file": "/Users/macbook/Downloads/react/react1/src/components/Forms/FormSelect.tsx"
+      "file": "C:/Users/Мария/Downloads/bot/react1/src/components/Forms/FormSelect.tsx"
     },
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
-    "hash": "06e8e3f63a35a300cbec5e5bd8a989da04140745"
+    "hash": "4d9c6858d083f48de83cc2aa2f628260a63059bd"
   },
-  "/Users/macbook/Downloads/react/react1/src/components/Forms/FormFile.tsx": {
-    "path": "/Users/macbook/Downloads/react/react1/src/components/Forms/FormFile.tsx",
+  "C:/Users/Мария/Downloads/bot/react1/src/components/Forms/FormFile.tsx": {
+    "path": "C:/Users/Мария/Downloads/bot/react1/src/components/Forms/FormFile.tsx",
     "statementMap": {
       "0": {
         "start": {
@@ -3733,7 +3733,7 @@
         },
         "end": {
           "line": 12,
-          "column": 115
+          "column": 113
         }
       },
       "7": {
@@ -3843,7 +3843,7 @@
         },
         "end": {
           "line": 91,
-          "column": 141
+          "column": 139
         }
       },
       "18": {
@@ -4230,25 +4230,25 @@
       }
     },
     "s": {
-      "0": 5,
-      "1": 5,
+      "0": 15,
+      "1": 15,
       "2": 0,
-      "3": 5,
-      "4": 5,
-      "5": 5,
-      "6": 5,
-      "7": 5,
-      "8": 5,
-      "9": 16,
-      "10": 16,
-      "11": 5,
-      "12": 5,
-      "13": 5,
-      "14": 5,
-      "15": 5,
-      "16": 5,
-      "17": 5,
-      "18": 5,
+      "3": 15,
+      "4": 15,
+      "5": 15,
+      "6": 15,
+      "7": 15,
+      "8": 15,
+      "9": 48,
+      "10": 48,
+      "11": 15,
+      "12": 15,
+      "13": 15,
+      "14": 15,
+      "15": 15,
+      "16": 15,
+      "17": 15,
+      "18": 15,
       "19": 0,
       "20": 0,
       "21": 0,
@@ -4256,22 +4256,22 @@
       "23": 0
     },
     "f": {
-      "0": 5,
-      "1": 16,
-      "2": 5,
+      "0": 15,
+      "1": 48,
+      "2": 15,
       "3": 0
     },
     "b": {
       "0": [
-        5,
+        15,
         0
       ],
       "1": [
         0,
-        5
+        15
       ],
       "2": [
-        16,
+        48,
         0
       ],
       "3": [
@@ -4279,7 +4279,7 @@
         0
       ],
       "4": [
-        5,
+        15,
         0
       ],
       "5": [
@@ -4310,15 +4310,15 @@
         "$RefreshReg$"
       ],
       "sources": [
-        "/Users/macbook/Downloads/react/react1/src/components/Forms/FormFile.tsx"
+        "C:/Users/Мария/Downloads/bot/react1/src/components/Forms/FormFile.tsx"
       ],
-      "file": "/Users/macbook/Downloads/react/react1/src/components/Forms/FormFile.tsx"
+      "file": "C:/Users/Мария/Downloads/bot/react1/src/components/Forms/FormFile.tsx"
     },
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
-    "hash": "36decf61d2573d30c4eba1d841a8b7924da8837c"
+    "hash": "d57a66daafbb517a164fd7ad89852d0b9699bc30"
   },
-  "/Users/macbook/Downloads/react/react1/src/components/Forms/FormRadio.tsx": {
-    "path": "/Users/macbook/Downloads/react/react1/src/components/Forms/FormRadio.tsx",
+  "C:/Users/Мария/Downloads/bot/react1/src/components/Forms/FormRadio.tsx": {
+    "path": "C:/Users/Мария/Downloads/bot/react1/src/components/Forms/FormRadio.tsx",
     "statementMap": {
       "0": {
         "start": {
@@ -4387,7 +4387,7 @@
         },
         "end": {
           "line": 12,
-          "column": 116
+          "column": 114
         }
       },
       "7": {
@@ -4497,7 +4497,7 @@
         },
         "end": {
           "line": 57,
-          "column": 142
+          "column": 140
         }
       },
       "18": {
@@ -4848,25 +4848,25 @@
       }
     },
     "s": {
-      "0": 5,
-      "1": 5,
+      "0": 15,
+      "1": 15,
       "2": 0,
-      "3": 5,
-      "4": 5,
-      "5": 5,
-      "6": 5,
-      "7": 5,
-      "8": 5,
-      "9": 288,
-      "10": 288,
-      "11": 5,
-      "12": 5,
-      "13": 5,
-      "14": 5,
-      "15": 5,
-      "16": 5,
-      "17": 5,
-      "18": 5,
+      "3": 15,
+      "4": 15,
+      "5": 15,
+      "6": 15,
+      "7": 15,
+      "8": 15,
+      "9": 864,
+      "10": 864,
+      "11": 15,
+      "12": 15,
+      "13": 15,
+      "14": 15,
+      "15": 15,
+      "16": 15,
+      "17": 15,
+      "18": 15,
       "19": 0,
       "20": 0,
       "21": 0,
@@ -4874,26 +4874,26 @@
       "23": 0
     },
     "f": {
-      "0": 5,
-      "1": 288,
-      "2": 5,
+      "0": 15,
+      "1": 864,
+      "2": 15,
       "3": 0
     },
     "b": {
       "0": [
-        5,
+        15,
         0
       ],
       "1": [
         0,
-        5
+        15
       ],
       "2": [
-        3,
-        285
+        9,
+        855
       ],
       "3": [
-        5,
+        15,
         0
       ],
       "4": [
@@ -4923,15 +4923,15 @@
         "$RefreshReg$"
       ],
       "sources": [
-        "/Users/macbook/Downloads/react/react1/src/components/Forms/FormRadio.tsx"
+        "C:/Users/Мария/Downloads/bot/react1/src/components/Forms/FormRadio.tsx"
       ],
-      "file": "/Users/macbook/Downloads/react/react1/src/components/Forms/FormRadio.tsx"
+      "file": "C:/Users/Мария/Downloads/bot/react1/src/components/Forms/FormRadio.tsx"
     },
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
-    "hash": "f62c56b223223949df4647853a6a28cdf33ffbf1"
+    "hash": "2df7d452fedd4f73b93631eaba01c8e34bb48229"
   },
-  "/Users/macbook/Downloads/react/react1/src/components/Forms/FormCheckbox.tsx": {
-    "path": "/Users/macbook/Downloads/react/react1/src/components/Forms/FormCheckbox.tsx",
+  "C:/Users/Мария/Downloads/bot/react1/src/components/Forms/FormCheckbox.tsx": {
+    "path": "C:/Users/Мария/Downloads/bot/react1/src/components/Forms/FormCheckbox.tsx",
     "statementMap": {
       "0": {
         "start": {
@@ -5000,7 +5000,7 @@
         },
         "end": {
           "line": 12,
-          "column": 119
+          "column": 117
         }
       },
       "7": {
@@ -5110,7 +5110,7 @@
         },
         "end": {
           "line": 51,
-          "column": 145
+          "column": 143
         }
       },
       "18": {
@@ -5425,25 +5425,25 @@
       }
     },
     "s": {
-      "0": 5,
-      "1": 5,
+      "0": 15,
+      "1": 15,
       "2": 0,
-      "3": 5,
-      "4": 5,
-      "5": 5,
-      "6": 5,
-      "7": 5,
-      "8": 5,
-      "9": 16,
-      "10": 16,
-      "11": 5,
-      "12": 5,
-      "13": 5,
-      "14": 5,
-      "15": 5,
-      "16": 5,
-      "17": 5,
-      "18": 5,
+      "3": 15,
+      "4": 15,
+      "5": 15,
+      "6": 15,
+      "7": 15,
+      "8": 15,
+      "9": 48,
+      "10": 48,
+      "11": 15,
+      "12": 15,
+      "13": 15,
+      "14": 15,
+      "15": 15,
+      "16": 15,
+      "17": 15,
+      "18": 15,
       "19": 0,
       "20": 0,
       "21": 0,
@@ -5451,22 +5451,22 @@
       "23": 0
     },
     "f": {
-      "0": 5,
-      "1": 16,
-      "2": 5,
+      "0": 15,
+      "1": 48,
+      "2": 15,
       "3": 0
     },
     "b": {
       "0": [
-        5,
+        15,
         0
       ],
       "1": [
         0,
-        5
+        15
       ],
       "2": [
-        5,
+        15,
         0
       ],
       "3": [
@@ -5493,15 +5493,15 @@
         "$RefreshReg$"
       ],
       "sources": [
-        "/Users/macbook/Downloads/react/react1/src/components/Forms/FormCheckbox.tsx"
+        "C:/Users/Мария/Downloads/bot/react1/src/components/Forms/FormCheckbox.tsx"
       ],
-      "file": "/Users/macbook/Downloads/react/react1/src/components/Forms/FormCheckbox.tsx"
+      "file": "C:/Users/Мария/Downloads/bot/react1/src/components/Forms/FormCheckbox.tsx"
     },
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
-    "hash": "3032a86c7214c97a27e297446486801d50952f61"
+    "hash": "63042fece75213703682f3eefb8a01803af874e3"
   },
-  "/Users/macbook/Downloads/react/react1/src/components/Forms/FormCard.tsx": {
-    "path": "/Users/macbook/Downloads/react/react1/src/components/Forms/FormCard.tsx",
+  "C:/Users/Мария/Downloads/bot/react1/src/components/Forms/FormCard.tsx": {
+    "path": "C:/Users/Мария/Downloads/bot/react1/src/components/Forms/FormCard.tsx",
     "statementMap": {
       "0": {
         "start": {
@@ -5570,7 +5570,7 @@
         },
         "end": {
           "line": 12,
-          "column": 115
+          "column": 113
         }
       },
       "7": {
@@ -5820,7 +5820,7 @@
         },
         "end": {
           "line": 141,
-          "column": 141
+          "column": 139
         }
       },
       "32": {
@@ -6285,39 +6285,39 @@
       }
     },
     "s": {
-      "0": 5,
-      "1": 5,
+      "0": 15,
+      "1": 15,
       "2": 0,
-      "3": 5,
-      "4": 5,
-      "5": 5,
-      "6": 5,
-      "7": 5,
-      "8": 5,
-      "9": 5,
-      "10": 2,
-      "11": 2,
-      "12": 2,
-      "13": 2,
+      "3": 15,
+      "4": 15,
+      "5": 15,
+      "6": 15,
+      "7": 15,
+      "8": 15,
+      "9": 15,
+      "10": 6,
+      "11": 6,
+      "12": 6,
+      "13": 6,
       "14": 0,
-      "15": 2,
-      "16": 2,
-      "17": 2,
+      "15": 6,
+      "16": 6,
+      "17": 6,
       "18": 0,
-      "19": 2,
+      "19": 6,
       "20": 0,
-      "21": 2,
+      "21": 6,
       "22": 0,
-      "23": 5,
-      "24": 1,
-      "25": 5,
-      "26": 5,
-      "27": 5,
-      "28": 5,
-      "29": 5,
-      "30": 5,
-      "31": 5,
-      "32": 5,
+      "23": 15,
+      "24": 3,
+      "25": 15,
+      "26": 15,
+      "27": 15,
+      "28": 15,
+      "29": 15,
+      "30": 15,
+      "31": 15,
+      "32": 15,
       "33": 0,
       "34": 0,
       "35": 0,
@@ -6325,36 +6325,36 @@
       "37": 0
     },
     "f": {
-      "0": 5,
-      "1": 2,
+      "0": 15,
+      "1": 6,
       "2": 0,
-      "3": 1,
-      "4": 5,
+      "3": 3,
+      "4": 15,
       "5": 0
     },
     "b": {
       "0": [
-        5,
+        15,
         0
       ],
       "1": [
         0,
-        5
+        15
       ],
       "2": [
         0,
-        2
+        6
       ],
       "3": [
         0,
-        2
+        6
       ],
       "4": [
         0,
-        2
+        6
       ],
       "5": [
-        5,
+        15,
         0
       ],
       "6": [
@@ -6368,7 +6368,7 @@
     },
     "inputSourceMap": {
       "version": 3,
-      "mappings": "AAsBM;;;;;;;;;;;;;;;;AApBN,SAASA,kBAAkB;AAC3B,SAASC,mBAAmB;AAG5B,IAAIC;AAEG,aAAMC,WAAiCC,WAAU;AAAAC,KAAA;AACtD,QAAM;AAAA,IAAEC;AAAAA,IAAIC;AAAAA,IAAOC;AAAAA,IAAMC;AAAAA,IAAQC;AAAAA,IAAMC;AAAAA,EAAM,IAAIP;AACjD,QAAMQ,WAAWX,YAAY;AAC7B,MAAIG,MAAMS,UAAU,MAAM;AACxBX,gBAAY;AAAA,EACd;AAAOA,gBAAY;AACnB,MAAIY,MAAM;AACV,MAAI,OAAOJ,SAAS,UAAU;AAC5BI,UAAMJ;AAAAA,EACR,WAAWA,gBAAgBK,MAAM;AAC/BD,UAAME,IAAIC,gBAAgBP,IAAI;AAAA,EAChC;AACA,SACE,uBAAC,SAAI,WAAU,iBAAgB,IAAIJ,GAAGY,SAAS,GAAG,eAAY,aAC5D;AAAA,2BAAC,YAAO,WAAU,qBAAoB,SAAS,MAAMN,SAASZ,WAAW;AAAA,MAAEM;AAAAA,IAAG,CAAC,CAAC,GAAE,iBAAlF;AAAA;AAAA;AAAA;AAAA,WAEA;AAAA,IACA,uBAAC,OAAE,WAAU,kBACX;AAAA,6BAAC,OAAE,sBAAH;AAAA;AAAA;AAAA;AAAA,aAAS;AAAA,MAAI;AAAA,MAAEC;AAAAA,SADjB;AAAA;AAAA;AAAA;AAAA,WAEA;AAAA,IACA,uBAAC,OAAE,WAAU,iBACX;AAAA,6BAAC,OAAE,qBAAH;AAAA;AAAA;AAAA;AAAA,aAAQ;AAAA,MAAI;AAAA,MAAEC;AAAAA,SADhB;AAAA;AAAA;AAAA;AAAA,WAEA;AAAA,IACA,uBAAC,OAAE,WAAU,mBACX;AAAA,6BAAC,OAAE,8BAAH;AAAA;AAAA;AAAA;AAAA,aAAiB;AAAA,MAAI;AAAA,MAAEC;AAAAA,SADzB;AAAA;AAAA;AAAA;AAAA,WAEA;AAAA,IACA,uBAAC,OAAE,WAAU,iBACX;AAAA,6BAAC,OAAE,qBAAH;AAAA;AAAA;AAAA;AAAA,aAAQ;AAAA,MACR,uBAAC,SAAI,WAAU,cAAa,KAAU,KAAI,UAA1C;AAAA;AAAA;AAAA;AAAA,aAAgD;AAAA,SAFlD;AAAA;AAAA;AAAA;AAAA,WAGA;AAAA,IACA,uBAAC,OAAE,WAAU,kBACX;AAAA,6BAAC,OAAE,wBAAH;AAAA;AAAA;AAAA;AAAA,aAAW;AAAA,MAAI;AAAA,MAAEP;AAAAA,SADnB;AAAA;AAAA;AAAA;AAAA,WAEA;AAAA,IACA,uBAAC,SAAI,WAAU,cAAa,KAAKS,OAAO,KAAI,WAA5C;AAAA;AAAA;AAAA;AAAA,WAAmD;AAAA,OApBrD;AAAA;AAAA;AAAA;AAAA,SAqBA;AAEJ;AAAEN,GApCWF,UAA6B;AAAA,UAEvBF,WAAW;AAAA;AAAAkB,KAFjBhB;AAA6B,IAAAgB;AAAAC,aAAAD,IAAA",
+      "mappings": "AAsBM;;;;;;;;;;;;;;;;AApBN,SAASA,kBAAkB;AAC3B,SAASC,mBAAmB;AAG5B,IAAIC;AAEG,aAAMC,WAAiCC,WAAU;AAAAC,KAAA;AACtD,QAAM;AAAA,IAAEC;AAAAA,IAAIC;AAAAA,IAAOC;AAAAA,IAAMC;AAAAA,IAAQC;AAAAA,IAAMC;AAAAA,EAAM,IAAIP;AACjD,QAAMQ,WAAWX,YAAY;AAC7B,MAAIG,MAAMS,UAAU,MAAM;AACxBX,gBAAY;AAAA,EACd;AAAOA,gBAAY;AACnB,MAAIY,MAAM;AACV,MAAI,OAAOJ,SAAS,UAAU;AAC5BI,UAAMJ;AAAAA,EACR,WAAWA,gBAAgBK,MAAM;AAC/BD,UAAME,IAAIC,gBAAgBP,IAAI;AAAA,EAChC;AACA,SACE,uBAAC,SAAI,WAAU,iBAAgB,IAAIJ,GAAGY,SAAS,GAAG,eAAY,aAC5D;AAAA,2BAAC,YAAO,WAAU,qBAAoB,SAAS,MAAMN,SAASZ,WAAW;AAAA,MAAEM;AAAAA,IAAG,CAAC,CAAC,GAAG,iBAAnF;AAAA;AAAA;AAAA;AAAA,WAEA;AAAA,IACA,uBAAC,OAAE,WAAU,kBACX;AAAA,6BAAC,OAAE,sBAAH;AAAA;AAAA;AAAA;AAAA,aAAS;AAAA,MAAI;AAAA,MAAEC;AAAAA,SADjB;AAAA;AAAA;AAAA;AAAA,WAEA;AAAA,IACA,uBAAC,OAAE,WAAU,iBACX;AAAA,6BAAC,OAAE,qBAAH;AAAA;AAAA;AAAA;AAAA,aAAQ;AAAA,MAAI;AAAA,MAAEC;AAAAA,SADhB;AAAA;AAAA;AAAA;AAAA,WAEA;AAAA,IACA,uBAAC,OAAE,WAAU,mBACX;AAAA,6BAAC,OAAE,8BAAH;AAAA;AAAA;AAAA;AAAA,aAAiB;AAAA,MAAI;AAAA,MAAEC;AAAAA,SADzB;AAAA;AAAA;AAAA;AAAA,WAEA;AAAA,IACA,uBAAC,OAAE,WAAU,iBACX;AAAA,6BAAC,OAAE,qBAAH;AAAA;AAAA;AAAA;AAAA,aAAQ;AAAA,MACR,uBAAC,SAAI,WAAU,cAAa,KAAU,KAAI,UAA1C;AAAA;AAAA;AAAA;AAAA,aAAgD;AAAA,SAFlD;AAAA;AAAA;AAAA;AAAA,WAGA;AAAA,IACA,uBAAC,OAAE,WAAU,kBACX;AAAA,6BAAC,OAAE,wBAAH;AAAA;AAAA;AAAA;AAAA,aAAW;AAAA,MAAI;AAAA,MAAEP;AAAAA,SADnB;AAAA;AAAA;AAAA;AAAA,WAEA;AAAA,IACA,uBAAC,SAAI,WAAU,cAAa,KAAKS,OAAO,KAAI,WAA5C;AAAA;AAAA;AAAA;AAAA,WAAmD;AAAA,OApBrD;AAAA;AAAA;AAAA;AAAA,SAqBA;AAEJ;AAAEN,GApCWF,UAA6B;AAAA,UAEvBF,WAAW;AAAA;AAAAkB,KAFjBhB;AAA6B,IAAAgB;AAAAC,aAAAD,IAAA",
       "names": [
         "deleteCard",
         "useDispatch",
@@ -6393,15 +6393,15 @@
         "$RefreshReg$"
       ],
       "sources": [
-        "/Users/macbook/Downloads/react/react1/src/components/Forms/FormCard.tsx"
+        "C:/Users/Мария/Downloads/bot/react1/src/components/Forms/FormCard.tsx"
       ],
-      "file": "/Users/macbook/Downloads/react/react1/src/components/Forms/FormCard.tsx"
+      "file": "C:/Users/Мария/Downloads/bot/react1/src/components/Forms/FormCard.tsx"
     },
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
-    "hash": "b4a70ef5a04bcf20aecc897673651beca699b66b"
+    "hash": "da60f10fe204984ddb48e8fdc893553fc24dbd13"
   },
-  "/Users/macbook/Downloads/react/react1/src/components/Forms/FormCardList.tsx": {
-    "path": "/Users/macbook/Downloads/react/react1/src/components/Forms/FormCardList.tsx",
+  "C:/Users/Мария/Downloads/bot/react1/src/components/Forms/FormCardList.tsx": {
+    "path": "C:/Users/Мария/Downloads/bot/react1/src/components/Forms/FormCardList.tsx",
     "statementMap": {
       "0": {
         "start": {
@@ -6470,7 +6470,7 @@
         },
         "end": {
           "line": 12,
-          "column": 119
+          "column": 117
         }
       },
       "7": {
@@ -6590,7 +6590,7 @@
         },
         "end": {
           "line": 41,
-          "column": 145
+          "column": 143
         }
       },
       "19": {
@@ -6929,26 +6929,26 @@
       }
     },
     "s": {
-      "0": 5,
-      "1": 5,
+      "0": 15,
+      "1": 15,
       "2": 0,
-      "3": 5,
-      "4": 5,
-      "5": 5,
-      "6": 5,
-      "7": 5,
-      "8": 5,
-      "9": 16,
-      "10": 16,
-      "11": 2,
-      "12": 5,
-      "13": 5,
-      "14": 5,
-      "15": 5,
-      "16": 5,
-      "17": 5,
-      "18": 5,
-      "19": 5,
+      "3": 15,
+      "4": 15,
+      "5": 15,
+      "6": 15,
+      "7": 15,
+      "8": 15,
+      "9": 48,
+      "10": 48,
+      "11": 6,
+      "12": 15,
+      "13": 15,
+      "14": 15,
+      "15": 15,
+      "16": 15,
+      "17": 15,
+      "18": 15,
+      "19": 15,
       "20": 0,
       "21": 0,
       "22": 0,
@@ -6956,23 +6956,23 @@
       "24": 0
     },
     "f": {
-      "0": 5,
-      "1": 16,
-      "2": 2,
-      "3": 5,
+      "0": 15,
+      "1": 48,
+      "2": 6,
+      "3": 15,
       "4": 0
     },
     "b": {
       "0": [
-        5,
+        15,
         0
       ],
       "1": [
         0,
-        5
+        15
       ],
       "2": [
-        5,
+        15,
         0
       ],
       "3": [
@@ -6999,15 +6999,15 @@
         "$RefreshReg$"
       ],
       "sources": [
-        "/Users/macbook/Downloads/react/react1/src/components/Forms/FormCardList.tsx"
+        "C:/Users/Мария/Downloads/bot/react1/src/components/Forms/FormCardList.tsx"
       ],
-      "file": "/Users/macbook/Downloads/react/react1/src/components/Forms/FormCardList.tsx"
+      "file": "C:/Users/Мария/Downloads/bot/react1/src/components/Forms/FormCardList.tsx"
     },
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
-    "hash": "d6cae4cffae107395707eeacf65960320ef21040"
+    "hash": "8509c5351651683855e3d5b7d7bfda89e798c43e"
   },
-  "/Users/macbook/Downloads/react/react1/src/pages/recycle/recycle.tsx": {
-    "path": "/Users/macbook/Downloads/react/react1/src/pages/recycle/recycle.tsx",
+  "C:/Users/Мария/Downloads/bot/react1/src/pages/recycle/recycle.tsx": {
+    "path": "C:/Users/Мария/Downloads/bot/react1/src/pages/recycle/recycle.tsx",
     "statementMap": {
       "0": {
         "start": {
@@ -7076,7 +7076,7 @@
         },
         "end": {
           "line": 12,
-          "column": 111
+          "column": 109
         }
       },
       "7": {
@@ -7556,7 +7556,7 @@
         },
         "end": {
           "line": 203,
-          "column": 137
+          "column": 135
         }
       },
       "55": {
@@ -8213,62 +8213,62 @@
       }
     },
     "s": {
-      "0": 5,
-      "1": 5,
+      "0": 15,
+      "1": 15,
       "2": 0,
-      "3": 5,
-      "4": 5,
-      "5": 5,
-      "6": 5,
-      "7": 5,
-      "8": 5,
-      "9": 5,
-      "10": 16,
-      "11": 16,
-      "12": 16,
-      "13": 18,
-      "14": 16,
-      "15": 16,
-      "16": 1,
-      "17": 1,
-      "18": 1,
-      "19": 1,
-      "20": 1,
-      "21": 1,
-      "22": 1,
-      "23": 1,
-      "24": 1,
-      "25": 16,
-      "26": 16,
-      "27": 1,
-      "28": 16,
-      "29": 16,
-      "30": 6,
-      "31": 16,
-      "32": 16,
-      "33": 1,
-      "34": 16,
-      "35": 16,
-      "36": 1,
-      "37": 1,
-      "38": 16,
-      "39": 16,
-      "40": 1,
-      "41": 16,
-      "42": 16,
-      "43": 1,
-      "44": 16,
-      "45": 288,
-      "46": 5,
-      "47": 3,
-      "48": 5,
-      "49": 5,
-      "50": 5,
-      "51": 5,
-      "52": 5,
-      "53": 5,
-      "54": 5,
-      "55": 5,
+      "3": 15,
+      "4": 15,
+      "5": 15,
+      "6": 15,
+      "7": 15,
+      "8": 15,
+      "9": 15,
+      "10": 48,
+      "11": 48,
+      "12": 48,
+      "13": 56,
+      "14": 48,
+      "15": 48,
+      "16": 3,
+      "17": 3,
+      "18": 3,
+      "19": 3,
+      "20": 3,
+      "21": 3,
+      "22": 3,
+      "23": 3,
+      "24": 3,
+      "25": 48,
+      "26": 48,
+      "27": 3,
+      "28": 48,
+      "29": 48,
+      "30": 18,
+      "31": 48,
+      "32": 48,
+      "33": 3,
+      "34": 48,
+      "35": 48,
+      "36": 3,
+      "37": 3,
+      "38": 48,
+      "39": 48,
+      "40": 3,
+      "41": 48,
+      "42": 48,
+      "43": 3,
+      "44": 48,
+      "45": 864,
+      "46": 15,
+      "47": 9,
+      "48": 15,
+      "49": 15,
+      "50": 15,
+      "51": 15,
+      "52": 15,
+      "53": 15,
+      "54": 15,
+      "55": 15,
       "56": 0,
       "57": 0,
       "58": 0,
@@ -8276,36 +8276,36 @@
       "60": 0
     },
     "f": {
-      "0": 5,
-      "1": 16,
-      "2": 18,
-      "3": 1,
-      "4": 1,
-      "5": 6,
-      "6": 1,
-      "7": 1,
-      "8": 1,
-      "9": 1,
-      "10": 288,
-      "11": 3,
-      "12": 5,
+      "0": 15,
+      "1": 48,
+      "2": 56,
+      "3": 3,
+      "4": 3,
+      "5": 18,
+      "6": 3,
+      "7": 3,
+      "8": 3,
+      "9": 3,
+      "10": 864,
+      "11": 9,
+      "12": 15,
       "13": 0
     },
     "b": {
       "0": [
-        5,
+        15,
         0
       ],
       "1": [
         0,
-        5
+        15
       ],
       "2": [
-        1,
+        3,
         0
       ],
       "3": [
-        16,
+        48,
         0
       ],
       "4": [
@@ -8313,7 +8313,7 @@
         0
       ],
       "5": [
-        5,
+        15,
         0
       ],
       "6": [
@@ -8399,15 +8399,15 @@
         "$RefreshReg$"
       ],
       "sources": [
-        "/Users/macbook/Downloads/react/react1/src/pages/recycle/recycle.tsx"
+        "C:/Users/Мария/Downloads/bot/react1/src/pages/recycle/recycle.tsx"
       ],
-      "file": "/Users/macbook/Downloads/react/react1/src/pages/recycle/recycle.tsx"
+      "file": "C:/Users/Мария/Downloads/bot/react1/src/pages/recycle/recycle.tsx"
     },
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
-    "hash": "090aae7f1fb004510cc1003eea74b889a935227c"
+    "hash": "4ce7a40c21b4fa6b7ba3c93aaa6eb84891e20f72"
   },
-  "/Users/macbook/Downloads/react/react1/src/pages/404/404.tsx": {
-    "path": "/Users/macbook/Downloads/react/react1/src/pages/404/404.tsx",
+  "C:/Users/Мария/Downloads/bot/react1/src/pages/404/404.tsx": {
+    "path": "C:/Users/Мария/Downloads/bot/react1/src/pages/404/404.tsx",
     "statementMap": {
       "0": {
         "start": {
@@ -8476,7 +8476,7 @@
         },
         "end": {
           "line": 12,
-          "column": 103
+          "column": 101
         }
       },
       "7": {
@@ -8576,7 +8576,7 @@
         },
         "end": {
           "line": 46,
-          "column": 129
+          "column": 127
         }
       },
       "17": {
@@ -8891,24 +8891,24 @@
       }
     },
     "s": {
-      "0": 5,
-      "1": 5,
+      "0": 15,
+      "1": 15,
       "2": 0,
-      "3": 5,
-      "4": 5,
-      "5": 5,
-      "6": 5,
-      "7": 5,
-      "8": 5,
-      "9": 1,
-      "10": 5,
-      "11": 5,
-      "12": 5,
-      "13": 5,
-      "14": 5,
-      "15": 5,
-      "16": 5,
-      "17": 5,
+      "3": 15,
+      "4": 15,
+      "5": 15,
+      "6": 15,
+      "7": 15,
+      "8": 15,
+      "9": 3,
+      "10": 15,
+      "11": 15,
+      "12": 15,
+      "13": 15,
+      "14": 15,
+      "15": 15,
+      "16": 15,
+      "17": 15,
       "18": 0,
       "19": 0,
       "20": 0,
@@ -8916,22 +8916,22 @@
       "22": 0
     },
     "f": {
-      "0": 5,
-      "1": 1,
-      "2": 5,
+      "0": 15,
+      "1": 3,
+      "2": 15,
       "3": 0
     },
     "b": {
       "0": [
-        5,
+        15,
         0
       ],
       "1": [
         0,
-        5
+        15
       ],
       "2": [
-        5,
+        15,
         0
       ],
       "3": [
@@ -8945,22 +8945,22 @@
     },
     "inputSourceMap": {
       "version": 3,
-      "mappings": "AAOQ;AAPR,2BAAwB;AAAkB;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAE1C,MAAMA,eAAeA,MAAM;AACzB,SACE,uBAAC,SAAI,WAAU,2BAAyB;AAAA;AAAA,IAEtC,uBAAC,WAAQ,IAAG,KACV,iCAAC,QAAG,WAAU,QAAO,2BAArB;AAAA;AAAA;AAAA;AAAA,WAAgC,KADlC;AAAA;AAAA;AAAA;AAAA,WAEA;AAAA,OAJF;AAAA;AAAA;AAAA;AAAA,SAKA;AAEJ;AAAEC,KATID;AAUN,SAASA;AAAe,IAAAC;AAAAC,aAAAD,IAAA",
+      "mappings": "AAOQ;AAPR,2BAAwB;AAAkB;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAE1C,MAAMA,eAAeA,MAAM;AACzB,SACE,uBAAC,SAAI,WAAU,2BAA0B;AAAA;AAAA,IAEvC,uBAAC,WAAQ,IAAG,KACV,iCAAC,QAAG,WAAU,QAAO,2BAArB;AAAA;AAAA;AAAA;AAAA,WAAgC,KADlC;AAAA;AAAA;AAAA;AAAA,WAEA;AAAA,OAJF;AAAA;AAAA;AAAA;AAAA,SAKA;AAEJ;AAAEC,KATID;AAUN,SAASA;AAAe,IAAAC;AAAAC,aAAAD,IAAA",
       "names": [
         "NotFoundPage",
         "_c",
         "$RefreshReg$"
       ],
       "sources": [
-        "/Users/macbook/Downloads/react/react1/src/pages/404/404.tsx"
+        "C:/Users/Мария/Downloads/bot/react1/src/pages/404/404.tsx"
       ],
-      "file": "/Users/macbook/Downloads/react/react1/src/pages/404/404.tsx"
+      "file": "C:/Users/Мария/Downloads/bot/react1/src/pages/404/404.tsx"
     },
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
-    "hash": "558acbd0c9a593de5ef1f42892436a0937dcac16"
+    "hash": "bb8de03ab0e1fd57dcf38fc8ae6e1abd3e717dee"
   },
-  "/Users/macbook/Downloads/react/react1/src/components/Card/Card.tsx": {
-    "path": "/Users/macbook/Downloads/react/react1/src/components/Card/Card.tsx",
+  "C:/Users/Мария/Downloads/bot/react1/src/components/Card/Card.tsx": {
+    "path": "C:/Users/Мария/Downloads/bot/react1/src/components/Card/Card.tsx",
     "statementMap": {
       "0": {
         "start": {
@@ -9029,7 +9029,7 @@
         },
         "end": {
           "line": 12,
-          "column": 110
+          "column": 108
         }
       },
       "7": {
@@ -9159,7 +9159,7 @@
         },
         "end": {
           "line": 89,
-          "column": 136
+          "column": 134
         }
       },
       "20": {
@@ -9528,27 +9528,27 @@
       }
     },
     "s": {
-      "0": 5,
-      "1": 5,
+      "0": 15,
+      "1": 15,
       "2": 0,
-      "3": 5,
-      "4": 5,
-      "5": 5,
-      "6": 5,
-      "7": 5,
-      "8": 5,
+      "3": 15,
+      "4": 15,
+      "5": 15,
+      "6": 15,
+      "7": 15,
+      "8": 15,
       "9": 0,
       "10": 0,
       "11": 0,
       "12": 0,
-      "13": 5,
-      "14": 5,
-      "15": 5,
-      "16": 5,
-      "17": 5,
-      "18": 5,
-      "19": 5,
-      "20": 5,
+      "13": 15,
+      "14": 15,
+      "15": 15,
+      "16": 15,
+      "17": 15,
+      "18": 15,
+      "19": 15,
+      "20": 15,
       "21": 0,
       "22": 0,
       "23": 0,
@@ -9556,27 +9556,27 @@
       "25": 0
     },
     "f": {
-      "0": 5,
+      "0": 15,
       "1": 0,
       "2": 0,
-      "3": 5,
+      "3": 15,
       "4": 0
     },
     "b": {
       "0": [
-        5,
+        15,
         0
       ],
       "1": [
         0,
-        5
+        15
       ],
       "2": [
         0,
         0
       ],
       "3": [
-        5,
+        15,
         0
       ],
       "4": [
@@ -9605,15 +9605,15 @@
         "$RefreshReg$"
       ],
       "sources": [
-        "/Users/macbook/Downloads/react/react1/src/components/Card/Card.tsx"
+        "C:/Users/Мария/Downloads/bot/react1/src/components/Card/Card.tsx"
       ],
-      "file": "/Users/macbook/Downloads/react/react1/src/components/Card/Card.tsx"
+      "file": "C:/Users/Мария/Downloads/bot/react1/src/components/Card/Card.tsx"
     },
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
-    "hash": "b12fbb36e685ca1e39724b6e7e5eaf6fcbba33bd"
+    "hash": "9d468222ffe5541bd5980e7357af518d507452f8"
   },
-  "/Users/macbook/Downloads/react/react1/src/components/SearchBar/SearchBar.tsx": {
-    "path": "/Users/macbook/Downloads/react/react1/src/components/SearchBar/SearchBar.tsx",
+  "C:/Users/Мария/Downloads/bot/react1/src/components/SearchBar/SearchBar.tsx": {
+    "path": "C:/Users/Мария/Downloads/bot/react1/src/components/SearchBar/SearchBar.tsx",
     "statementMap": {
       "0": {
         "start": {
@@ -9682,7 +9682,7 @@
         },
         "end": {
           "line": 12,
-          "column": 120
+          "column": 118
         }
       },
       "7": {
@@ -9892,7 +9892,7 @@
         },
         "end": {
           "line": 63,
-          "column": 146
+          "column": 144
         }
       },
       "28": {
@@ -10303,35 +10303,35 @@
       }
     },
     "s": {
-      "0": 5,
-      "1": 5,
+      "0": 15,
+      "1": 15,
       "2": 0,
-      "3": 5,
-      "4": 5,
-      "5": 5,
-      "6": 5,
-      "7": 5,
-      "8": 5,
-      "9": 5,
-      "10": 11,
-      "11": 11,
-      "12": 11,
-      "13": 12,
-      "14": 11,
-      "15": 11,
-      "16": 1,
-      "17": 1,
-      "18": 8,
-      "19": 5,
-      "20": 2,
-      "21": 5,
-      "22": 5,
-      "23": 5,
-      "24": 5,
-      "25": 5,
-      "26": 5,
-      "27": 5,
-      "28": 5,
+      "3": 15,
+      "4": 15,
+      "5": 15,
+      "6": 15,
+      "7": 15,
+      "8": 15,
+      "9": 15,
+      "10": 30,
+      "11": 30,
+      "12": 30,
+      "13": 33,
+      "14": 30,
+      "15": 30,
+      "16": 3,
+      "17": 3,
+      "18": 24,
+      "19": 15,
+      "20": 3,
+      "21": 15,
+      "22": 15,
+      "23": 15,
+      "24": 15,
+      "25": 15,
+      "26": 15,
+      "27": 15,
+      "28": 15,
       "29": 0,
       "30": 0,
       "31": 0,
@@ -10339,26 +10339,26 @@
       "33": 0
     },
     "f": {
-      "0": 5,
-      "1": 11,
-      "2": 12,
-      "3": 1,
-      "4": 8,
-      "5": 2,
-      "6": 5,
+      "0": 15,
+      "1": 30,
+      "2": 33,
+      "3": 3,
+      "4": 24,
+      "5": 3,
+      "6": 15,
       "7": 0
     },
     "b": {
       "0": [
-        5,
+        15,
         0
       ],
       "1": [
         0,
-        5
+        15
       ],
       "2": [
-        5,
+        15,
         0
       ],
       "3": [
@@ -10393,15 +10393,15 @@
         "$RefreshReg$"
       ],
       "sources": [
-        "/Users/macbook/Downloads/react/react1/src/components/SearchBar/SearchBar.tsx"
+        "C:/Users/Мария/Downloads/bot/react1/src/components/SearchBar/SearchBar.tsx"
       ],
-      "file": "/Users/macbook/Downloads/react/react1/src/components/SearchBar/SearchBar.tsx"
+      "file": "C:/Users/Мария/Downloads/bot/react1/src/components/SearchBar/SearchBar.tsx"
     },
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
-    "hash": "c6fe2b8787c9296f84ba8d928ff2b7aabc5dc12f"
+    "hash": "8cab48b183fe92efb3548b9a0eda16af6d0feed6"
   },
-  "/Users/macbook/Downloads/react/react1/src/components/Loading.tsx": {
-    "path": "/Users/macbook/Downloads/react/react1/src/components/Loading.tsx",
+  "C:/Users/Мария/Downloads/bot/react1/src/components/Loading.tsx": {
+    "path": "C:/Users/Мария/Downloads/bot/react1/src/components/Loading.tsx",
     "statementMap": {
       "0": {
         "start": {
@@ -10470,7 +10470,7 @@
         },
         "end": {
           "line": 12,
-          "column": 108
+          "column": 106
         }
       },
       "7": {
@@ -10570,7 +10570,7 @@
         },
         "end": {
           "line": 47,
-          "column": 134
+          "column": 132
         }
       },
       "17": {
@@ -10885,24 +10885,24 @@
       }
     },
     "s": {
-      "0": 5,
-      "1": 5,
+      "0": 15,
+      "1": 15,
       "2": 0,
-      "3": 5,
-      "4": 5,
-      "5": 5,
-      "6": 5,
-      "7": 5,
-      "8": 5,
-      "9": 8,
-      "10": 5,
-      "11": 5,
-      "12": 5,
-      "13": 5,
-      "14": 5,
-      "15": 5,
-      "16": 5,
-      "17": 5,
+      "3": 15,
+      "4": 15,
+      "5": 15,
+      "6": 15,
+      "7": 15,
+      "8": 15,
+      "9": 24,
+      "10": 15,
+      "11": 15,
+      "12": 15,
+      "13": 15,
+      "14": 15,
+      "15": 15,
+      "16": 15,
+      "17": 15,
       "18": 0,
       "19": 0,
       "20": 0,
@@ -10910,22 +10910,22 @@
       "22": 0
     },
     "f": {
-      "0": 5,
-      "1": 8,
-      "2": 5,
+      "0": 15,
+      "1": 24,
+      "2": 15,
       "3": 0
     },
     "b": {
       "0": [
-        5,
+        15,
         0
       ],
       "1": [
         0,
-        5
+        15
       ],
       "2": [
-        5,
+        15,
         0
       ],
       "3": [
@@ -10947,15 +10947,15 @@
         "$RefreshReg$"
       ],
       "sources": [
-        "/Users/macbook/Downloads/react/react1/src/components/Loading.tsx"
+        "C:/Users/Мария/Downloads/bot/react1/src/components/Loading.tsx"
       ],
-      "file": "/Users/macbook/Downloads/react/react1/src/components/Loading.tsx"
+      "file": "C:/Users/Мария/Downloads/bot/react1/src/components/Loading.tsx"
     },
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
-    "hash": "c2d8a043c47ed0bb15a8612bdcf4b7031b16f0ca"
+    "hash": "277a86d2dcfa07a7c7b5de041c3dfc4757b1ca36"
   },
-  "/Users/macbook/Downloads/react/react1/src/components/Modal.tsx": {
-    "path": "/Users/macbook/Downloads/react/react1/src/components/Modal.tsx",
+  "C:/Users/Мария/Downloads/bot/react1/src/components/Modal.tsx": {
+    "path": "C:/Users/Мария/Downloads/bot/react1/src/components/Modal.tsx",
     "statementMap": {
       "0": {
         "start": {
@@ -11024,7 +11024,7 @@
         },
         "end": {
           "line": 12,
-          "column": 106
+          "column": 104
         }
       },
       "7": {
@@ -11214,7 +11214,7 @@
         },
         "end": {
           "line": 127,
-          "column": 132
+          "column": 130
         }
       },
       "26": {
@@ -11703,16 +11703,16 @@
       }
     },
     "s": {
-      "0": 5,
-      "1": 5,
+      "0": 15,
+      "1": 15,
       "2": 0,
-      "3": 5,
-      "4": 5,
-      "5": 5,
-      "6": 5,
-      "7": 5,
-      "8": 5,
-      "9": 5,
+      "3": 15,
+      "4": 15,
+      "5": 15,
+      "6": 15,
+      "7": 15,
+      "8": 15,
+      "9": 15,
       "10": 0,
       "11": 0,
       "12": 0,
@@ -11721,15 +11721,15 @@
       "15": 0,
       "16": 0,
       "17": 0,
-      "18": 5,
-      "19": 5,
-      "20": 5,
-      "21": 5,
-      "22": 5,
-      "23": 5,
-      "24": 5,
-      "25": 5,
-      "26": 5,
+      "18": 15,
+      "19": 15,
+      "20": 15,
+      "21": 15,
+      "22": 15,
+      "23": 15,
+      "24": 15,
+      "25": 15,
+      "26": 15,
       "27": 0,
       "28": 0,
       "29": 0,
@@ -11737,22 +11737,22 @@
       "31": 0
     },
     "f": {
-      "0": 5,
+      "0": 15,
       "1": 0,
       "2": 0,
       "3": 0,
       "4": 0,
-      "5": 5,
+      "5": 15,
       "6": 0
     },
     "b": {
       "0": [
-        5,
+        15,
         0
       ],
       "1": [
         0,
-        5
+        15
       ],
       "2": [
         0,
@@ -11767,7 +11767,7 @@
         0
       ],
       "5": [
-        5,
+        15,
         0
       ],
       "6": [
@@ -11781,7 +11781,7 @@
     },
     "inputSourceMap": {
       "version": 3,
-      "mappings": "AAqBQ;;;;;;;;;;;;;;;;AArBR,SAASA,gBAAgB;AAOlB,aAAMC,QAAQA,CAACC,UAAsB;AAAAC,KAAA;AAC1C,QAAM;AAAA,IAAEC;AAAAA,EAAQ,IAAIF;AACpB,QAAM,CAACG,UAAUC,WAAW,IAAIN,SAAS,KAAK;AAC9C,SACE,uBAAC,SACC,eAAY,SACZ,WAAU,kBACV,SAAUO,OAAM;AACd,QAAIA,EAAEC,WAAWD,EAAEE,eAAe;AAChCL,cAAQ;AAAA,IACV;AAAA,EACF,GAEA,iCAAC,SAAI,WAAU,eACb;AAAA,2BAAC,YACC,WAAU,uBACV,SAAS,MAAM;AACbA,cAAQ;AAAA,IACV,GAAE,iBAJJ;AAAA;AAAA;AAAA;AAAA,WAOA;AAAA,IACA,uBAAC,SAAI,WAAU,eACb;AAAA,6BAAC,SACC,WAAU,cACV,KAAKF,MAAMQ,KACX,KAAKR,MAAMS,WAAW,OAAOT,MAAMS,SAAS,OAC5C,QAAQ,MAAM;AACZL,oBAAY,IAAI;AAAA,MAClB,GACA,OAAO,CAACD,WAAW;AAAA,QAAEO,SAAS;AAAA,MAAE,IAAI;AAAA,QAAEA,SAAS;AAAA,MAAE,KAPnD;AAAA;AAAA;AAAA;AAAA,aAOqD;AAAA,MAErD,uBAAC,SAAI,WAAU,eACb;AAAA,+BAAC,QAAG;AAAA;AAAA,UAAOV,MAAMS;AAAAA,aAAjB;AAAA;AAAA;AAAA;AAAA,eAAwB;AAAA,QACxB,uBAAC,OACC;AAAA,iCAAC,OAAE,0BAAH;AAAA;AAAA;AAAA;AAAA,iBAAa;AAAA,UAAI;AAAA,UAAGT,MAAMW;AAAAA,aAD5B;AAAA;AAAA;AAAA;AAAA,eAEA;AAAA,QACA,uBAAC,OACC;AAAA,iCAAC,OAAE,sBAAH;AAAA;AAAA;AAAA;AAAA,iBAAS;AAAA,UAAI;AAAA,UAAGX,MAAMY;AAAAA,aADxB;AAAA;AAAA;AAAA;AAAA,eAEA;AAAA,QACA,uBAAC,OACC;AAAA,iCAAC,OAAE,wBAAH;AAAA;AAAA;AAAA;AAAA,iBAAW;AAAA,UAAI;AAAA,UAAGZ,MAAMa;AAAAA,aAD1B;AAAA;AAAA;AAAA;AAAA,eAEA;AAAA,WAVF;AAAA;AAAA;AAAA;AAAA,aAWA;AAAA,SArBF;AAAA;AAAA;AAAA;AAAA,WAsBA;AAAA,OA/BF;AAAA;AAAA;AAAA;AAAA,SAgCA,KAzCF;AAAA;AAAA;AAAA;AAAA,SA0CA;AAEJ;AAAEZ,GAhDWF,OAAK;AAAAe,KAALf;AAAK,IAAAe;AAAAC,aAAAD,IAAA",
+      "mappings": "AAqBQ;;;;;;;;;;;;;;;;AArBR,SAASA,gBAAgB;AAOlB,aAAMC,QAAQA,CAACC,UAAsB;AAAAC,KAAA;AAC1C,QAAM;AAAA,IAAEC;AAAAA,EAAQ,IAAIF;AACpB,QAAM,CAACG,UAAUC,WAAW,IAAIN,SAAS,KAAK;AAC9C,SACE,uBAAC,SACC,eAAY,SACZ,WAAU,kBACV,SAAUO,OAAM;AACd,QAAIA,EAAEC,WAAWD,EAAEE,eAAe;AAChCL,cAAQ;AAAA,IACV;AAAA,EACF,GAEA,iCAAC,SAAI,WAAU,eACb;AAAA,2BAAC,YACC,WAAU,uBACV,SAAS,MAAM;AACbA,cAAQ;AAAA,IACV,GACD,iBALD;AAAA;AAAA;AAAA;AAAA,WAOA;AAAA,IACA,uBAAC,SAAI,WAAU,eACb;AAAA,6BAAC,SACC,WAAU,cACV,KAAKF,MAAMQ,KACX,KAAKR,MAAMS,WAAW,OAAOT,MAAMS,SAAS,OAC5C,QAAQ,MAAM;AACZL,oBAAY,IAAI;AAAA,MAClB,GACA,OAAO,CAACD,WAAW;AAAA,QAAEO,SAAS;AAAA,MAAE,IAAI;AAAA,QAAEA,SAAS;AAAA,MAAE,KAPnD;AAAA;AAAA;AAAA;AAAA,aAOqD;AAAA,MAErD,uBAAC,SAAI,WAAU,eACb;AAAA,+BAAC,QAAG;AAAA;AAAA,UAAOV,MAAMS;AAAAA,aAAjB;AAAA;AAAA;AAAA;AAAA,eAAwB;AAAA,QACxB,uBAAC,OACC;AAAA,iCAAC,OAAE,0BAAH;AAAA;AAAA;AAAA;AAAA,iBAAa;AAAA,UAAI;AAAA,UAAGT,MAAMW;AAAAA,aAD5B;AAAA;AAAA;AAAA;AAAA,eAEA;AAAA,QACA,uBAAC,OACC;AAAA,iCAAC,OAAE,sBAAH;AAAA;AAAA;AAAA;AAAA,iBAAS;AAAA,UAAI;AAAA,UAAGX,MAAMY;AAAAA,aADxB;AAAA;AAAA;AAAA;AAAA,eAEA;AAAA,QACA,uBAAC,OACC;AAAA,iCAAC,OAAE,wBAAH;AAAA;AAAA;AAAA;AAAA,iBAAW;AAAA,UAAI;AAAA,UAAGZ,MAAMa;AAAAA,aAD1B;AAAA;AAAA;AAAA;AAAA,eAEA;AAAA,WAVF;AAAA;AAAA;AAAA;AAAA,aAWA;AAAA,SArBF;AAAA;AAAA;AAAA;AAAA,WAsBA;AAAA,OA/BF;AAAA;AAAA;AAAA;AAAA,SAgCA,KAzCF;AAAA;AAAA;AAAA;AAAA,SA0CA;AAEJ;AAAEZ,GAhDWF,OAAK;AAAAe,KAALf;AAAK,IAAAe;AAAAC,aAAAD,IAAA",
       "names": [
         "useState",
         "Modal",
@@ -11803,15 +11803,15 @@
         "$RefreshReg$"
       ],
       "sources": [
-        "/Users/macbook/Downloads/react/react1/src/components/Modal.tsx"
+        "C:/Users/Мария/Downloads/bot/react1/src/components/Modal.tsx"
       ],
-      "file": "/Users/macbook/Downloads/react/react1/src/components/Modal.tsx"
+      "file": "C:/Users/Мария/Downloads/bot/react1/src/components/Modal.tsx"
     },
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
-    "hash": "04a318c9d769051937624ba1238554c94a7f2cb5"
+    "hash": "008a5c28022f0e44d207bb209136f140702cfa19"
   },
-  "/Users/macbook/Downloads/react/react1/src/pages/home/home.tsx": {
-    "path": "/Users/macbook/Downloads/react/react1/src/pages/home/home.tsx",
+  "C:/Users/Мария/Downloads/bot/react1/src/pages/home/home.tsx": {
+    "path": "C:/Users/Мария/Downloads/bot/react1/src/pages/home/home.tsx",
     "statementMap": {
       "0": {
         "start": {
@@ -11880,7 +11880,7 @@
         },
         "end": {
           "line": 12,
-          "column": 105
+          "column": 103
         }
       },
       "7": {
@@ -12340,7 +12340,7 @@
         },
         "end": {
           "line": 134,
-          "column": 131
+          "column": 129
         }
       },
       "53": {
@@ -13347,30 +13347,30 @@
       }
     },
     "s": {
-      "0": 5,
-      "1": 5,
+      "0": 15,
+      "1": 15,
       "2": 0,
-      "3": 5,
-      "4": 5,
-      "5": 5,
-      "6": 5,
-      "7": 5,
-      "8": 5,
-      "9": 5,
-      "10": 11,
-      "11": 11,
-      "12": 11,
-      "13": 11,
-      "14": 11,
-      "15": 11,
-      "16": 11,
-      "17": 11,
-      "18": 11,
-      "19": 26,
-      "20": 11,
-      "21": 11,
-      "22": 8,
-      "23": 3,
+      "3": 15,
+      "4": 15,
+      "5": 15,
+      "6": 15,
+      "7": 15,
+      "8": 15,
+      "9": 15,
+      "10": 30,
+      "11": 30,
+      "12": 30,
+      "13": 30,
+      "14": 30,
+      "15": 30,
+      "16": 30,
+      "17": 30,
+      "18": 30,
+      "19": 72,
+      "20": 30,
+      "21": 30,
+      "22": 24,
+      "23": 6,
       "24": 0,
       "25": 0,
       "26": 0,
@@ -13378,9 +13378,9 @@
       "28": 0,
       "29": 0,
       "30": 0,
-      "31": 3,
+      "31": 6,
       "32": 0,
-      "33": 3,
+      "33": 6,
       "34": 0,
       "35": 0,
       "36": 0,
@@ -13388,19 +13388,19 @@
       "38": 0,
       "39": 0,
       "40": 0,
-      "41": 3,
+      "41": 6,
       "42": 0,
       "43": 0,
-      "44": 5,
-      "45": 3,
-      "46": 5,
-      "47": 5,
-      "48": 5,
-      "49": 5,
-      "50": 5,
-      "51": 5,
-      "52": 5,
-      "53": 5,
+      "44": 15,
+      "45": 9,
+      "46": 15,
+      "47": 15,
+      "48": 15,
+      "49": 15,
+      "50": 15,
+      "51": 15,
+      "52": 15,
+      "53": 15,
       "54": 0,
       "55": 0,
       "56": 0,
@@ -13408,33 +13408,33 @@
       "58": 0
     },
     "f": {
-      "0": 5,
-      "1": 11,
-      "2": 26,
+      "0": 15,
+      "1": 30,
+      "2": 72,
       "3": 0,
       "4": 0,
       "5": 0,
       "6": 0,
       "7": 0,
-      "8": 3,
-      "9": 5,
+      "8": 9,
+      "9": 15,
       "10": 0
     },
     "b": {
       "0": [
-        5,
+        15,
         0
       ],
       "1": [
         0,
-        5
+        15
       ],
       "2": [
-        11
+        30
       ],
       "3": [
-        8,
-        3
+        24,
+        6
       ],
       "4": [
         0,
@@ -13442,26 +13442,26 @@
       ],
       "5": [
         0,
-        3
+        6
       ],
       "6": [
-        2,
-        1
+        3,
+        3
       ],
       "7": [
-        3,
+        6,
         0
       ],
       "8": [
-        3,
-        3
+        6,
+        6
       ],
       "9": [
-        3,
-        3
+        6,
+        6
       ],
       "10": [
-        3,
+        6,
         0
       ],
       "11": [
@@ -13489,7 +13489,7 @@
         0
       ],
       "17": [
-        5,
+        15,
         0
       ],
       "18": [
@@ -13558,15 +13558,15 @@
         "$RefreshReg$"
       ],
       "sources": [
-        "/Users/macbook/Downloads/react/react1/src/pages/home/home.tsx"
+        "C:/Users/Мария/Downloads/bot/react1/src/pages/home/home.tsx"
       ],
-      "file": "/Users/macbook/Downloads/react/react1/src/pages/home/home.tsx"
+      "file": "C:/Users/Мария/Downloads/bot/react1/src/pages/home/home.tsx"
     },
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
-    "hash": "ae5942b04cb13f56ac3cd9f97e73523c74dac9de"
+    "hash": "11f9889c9df218856935bbebb4ebc4f568eb0266"
   },
-  "/Users/macbook/Downloads/react/react1/src/components/Header/Header.tsx": {
-    "path": "/Users/macbook/Downloads/react/react1/src/components/Header/Header.tsx",
+  "C:/Users/Мария/Downloads/bot/react1/src/components/Header/Header.tsx": {
+    "path": "C:/Users/Мария/Downloads/bot/react1/src/components/Header/Header.tsx",
     "statementMap": {
       "0": {
         "start": {
@@ -13635,7 +13635,7 @@
         },
         "end": {
           "line": 12,
-          "column": 114
+          "column": 112
         }
       },
       "7": {
@@ -13765,7 +13765,7 @@
         },
         "end": {
           "line": 72,
-          "column": 140
+          "column": 138
         }
       },
       "20": {
@@ -14260,27 +14260,27 @@
       }
     },
     "s": {
-      "0": 5,
-      "1": 5,
+      "0": 15,
+      "1": 15,
       "2": 0,
-      "3": 5,
-      "4": 5,
-      "5": 5,
-      "6": 5,
-      "7": 5,
-      "8": 5,
-      "9": 5,
-      "10": 9,
-      "11": 9,
-      "12": 9,
-      "13": 5,
-      "14": 5,
-      "15": 5,
-      "16": 5,
-      "17": 5,
-      "18": 5,
-      "19": 5,
-      "20": 5,
+      "3": 15,
+      "4": 15,
+      "5": 15,
+      "6": 15,
+      "7": 15,
+      "8": 15,
+      "9": 15,
+      "10": 27,
+      "11": 27,
+      "12": 27,
+      "13": 15,
+      "14": 15,
+      "15": 15,
+      "16": 15,
+      "17": 15,
+      "18": 15,
+      "19": 15,
+      "20": 15,
       "21": 0,
       "22": 0,
       "23": 0,
@@ -14288,37 +14288,37 @@
       "25": 0
     },
     "f": {
-      "0": 5,
-      "1": 5,
-      "2": 9,
-      "3": 9,
-      "4": 9,
-      "5": 5,
+      "0": 15,
+      "1": 15,
+      "2": 27,
+      "3": 27,
+      "4": 27,
+      "5": 15,
       "6": 0
     },
     "b": {
       "0": [
-        5,
+        15,
         0
       ],
       "1": [
         0,
-        5
+        15
       ],
       "2": [
-        3,
-        6
+        9,
+        18
       ],
       "3": [
-        2,
-        7
+        6,
+        21
       ],
       "4": [
-        3,
-        6
+        9,
+        18
       ],
       "5": [
-        5,
+        15,
         0
       ],
       "6": [
@@ -14332,7 +14332,7 @@
     },
     "inputSourceMap": {
       "version": 3,
-      "mappings": "AAQU;AARV,2BAAwB;AAAkB;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAG1C,MAAMA,SAASA,MAAM;AACnB,SACE,uBAAC,YAAO,WAAU,UAChB,iCAAC,SAAI,WAAU,oBAAmB,MAAK,SACrC;AAAA,2BAAC,WAAQ,WAAW,CAAC;AAAA,MAAEC;AAAAA,IAAS,MAAOA,WAAW,gBAAgB,gBAAiB,IAAG,KACpF;AAAA,6BAAC,SAAI,KAAI,aAAY,KAAI,UAAzB;AAAA;AAAA;AAAA;AAAA,aAA+B;AAAA,MAC/B,uBAAC,QAAG,WAAU,QAAO,2BAArB;AAAA;AAAA;AAAA;AAAA,aAAgC;AAAA,SAFlC;AAAA;AAAA;AAAA;AAAA,WAGA;AAAA,IACA,uBAAC,WACC,WAAW,CAAC;AAAA,MAAEA;AAAAA,IAAS,MAAOA,WAAW,gBAAgB,gBACzD,IAAG,UAAQ,wBAFb;AAAA;AAAA;AAAA;AAAA,WAKA;AAAA,IACA,uBAAC,WACC,WAAW,CAAC;AAAA,MAAEA;AAAAA,IAAS,MAAOA,WAAW,gBAAgB,gBACzD,IAAG,YAAU,uBAFf;AAAA;AAAA;AAAA;AAAA,WAKA;AAAA,OAhBF;AAAA;AAAA;AAAA;AAAA,SAiBA,KAlBF;AAAA;AAAA;AAAA;AAAA,SAmBA;AAEJ;AAAEC,KAvBIF;AAyBN,SAASA;AAAS,IAAAE;AAAAC,aAAAD,IAAA",
+      "mappings": "AAQU;AARV,2BAAwB;AAAkB;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAG1C,MAAMA,SAASA,MAAM;AACnB,SACE,uBAAC,YAAO,WAAU,UAChB,iCAAC,SAAI,WAAU,oBAAmB,MAAK,SACrC;AAAA,2BAAC,WAAQ,WAAW,CAAC;AAAA,MAAEC;AAAAA,IAAS,MAAOA,WAAW,gBAAgB,gBAAiB,IAAG,KACpF;AAAA,6BAAC,SAAI,KAAI,aAAY,KAAI,UAAzB;AAAA;AAAA;AAAA;AAAA,aAA+B;AAAA,MAC/B,uBAAC,QAAG,WAAU,QAAO,2BAArB;AAAA;AAAA;AAAA;AAAA,aAAgC;AAAA,SAFlC;AAAA;AAAA;AAAA;AAAA,WAGA;AAAA,IACA,uBAAC,WACC,WAAW,CAAC;AAAA,MAAEA;AAAAA,IAAS,MAAOA,WAAW,gBAAgB,gBACzD,IAAG,UACJ,wBAHD;AAAA;AAAA;AAAA;AAAA,WAKA;AAAA,IACA,uBAAC,WACC,WAAW,CAAC;AAAA,MAAEA;AAAAA,IAAS,MAAOA,WAAW,gBAAgB,gBACzD,IAAG,YACJ,uBAHD;AAAA;AAAA;AAAA;AAAA,WAKA;AAAA,OAhBF;AAAA;AAAA;AAAA;AAAA,SAiBA,KAlBF;AAAA;AAAA;AAAA;AAAA,SAmBA;AAEJ;AAAEC,KAvBIF;AAyBN,SAASA;AAAS,IAAAE;AAAAC,aAAAD,IAAA",
       "names": [
         "Header",
         "isActive",
@@ -14340,15 +14340,15 @@
         "$RefreshReg$"
       ],
       "sources": [
-        "/Users/macbook/Downloads/react/react1/src/components/Header/Header.tsx"
+        "C:/Users/Мария/Downloads/bot/react1/src/components/Header/Header.tsx"
       ],
-      "file": "/Users/macbook/Downloads/react/react1/src/components/Header/Header.tsx"
+      "file": "C:/Users/Мария/Downloads/bot/react1/src/components/Header/Header.tsx"
     },
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
-    "hash": "cd5787d6b38dd38ec0a5dfde5950444f792ac2e6"
+    "hash": "5f27e17b9fde3a6776307bdc6f6421a60152a74c"
   },
-  "/Users/macbook/Downloads/react/react1/src/components/Footer/footer.tsx": {
-    "path": "/Users/macbook/Downloads/react/react1/src/components/Footer/footer.tsx",
+  "C:/Users/Мария/Downloads/bot/react1/src/components/Footer/footer.tsx": {
+    "path": "C:/Users/Мария/Downloads/bot/react1/src/components/Footer/footer.tsx",
     "statementMap": {
       "0": {
         "start": {
@@ -14417,7 +14417,7 @@
         },
         "end": {
           "line": 12,
-          "column": 114
+          "column": 112
         }
       },
       "7": {
@@ -14517,7 +14517,7 @@
         },
         "end": {
           "line": 87,
-          "column": 140
+          "column": 138
         }
       },
       "17": {
@@ -14832,24 +14832,24 @@
       }
     },
     "s": {
-      "0": 5,
-      "1": 5,
+      "0": 15,
+      "1": 15,
       "2": 0,
-      "3": 5,
-      "4": 5,
-      "5": 5,
-      "6": 5,
-      "7": 5,
-      "8": 5,
-      "9": 5,
-      "10": 5,
-      "11": 5,
-      "12": 5,
-      "13": 5,
-      "14": 5,
-      "15": 5,
-      "16": 5,
-      "17": 5,
+      "3": 15,
+      "4": 15,
+      "5": 15,
+      "6": 15,
+      "7": 15,
+      "8": 15,
+      "9": 15,
+      "10": 15,
+      "11": 15,
+      "12": 15,
+      "13": 15,
+      "14": 15,
+      "15": 15,
+      "16": 15,
+      "17": 15,
       "18": 0,
       "19": 0,
       "20": 0,
@@ -14857,22 +14857,22 @@
       "22": 0
     },
     "f": {
-      "0": 5,
-      "1": 5,
-      "2": 5,
+      "0": 15,
+      "1": 15,
+      "2": 15,
       "3": 0
     },
     "b": {
       "0": [
-        5,
+        15,
         0
       ],
       "1": [
         0,
-        5
+        15
       ],
       "2": [
-        5,
+        15,
         0
       ],
       "3": [
@@ -14895,15 +14895,15 @@
         "$RefreshReg$"
       ],
       "sources": [
-        "/Users/macbook/Downloads/react/react1/src/components/Footer/footer.tsx"
+        "C:/Users/Мария/Downloads/bot/react1/src/components/Footer/footer.tsx"
       ],
-      "file": "/Users/macbook/Downloads/react/react1/src/components/Footer/footer.tsx"
+      "file": "C:/Users/Мария/Downloads/bot/react1/src/components/Footer/footer.tsx"
     },
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
-    "hash": "47147409de813ee00c1ad6f266389ff6fe84b378"
+    "hash": "86bf132d897c05c77dc6108ad9f75739795a67fc"
   },
-  "/Users/macbook/Downloads/react/react1/src/components/Layout/Layout.tsx": {
-    "path": "/Users/macbook/Downloads/react/react1/src/components/Layout/Layout.tsx",
+  "C:/Users/Мария/Downloads/bot/react1/src/components/Layout/Layout.tsx": {
+    "path": "C:/Users/Мария/Downloads/bot/react1/src/components/Layout/Layout.tsx",
     "statementMap": {
       "0": {
         "start": {
@@ -15083,26 +15083,26 @@
       }
     },
     "s": {
-      "0": 5,
-      "1": 5,
-      "2": 5
+      "0": 15,
+      "1": 15,
+      "2": 15
     },
     "f": {
-      "0": 5
+      "0": 15
     },
     "b": {
       "0": [
-        5,
+        15,
         0,
         0
       ],
       "1": [
-        5,
-        5
+        15,
+        15
       ],
       "2": [
-        5,
-        5
+        15,
+        15
       ]
     },
     "inputSourceMap": {
@@ -15120,15 +15120,15 @@
         "shouldShowFooterHeader"
       ],
       "sources": [
-        "/Users/macbook/Downloads/react/react1/src/components/Layout/Layout.tsx"
+        "C:/Users/Мария/Downloads/bot/react1/src/components/Layout/Layout.tsx"
       ],
-      "file": "/Users/macbook/Downloads/react/react1/src/components/Layout/Layout.tsx"
+      "file": "C:/Users/Мария/Downloads/bot/react1/src/components/Layout/Layout.tsx"
     },
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
-    "hash": "960e7ac5d58cf39e21762827dd833e2c36998304"
+    "hash": "2a650c9ac35b5e21cd435f0644db28df976eb80f"
   },
-  "/Users/macbook/Downloads/react/react1/src/AppRoutes.tsx": {
-    "path": "/Users/macbook/Downloads/react/react1/src/AppRoutes.tsx",
+  "C:/Users/Мария/Downloads/bot/react1/src/AppRoutes.tsx": {
+    "path": "C:/Users/Мария/Downloads/bot/react1/src/AppRoutes.tsx",
     "statementMap": {
       "0": {
         "start": {
@@ -15197,7 +15197,7 @@
         },
         "end": {
           "line": 12,
-          "column": 99
+          "column": 97
         }
       },
       "7": {
@@ -15297,7 +15297,7 @@
         },
         "end": {
           "line": 85,
-          "column": 125
+          "column": 123
         }
       },
       "17": {
@@ -15612,24 +15612,24 @@
       }
     },
     "s": {
-      "0": 5,
-      "1": 5,
+      "0": 15,
+      "1": 15,
       "2": 0,
-      "3": 5,
-      "4": 5,
-      "5": 5,
-      "6": 5,
-      "7": 5,
-      "8": 5,
-      "9": 5,
-      "10": 5,
-      "11": 5,
-      "12": 5,
-      "13": 5,
-      "14": 5,
-      "15": 5,
-      "16": 5,
-      "17": 5,
+      "3": 15,
+      "4": 15,
+      "5": 15,
+      "6": 15,
+      "7": 15,
+      "8": 15,
+      "9": 15,
+      "10": 15,
+      "11": 15,
+      "12": 15,
+      "13": 15,
+      "14": 15,
+      "15": 15,
+      "16": 15,
+      "17": 15,
       "18": 0,
       "19": 0,
       "20": 0,
@@ -15637,22 +15637,22 @@
       "22": 0
     },
     "f": {
-      "0": 5,
-      "1": 5,
-      "2": 5,
+      "0": 15,
+      "1": 15,
+      "2": 15,
       "3": 0
     },
     "b": {
       "0": [
-        5,
+        15,
         0
       ],
       "1": [
         0,
-        5
+        15
       ],
       "2": [
-        5,
+        15,
         0
       ],
       "3": [
@@ -15680,15 +15680,15 @@
         "$RefreshReg$"
       ],
       "sources": [
-        "/Users/macbook/Downloads/react/react1/src/AppRoutes.tsx"
+        "C:/Users/Мария/Downloads/bot/react1/src/AppRoutes.tsx"
       ],
-      "file": "/Users/macbook/Downloads/react/react1/src/AppRoutes.tsx"
+      "file": "C:/Users/Мария/Downloads/bot/react1/src/AppRoutes.tsx"
     },
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
-    "hash": "e74801f25d89ae399eda742f1efe109ccd6f4196"
+    "hash": "2f696ed9f506e32cc2f2dacf38db2ea8f01f1161"
   },
-  "/Users/macbook/Downloads/react/react1/src/entry-client.tsx": {
-    "path": "/Users/macbook/Downloads/react/react1/src/entry-client.tsx",
+  "C:/Users/Мария/Downloads/bot/react1/src/entry-client.tsx": {
+    "path": "C:/Users/Мария/Downloads/bot/react1/src/entry-client.tsx",
     "statementMap": {
       "0": {
         "start": {
@@ -15704,7 +15704,7 @@
     "fnMap": {},
     "branchMap": {},
     "s": {
-      "0": 5
+      "0": 15
     },
     "f": {},
     "b": {},
@@ -15722,11 +15722,11 @@
         "querySelector"
       ],
       "sources": [
-        "/Users/macbook/Downloads/react/react1/src/entry-client.tsx"
+        "C:/Users/Мария/Downloads/bot/react1/src/entry-client.tsx"
       ],
-      "file": "/Users/macbook/Downloads/react/react1/src/entry-client.tsx"
+      "file": "C:/Users/Мария/Downloads/bot/react1/src/entry-client.tsx"
     },
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
-    "hash": "107c28f56ff6b0e8092691bc888bbf225a4f72df"
+    "hash": "066e89570c783d8ac5a9908241392401e28de210"
   }
 }

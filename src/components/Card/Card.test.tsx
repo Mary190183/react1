@@ -1,5 +1,5 @@
 import { render, screen } from '@testing-library/react';
-
+import '@testing-library/jest-dom';
 import Card from './Card';
 import React from 'react';
 

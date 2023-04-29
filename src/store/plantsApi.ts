@@ -3,7 +3,7 @@ import { DataPlant } from '../types/types';
 
 export const plantsApi = createApi({
   reducerPath: 'plantsApi',
-  baseQuery: fetchBaseQuery({ baseUrl: 'http://localhost:5125/' }),
+  baseQuery: fetchBaseQuery({ baseUrl: 'http://localhost:5173/' }),
   endpoints: (builder) => ({
     getPlants: builder.query<DataPlant[], string | void>({
       query: (search) => `plants?${search ? `/search?q=${search}` : `?limit=0`}`,

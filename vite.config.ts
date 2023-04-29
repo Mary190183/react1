@@ -32,6 +32,8 @@ export default defineConfig({
       exclude: [
         'vite.config.ts',
         'dist',
+        'cypress',
+        'instrumented',
         'src/vite-env.d.ts',
         'src/types',
         'src/**/*.test.tsx',

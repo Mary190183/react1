@@ -8,7 +8,7 @@ import { PipeableStream, RenderToPipeableStreamOptions } from 'react-dom/server.
 import { RootState } from './src/store/index';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const port = process.env.PORT || 5115;
+const port = process.env.PORT || 5000;
 const isProd = process.env.NODE_ENV === 'production';
 
 const createNodeServer = async () => {

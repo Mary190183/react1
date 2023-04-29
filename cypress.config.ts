@@ -3,6 +3,7 @@ import registerCodeCoverageTasks from '@cypress/code-coverage/task';
 
 export default defineConfig({
   env: {
+    apiUrl: 'http://localhost:5173',
     codeCoverage: {
       exclude: 'cypress/**/*.*',
     },
@@ -12,7 +13,7 @@ export default defineConfig({
       registerCodeCoverageTasks(on, config);
       return config;
     },
-    baseUrl: 'http://localhost:5115',
+    baseUrl: 'http://localhost:5000',
   },
   video: false,
   pageLoadTimeout: 100000,
