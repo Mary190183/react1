@@ -1,0 +1,93 @@
+{
+  "radio": [
+    {
+      "id": 1,
+      "name" : "plastic-1",
+      "image": "/Plastic-recyc-01.svg"
+    },
+    {
+      "id": 2,
+      "name" : "plastic-2",
+      "image": "Plastic-recyc-02.svg"
+    },
+    {
+      "id": 3,
+      "name" : "plastic-3", 
+      "image": "/Plastic-recyc-03.svg"
+    },
+    {
+      "id": 4,
+      "name" : "plastic-4", 
+      "image": "/Plastic-recyc-04.svg"
+    },
+    {
+      "id": 5,
+      "name" : "plastic-5",
+      "image": "Plastic-recyc-05.svg"
+    },
+    {
+      "id": 6,
+      "name" : "plastic-6",
+      "image": "/Plastic-recyc-06.svg"
+    },
+    {
+      "id": 7,
+      "name" : "plastic-7", 
+      "image": "/Plastic-recyc-07.svg"
+    },
+    {
+      "id": 8,
+      "name" : "paper-20", 
+      "image": "/paper-20.svg"
+    },
+    {
+      "id": 9,
+      "name" : "paper-21", 
+      "image": "/paper-21.svg"
+    },
+    {
+      "id": 10,
+      "name" : "paper-22", 
+      "image": "/paper-22.svg"
+    },    {
+      "id": 11,
+      "name" : "paper-23", 
+      "image": "/paper-23.svg"
+    },
+    {
+      "id": 12,
+      "name" : "metal-40", 
+      "image": "/metal-40.svg"
+    },    
+    {
+      "id": 13,
+      "name" : "metal-41", 
+      "image": "/metal-41.svg"
+    },
+    {
+      "id": 14,
+      "name" : "c-pap-84", 
+      "image": "/c-pap-84.svg"
+    },
+    {
+      "id": 15,
+      "name" : "glass-70", 
+      "image": "/glass-70.svg"
+    },    
+    {
+      "id": 16,
+      "name" : "glass-71", 
+      "image": "/glass-71.svg"
+    },
+    {
+      "id": 17,
+      "name" : "glass-72", 
+      "image": "/glass-72.svg"
+    },
+    {
+      "id": 18,
+      "name" : "Unmarked",
+      "image": "/close.svg"
+    }
+  ]
+  }
