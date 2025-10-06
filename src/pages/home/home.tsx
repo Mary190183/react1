@@ -54,10 +54,10 @@ const Home: FC = () => {
       method: 'GET',
       headers: {
         'X-RapidAPI-Key': 'b18c204c09msh89a114b4b235ccap162bddjsn254a940390cf',
-        'X-RapidAPI-Host': 'house-plants2.p.rapidapi.com',
+        'X-RapidAPI-Host': 'garden-api-fzyw.onrender.com',
       },
     };
-    fetch('https://house-plants2.p.rapidapi.com/all-lite', plant)
+    fetch('https://garden-api-fzyw.onrender.com/id', plant)
       .then((response) => {
         return response.json();
       })
