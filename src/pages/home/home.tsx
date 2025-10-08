@@ -48,6 +48,43 @@ const Home: FC = () => {
   useEffect(() => {
     localStorage.setItem('query', query);
   }, [query]);
+
+
+
+
+// import React, { useState, useEffect } from 'react';
+// import axios from 'axios';
+
+// function App() {
+//     const [data, setData] = useState(null);
+
+//     useEffect(() => {
+//         async function fetchData() {
+//             try {
+//                 const response = await axios.get(`https://perenual.com/api/v2/species-list?key=sk-n28i68e4ad26b857312736`);
+//                 setData(response.data);
+//             } catch (error) {
+//                 console.error("Error fetching data:", error);
+//             }
+//         }
+
+//         fetchData();
+//     }, []);
+
+//     return (
+//         <div>
+//             <h1>API Data</h1>
+//             <pre>{JSON.stringify(data, null, 2)}</pre>
+//         </div>
+//     );
+// }
+
+// export default App;
+
+
+
+
+
   const fetchMe = () => {
     setIsPending(true);
     const plant = {
@@ -71,6 +108,7 @@ const Home: FC = () => {
         console.error(err);
         setIsPending(false);
       });
+
   };
 
   const handleSubmit: React.FormEventHandler<HTMLFormElement> = (e) => {
