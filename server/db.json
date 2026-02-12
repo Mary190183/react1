@@ -1,0 +1,175 @@
+{
+  "plants": [
+    {
+      "id": 1,
+      "common": "Gardenia",
+      "watches": 5,
+      "latin": "Gardénia",
+      "family": "Rubiaceae",
+      "img": "/Gardenia.jpg",
+      "watering": "Gardenia loves moisture and spraying"
+    },
+    {
+      "id": 2,
+      "common":  "Aspidistra",
+      "watches": 3,
+      "latin": "Aspidistra",
+      "family": "Asparagaceae",
+      "img": "/aspidistra_spatifilum.jpg",
+      "watering": "Water when soil is half dry & Can dry between watering"
+    },
+    {
+      "id": 3,
+      "common": "Orchid",
+      "watches": 2,
+      "latin": "Orchidáceae",
+      "family": "Orchidaceae",
+      "img": "/orhidea.jpg",
+      "watering": "Orchids like humid air — 50-80%. They need to be sprayed"
+    },
+    {
+      "id": 4,
+      "common": "Aglaonema",
+      "watches": 5,
+      "latin": "Aglaonema",
+      "family": "Araceae",
+      "img": "/aglaonema.jpg",
+      "watering": "Keep moist between watering & Water when soil is half dry"
+    },
+    {
+      "id": 5,
+      "common": "Ficus benjamina",
+      "watches": 3,
+      "latin": "Ficus benjamina",
+      "family": "Moraceae",
+      "img": "/fikus_bengamina.jpg",
+      "watering": "Keep moist between watering & Must not dry between watering"
+    },
+    {
+      "id": 6,
+      "common": "Gerbera",
+      "watches": 2,
+      "latin": "Gerbera",
+      "family": "Asteraceae",
+      "img": "/herbera.jpg",
+      "watering": "The plant loves to be sprayed. For this, water of a similar temperature is used. Watering with cold water can cause the potted plant to die."
+    },
+    {
+      "id": 7,
+      "common": "Kalanchoe",
+      "watches": 5,
+      "latin": "Kalánchoë",
+      "family": "Crassulaceae",
+      "img": "/kolanhoe.jpg",
+      "watering": "Kalanchoes should be watered once every week and a half or two weeks to prevent overwatering. This succulent stores water in its leaves and stems; hence, let the top 2-3″ of soil completely dry out before watering again."
+    },
+    {
+      "id": 8,
+      "common": "Maranta",
+      "watches": 3,
+      "latin": "Maranta",
+      "family": "Marantaceae",
+      "img": "/maranta.jpg",
+      "watering": "Keep moist between watering & Water when soil is half dry"
+    },
+    {
+      "id": 9,
+      "common": "Monstera",
+      "watches": 2,
+      "latin": "Monstéra",
+      "family": "Araceae",
+      "img": "/monstera.jpg",
+      "watering": "Water when soil is half dry & Can dry between watering"
+    },
+    {
+      "id": 10,
+      "common": "Nephrolepis",
+      "watches": 5,
+      "latin": "Nephrolépis",
+      "family": "Nephrolepidaceae",
+      "img": "/nefrolepis_gloriosa.jpg",
+      "watering": "Keep moist between watering & Water when soil is half dry"
+    },
+    {
+      "id": 11,
+      "common": "Carex",
+      "watches": 3,
+      "latin": "Cárex",
+      "family": "Cyperaceae",
+      "img": "/osoka.jpg",
+      "watering": "Most plants like about 1 inch of water per week."
+    },
+    {
+      "id": 12,
+      "common": "Kentia palm",
+      "watches": 2,
+      "latin": "Howea forsteriana",
+      "family": "Arecaceae",
+      "img": "/palm_kenia_hoveja.jpg",
+      "watering": "Keep moist between watering & Must not dry between watering"
+    },
+    {
+      "id": 13,
+      "common": "Livistona",
+      "watches": 5,
+      "latin": "Livistona",
+      "family": "Arecaceae",
+      "img": "/palm_livinstone.jpg",
+      "watering": "It's a good idea to check the soil more often in summer when the weather is warmer, as Livistonamight need a little more water than in the cold winter months."
+    },
+    {
+      "id": 14,
+      "common": "Bamboo palm",
+      "watches": 3,
+      "latin": "Chamaedorea erumpens",
+      "family": "Arecaceae",
+      "img": "/palm.jpg",
+      "watering": "Watering: Keep moist between watering & Water when soil is half dry"
+    },
+    {
+      "id": 15,
+      "common": "Petunia",
+      "watches": 2,
+      "latin": "Petunia",
+      "family": "Solanaceae",
+      "img": "/petunia.jpg",
+      "watering": "Watering should be regular, but not excessive, especially during the flowering period."
+    }, 
+    {
+      "id": 16,
+      "common": "Primula",
+      "watches": 2,
+      "latin": "Primula",
+      "family": "Primulaceae",
+      "img": "/primula.jpg",
+      "watering": "It is important to maintain a constant humidity of the soil, and you should not allow it to dry out excessively, or wet it too much."
+    },
+    {
+      "id": 17,
+      "common": "Spathiphyllum",
+      "watches": 5,
+      "latin": "Spathiphyllum",
+      "family": "Araceae",
+      "img": "/spatifillu_lima.jpg",
+      "watering": "Keep moist between watering & Must not dry between watering"
+    },
+    {
+      "id": 18,
+      "common": "Succulentus",
+      "watches": 3,
+      "latin": "Succulentus",
+      "family": "Cactaceae",
+      "img": "/succulent.jpg",
+      "watering": "Keep moist between watering & Water when soil is half dry"
+    },
+    {
+      "id": 19,
+      "common": "Janet Craig",
+      "watches": 3,
+      "latin": "Dracaena deremensis 'Janet Craig'",
+      "family": "Asparagaceae",
+      "img": "/water_giasint.jpg",
+      "watering": "Keep moist between watering & Can dry between watering"
+    }
+  ]
+  }
